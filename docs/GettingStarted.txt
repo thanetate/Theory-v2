@@ -1,0 +1,24 @@
+## This is the general outline of the app
+
+Tech Stack -
+    1. Frontend: React
+            - Vite
+            - Jotai (State Management Library)
+
+    2. Backend: C#, .NET
+    3. Database: PostgreSQL
+            - SupaBase
+
+
+Needs -
+    1. Authentication
+            - SupaBase
+    2. Database Connection
+    3. Responsive Design 
+            - Best CSS Practices
+    4. Security and Scalability
+    5. Public URL
+
+Other - 
+    1. Design Patterns for C#, E-Commerce, React
+            - UML Diagrams

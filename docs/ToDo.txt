@@ -1,0 +1,6 @@
+TODO
+
+1. Practice with PostgreSQL
+2. Learn C# and .NET 
+3. RoadMap.dev Backend RoadMap
+4. Design Patterns for E-Com website
