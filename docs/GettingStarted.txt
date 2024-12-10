@@ -2,7 +2,7 @@
 
 Tech Stack -
     1. Frontend: React
-            - Vite
+            - Vite (TypeScript)
             - Jotai (State Management Library)
 
     2. Backend: C#, .NET
@@ -29,3 +29,8 @@ Other -
     3. Frontend Recourses 
             - typewolf.com (Typeography)
             - mobbin.com (Similar Design Patterns)
+
+Client -
+    1. npm create vite@latest .
+    2. change port 5174 -> 3000
+    3. npm install
