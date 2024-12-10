@@ -18,7 +18,14 @@ Needs -
             - Best CSS Practices
     4. Security and Scalability
     5. Public URL
+            - Deploy on Azure or AWS
+            - VM
 
 Other - 
     1. Design Patterns for C#, E-Commerce, React
             - UML Diagrams
+    2. Include Frontend Designs
+            - Figma
+    3. Frontend Recourses 
+            - typewolf.com (Typeography)
+            - mobbin.com (Similar Design Patterns)
