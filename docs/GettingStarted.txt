@@ -28,7 +28,17 @@ Other -
             - Figma
     3. Frontend Recourses 
             - typewolf.com (Typeography)
-            - mobbin.com (Similar Design Patterns)
+                 Fonts — Galaxie Copernicus, Tiempos Text, Styrene 
+                 Fonts - Editorial Old, Surt
+                 Fonts - Times Now, Suisse Int’l 
+
+Phone -
+        h1 -> 20px normal 400 (option - opacity 1)
+        h2 -> 14px normal 400
+Desktop -
+        h1 -> 24px normal 400 (option - opacity 1)
+        h2 -> 14px normal 400
+
 
 Client -
     1. npm create vite@latest .
