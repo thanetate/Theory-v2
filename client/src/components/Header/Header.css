@@ -2,7 +2,7 @@
     width: 100vw;
     height: 100px;
     margin-top: 25px;
-    position: absolute;
+    position: relative;
     left: 0;
     display: flex;
     align-items: center;
