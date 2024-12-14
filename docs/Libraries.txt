@@ -1,3 +1,4 @@
 Libraries Used:
     - react-fast-marquee
     - react-modern-drawer
+    - hamburger-react
