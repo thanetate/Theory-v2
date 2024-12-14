@@ -1,0 +1,9 @@
+.header {
+    border-color: red;
+    border-style: solid;
+    width: 100vw;
+    height: 100px;
+    margin-top: 25px;
+    position: absolute;
+    left: 0;
+}
