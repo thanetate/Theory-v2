@@ -1,0 +1,2 @@
+Libraries Used:
+    - react-fast-marquee
