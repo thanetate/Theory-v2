@@ -7,6 +7,20 @@ export function Header() {
 			<div className="small-nav">
 				<Hamburger />
 			</div>
+			<div className="large-nav"></div>
+			{/* add logo here */}
+			<div className="right-icn-container">
+				<button className="search-btn">
+					<img
+						src="./icons/search.svg"
+						alt="Search Icon"
+						className="search-icn"
+					/>
+				</button>
+				<button className="cart-btn">
+					<img src="./icons/cart.svg" alt="Cart Icon" className="cart-icn" />
+				</button>
+			</div>
 		</div>
 	);
 }

@@ -7,3 +7,20 @@
     display: flex;
     align-items: center;
 }
+.right-icn-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 100vw;
+    gap: 10px;
+    margin-right: 20px;
+}
+.search-btn {
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+}
+.cart-btn {
+    cursor: pointer;
+    padding: 10px;
+    border: none; 
+}
