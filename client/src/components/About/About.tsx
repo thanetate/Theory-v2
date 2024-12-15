@@ -4,7 +4,7 @@ export function About() {
 	return (
 		<>
 			<div className="about-container">
-				<div className="about-logo">theory</div>
+				<div className="about-logo">Theory</div>
 				<div className="about-desc">
 					Theory is a climbing brand born from a passion for minimalism and
 					design. With its focus on functional elegance, the brand draws
