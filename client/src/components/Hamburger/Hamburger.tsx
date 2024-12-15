@@ -1,5 +1,6 @@
 import "./hamburger.css";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import Drawer from "react-modern-drawer";
 import "react-modern-drawer/dist/index.css";
 import { Squash as HamburgerIcon } from "hamburger-react";
@@ -10,6 +11,19 @@ export function Hamburger() {
 		setIsOpen((prevState) => !prevState);
 	};
 
+	const navigate = useNavigate();
+	const handleAboutClick = () => {
+		navigate("/about");
+	}
+	const handleShopClick = () => {
+		navigate("/collections");
+	}
+	const handleContactClick = () => {
+		navigate("/contact");
+	}
+	const handleAccountClick = () => {
+		navigate("/account");
+	}
 	return (
 		<>
 			<div className="hamburger-icn">
@@ -22,7 +36,12 @@ export function Hamburger() {
 				className="bla bla bla"
 				size="100vw"
 			>
-				<div>Hello World</div>
+				<div className="hamburger-nav">
+					<button onClick={handleShopClick}>Shop</button>
+					<button onClick={handleAboutClick}>About</button>
+					<button onClick={handleContactClick}>Contact</button>
+					<button onClick={handleAccountClick}>Log In / Sign Up</button>
+				</div>
 			</Drawer>
 		</>
 	);

@@ -1,9 +1,12 @@
-
+import { Header } from "../components/Header/Header";
+import { PromoBar } from "../components/PromoBar/PromoBar";
 
 export function CartPage() {
-    return (
-        <>
-        <div>Cart page</div>
-        </>
-    );
-};
+	return (
+		<>
+			<PromoBar />
+			<Header />
+			<div>Cart page</div>
+		</>
+	);
+}

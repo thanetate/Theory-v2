@@ -1,9 +1,12 @@
-
+import { Header } from "../components/Header/Header";
+import { PromoBar } from "../components/PromoBar/PromoBar";
 
 export function AboutPage() {
-    return (
-        <>
-        <div>About page</div>
-        </>
-    );
+	return (
+		<>
+			<PromoBar />
+			<Header />
+			<div>About page</div>
+		</>
+	);
 }
