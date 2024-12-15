@@ -1,7 +1,14 @@
+import { useNavigate } from "react-router-dom";
 import { Hamburger } from "../Hamburger/Hamburger";
 import "./Header.css";
 
 export function Header() {
+	const navigate = useNavigate();
+
+	const handleCartClick = () => {
+		navigate("/cart");
+	};
+
 	return (
 		<div className="header">
 			<div className="small-nav">
@@ -17,7 +24,7 @@ export function Header() {
 						className="search-icn"
 					/>
 				</button>
-				<button className="cart-btn">
+				<button className="cart-btn" onClick={handleCartClick}>
 					<img src="./icons/cart.svg" alt="Cart Icon" className="cart-icn" />
 				</button>
 			</div>

@@ -1,5 +1,5 @@
 
-export function Account() {
+export function AccountPage() {
     return (
         <>
         <div>Account page</div>

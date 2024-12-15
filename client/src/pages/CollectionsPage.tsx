@@ -1,6 +1,6 @@
 
 
-export function Collections() {
+export function CollectionsPage() {
     return (
         <>
         <div>Collections page</div>

@@ -3,22 +3,22 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.tsx'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { Cart } from './pages/Cart.tsx'
-import { Account } from './pages/Account.tsx'
-import { Collections } from './pages/Collections.tsx'
-import { About } from './pages/About.tsx'
-import { Contact } from './pages/Contact.tsx'
+import { CartPage } from './pages/CartPage.tsx'
+import { AccountPage } from './pages/AccountPage.tsx'
+import { CollectionsPage } from './pages/CollectionsPage.tsx'
+import { AboutPage } from './pages/AboutPage.tsx'
+import { ContactPage } from './pages/ContactPage.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="/cart" element={<Cart />} />
-        <Route path="/account" element={<Account />} />
-        <Route path="/collections" element={<Collections />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/cart" element={<CartPage />} />
+        <Route path="/account" element={<AccountPage />} />
+        <Route path="/collections" element={<CollectionsPage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/contact" element={<ContactPage />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>,
