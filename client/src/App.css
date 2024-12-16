@@ -11,17 +11,14 @@
 
 h1 {
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 100;
+  font-style: normal;
 }
 h2 {
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 100;
+  font-style: normal;
 }
-p {
-  font-size: 14px;
-  font-weight: bold;
-}
-
 @media (min-width: 600px) {
     .small-nav {
       display: none;
