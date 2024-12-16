@@ -8,7 +8,7 @@ export function Footer() {
 		navigate("/");
 	};
 	const handleCollectionClick = () => {
-		navigate("/collection");
+		navigate("/collections");
 	};
 	const handleAboutClick = () => {
 		navigate("/about");
@@ -23,7 +23,7 @@ export function Footer() {
 				<div className="dir-container">
 					<h1>Directory</h1>
 					<button onClick={handleHomeClick}>Home</button>
-					<button onClick={handleCollectionClick}>Collection</button>
+					<button onClick={handleCollectionClick}>Collections</button>
 					<button onClick={handleAboutClick}>About</button>
 					<button onClick={handleAccountClick}>Log In / Sign Up</button>
 				</div>
