@@ -4,15 +4,15 @@ import "./Shop.css";
 const shopCards = [
 	{
 		image: "",
-		title: "TITLE 1",
+		title: "TITLE",
 	},
 	{
 		image: "",
-		title: "TITLE 2",
+		title: "TITLE",
 	},
 	{
 		image: "",
-		title: "TITLE 3",
+		title: "TITLE",
 	},
 ];
 
