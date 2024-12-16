@@ -13,8 +13,8 @@ export function Footer() {
 	const handleAboutClick = () => {
 		navigate("/about");
 	};
-	const handleSearchClick = () => {
-		navigate("/search");
+	const handleAccountClick = () => {
+		navigate("/account");
 	};
 	return (
 		<>
@@ -25,7 +25,7 @@ export function Footer() {
 					<button onClick={handleHomeClick}>Home</button>
 					<button onClick={handleCollectionClick}>Collection</button>
 					<button onClick={handleAboutClick}>About</button>
-					<button onClick={handleSearchClick}>Search</button>
+					<button onClick={handleAccountClick}>Log In / Sign Up</button>
 				</div>
 				<div className="contact-container">
 					<h1>Contact</h1>

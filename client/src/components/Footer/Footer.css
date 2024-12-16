@@ -13,6 +13,9 @@
     text-align: start;
     text-decoration: underline;
 }
+.dir-container button:last-child {
+    width: 135px;
+}
 .contact-container {
 	margin-top: 30px;
 }
