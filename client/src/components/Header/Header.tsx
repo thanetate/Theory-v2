@@ -10,7 +10,7 @@ export function Header() {
 	};
 
 	return (
-		<div className="header">
+		<header className="header">
 			<div className="small-nav">
 				<Hamburger />
 			</div>
@@ -28,6 +28,6 @@ export function Header() {
 					<img src="./icons/cart.svg" alt="Cart Icon" className="cart-icn" />
 				</button>
 			</div>
-		</div>
+		</header>
 	);
 }
