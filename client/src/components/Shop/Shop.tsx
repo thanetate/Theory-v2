@@ -3,15 +3,19 @@ import "./Shop.css";
 
 const shopCards = [
 	{
-		image: "",
+		image: "./Carousel1.png",
 		title: "TITLE",
 	},
 	{
-		image: "",
+		image: "./Carousel2.png",
 		title: "TITLE",
 	},
 	{
-		image: "",
+		image: "./Carousel1.png",
+		title: "TITLE",
+	},
+	{
+		image: "./Carousel2.png",
 		title: "TITLE",
 	},
 ];
