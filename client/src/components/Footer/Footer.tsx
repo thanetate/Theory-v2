@@ -16,6 +16,9 @@ export function Footer() {
 	const handleAccountClick = () => {
 		navigate("/account");
 	};
+	const handleContactClick = () => {
+		navigate("/contact");
+	}
 	return (
 		<>
 			<div className="line"></div>
@@ -32,7 +35,7 @@ export function Footer() {
 						<h1>Customer</h1>
 						<button onClick={handleAccountClick}>Login</button>
 						<button onClick={handleAccountClick}>Register</button>
-						<button onClick={handleAccountClick}>Return Policy</button>
+						<button onClick={handleContactClick}>Return Policy</button>
 					</div>
 					<div className="contact-container">
 						<h1>Contact</h1>

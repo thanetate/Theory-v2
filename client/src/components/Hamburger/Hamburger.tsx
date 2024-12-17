@@ -21,9 +21,6 @@ export function Hamburger() {
 	const handleContactClick = () => {
 		navigate("/contact");
 	}
-	const handleAccountClick = () => {
-		navigate("/account");
-	}
 	return (
 		<>
 			<div className="hamburger-icn">
@@ -40,7 +37,6 @@ export function Hamburger() {
 					<button onClick={handleShopClick}>Shop</button>
 					<button onClick={handleAboutClick}>About</button>
 					<button onClick={handleContactClick}>Contact</button>
-					<button onClick={handleAccountClick}>Log In / Sign Up</button>
 				</div>
 			</Drawer>
 		</>

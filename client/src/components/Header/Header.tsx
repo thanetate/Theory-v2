@@ -17,9 +17,6 @@ export function Header() {
 	const handleContactClick = () => {
 		navigate("/contact");
 	};
-	const handleAccountClick = () => {
-		navigate("/account");
-	};
 
 	return (
 		<header className="header">
@@ -30,13 +27,12 @@ export function Header() {
 				<button onClick={handleShopClick}>Shop</button>
 				<button onClick={handleAboutClick}>About</button>
 				<button onClick={handleContactClick}>Contact</button>
-				<button onClick={handleAccountClick}>Log In / Sign Up</button>
 			</div>
 			<div className="right-icn-container">
 				<button className="search-btn">
 					<img
-						src="./icons/search.svg"
-						alt="Search Icon"
+						src="./icons/user.svg"
+						alt="Profile Icon"
 						className="search-icn"
 					/>
 				</button>
