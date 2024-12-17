@@ -8,8 +8,11 @@
     justify-content: center;
 }
 .about-desc {
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
     text-align: start;
+    margin: 15px auto;
+    max-width: 1000px;
+    text-align: center;
+    line-height: 1.5;
 }
