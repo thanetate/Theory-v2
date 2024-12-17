@@ -25,7 +25,7 @@ export function Carousel() {
 	};
 
 	return (
-		<>
+		<div className="carousel-outter-container">
 			<div className="carousel-container">
 				<div className="carousel-img">
 					<img src={images[currentImage]} alt="Carousel" />
@@ -49,6 +49,6 @@ export function Carousel() {
 					</button>
 				</div>
 			</div>
-		</>
+		</div>
 	);
 }
