@@ -12,6 +12,7 @@
 
 .shop-card {
 	position: relative;
+	overflow-y: hidden;
 }
 
 .shop-card img {
@@ -36,7 +37,7 @@
 
 .shop-card button {
 	position: absolute;
-	bottom: 10px;
+	bottom: 15px;
 	left: 10px;
 	width: 60px;
 	height: 30px;
@@ -54,5 +55,11 @@
 	.shop-card img {
 		height: 100%;
 		max-height: max-content;
+	}
+	.shop-card h2 {
+		bottom: 40px;
+	}
+	.shop-card button {
+		bottom: 10px;
 	}
 }

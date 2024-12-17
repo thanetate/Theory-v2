@@ -21,6 +21,7 @@
 	background-color: #d9d9d9;
 	width: 100%;
 	min-height: 350px;
+	overflow-y: hidden;
 }
 .carousel-img img {
 	width: 100%;
