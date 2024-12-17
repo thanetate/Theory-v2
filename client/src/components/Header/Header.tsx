@@ -8,14 +8,30 @@ export function Header() {
 	const handleCartClick = () => {
 		navigate("/cart");
 	};
+	const handleAboutClick = () => {
+		navigate("/about");
+	};
+	const handleShopClick = () => {
+		navigate("/collections");
+	};
+	const handleContactClick = () => {
+		navigate("/contact");
+	};
+	const handleAccountClick = () => {
+		navigate("/account");
+	};
 
 	return (
 		<header className="header">
 			<div className="small-nav">
 				<Hamburger />
 			</div>
-			<div className="large-nav"></div>
-			{/* add logo here */}
+			<div className="large-nav">
+				<button onClick={handleShopClick}>Shop</button>
+				<button onClick={handleAboutClick}>About</button>
+				<button onClick={handleContactClick}>Contact</button>
+				<button onClick={handleAccountClick}>Log In / Sign Up</button>
+			</div>
 			<div className="right-icn-container">
 				<button className="search-btn">
 					<img

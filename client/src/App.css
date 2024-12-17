@@ -28,8 +28,3 @@ button {
   border: none;
 	cursor: pointer;
 }
-@media (min-width: 600px) {
-    .small-nav {
-      display: none;
-    }
-}
