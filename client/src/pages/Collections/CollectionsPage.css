@@ -33,3 +33,9 @@
 .product-price {
     margin-top: 10px;
 }
+
+@media (min-width: 1000px) {
+    .product-img-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
