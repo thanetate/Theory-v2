@@ -1,0 +1,13 @@
+.contact-page {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 45px;
+    height: 50vh;
+    width: calc(100% - 30px);
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.contact-page h1 {
+    line-height: 1.5;
+}

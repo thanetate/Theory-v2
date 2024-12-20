@@ -1,0 +1,25 @@
+.about-page {
+    margin: 15px;
+    width: calc(100% - 35px); /* todo: bug 35 not 30? */
+    height: auto;
+}
+.aboutpage-img-container {
+    display: flex;
+    justify-content: center;
+}
+.aboutpage-img {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+}
+.aboutpage-desc-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.aboutpage-desc {
+    margin-top: 45px;
+    margin-bottom: 45px;
+    max-width: 1000px;
+    line-height: 1.5;
+}

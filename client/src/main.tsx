@@ -6,8 +6,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { CartPage } from './pages/CartPage.tsx'
 import { AccountPage } from './pages/AccountPage.tsx'
 import { CollectionsPage } from './pages/Collections/CollectionsPage.tsx'
-import { AboutPage } from './pages/AboutPage.tsx'
-import { ContactPage } from './pages/ContactPage.tsx'
+import { AboutPage } from './pages/About/AboutPage.tsx'
+import { ContactPage } from './pages/Contact/ContactPage.tsx'
 import { IndividualProductPage } from './pages/Individual/IndividualProductPage.tsx'
 
 createRoot(document.getElementById('root')!).render(
