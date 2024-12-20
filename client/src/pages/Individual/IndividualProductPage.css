@@ -93,7 +93,10 @@
 		width: calc(100% - 35px);
 		height: 100px;
 	}
-	.carousel-btn-container {
+	.product-page-container .carousel-btn-container {
 		display: none;
 	}
+    .i-product-img {
+        margin-top: 15px;
+    }
 }
