@@ -20,6 +20,26 @@ const products = [
 	  alt: "Example Product",
 	  price: "$ 100.00",
 	},
+	{
+	  image: "./example-product.webp",
+	  alt: "Example Product",
+	  price: "$ 100.00",
+	},
+	{
+	  image: "./example-product.webp",
+	  alt: "Example Product",
+	  price: "$ 100.00",
+	},
+	{
+	  image: "./example-product.webp",
+	  alt: "Example Product",
+	  price: "$ 100.00",
+	},
+	{
+	  image: "./example-product.webp",
+	  alt: "Example Product",
+	  price: "$ 100.00",
+	},
   ];
 
 export function CollectionsPage() {

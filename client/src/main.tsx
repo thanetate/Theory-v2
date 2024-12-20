@@ -8,7 +8,7 @@ import { AccountPage } from './pages/AccountPage.tsx'
 import { CollectionsPage } from './pages/Collections/CollectionsPage.tsx'
 import { AboutPage } from './pages/AboutPage.tsx'
 import { ContactPage } from './pages/ContactPage.tsx'
-import { IndividualProductPage } from './pages/IndividualProductPage.tsx'
+import { IndividualProductPage } from './pages/Individual/IndividualProductPage.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
