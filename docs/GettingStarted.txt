@@ -39,8 +39,15 @@ Desktop -
         h1 -> 24px normal 400 (option - opacity 1)
         h2 -> 14px normal 400
 
-
 Client -
-    1. npm create vite@latest .
-    2. change port 5174 -> 3000
-    3. npm install
+        1. npm create vite@latest .
+        2. change port 5174 -> 3000
+        3. npm install
+
+Server - 
+        1. dotnet new webapi
+        2. dotnet run
+        3. test -> curl curl http://localhost:5255/weatherforecast/
+        4. add CORS
+        5. Connect to api in frontend 
+        6. use Axios to get endpoint from backend

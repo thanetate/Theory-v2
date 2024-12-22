@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "SxOGC0VGypA=",
+  "success": true,
+  "projectFilePath": "/Users/thanetate/OneDrive/Desktop/Software Engineering/github/theory-v.2/theory-v.2/server/server.csproj",
+  "expectedPackageFiles": [
+    "/Users/thanetate/.nuget/packages/microsoft.aspnetcore.openapi/9.0.0/microsoft.aspnetcore.openapi.9.0.0.nupkg.sha512",
+    "/Users/thanetate/.nuget/packages/microsoft.openapi/1.6.17/microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}
