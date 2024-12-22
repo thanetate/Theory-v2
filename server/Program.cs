@@ -1,3 +1,4 @@
+using Supabase;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -12,6 +13,18 @@ builder.Services.AddCors(options => {
         .AllowAnyMethod()
     );
 });
+
+//config supabase client 
+builder.Services.AddScoped<Supabase.Client> (_ =>
+    new Supabase.Client (
+        builder.Configuration["SupabaseUrl"],
+        builder.Configuration["SupabaseKey"],
+        new SupabaseOptions {
+            AutoRefreshToken = true,
+            AutoConnectRealtime = true
+        }
+    )
+);
 
 var app = builder.Build();
 
