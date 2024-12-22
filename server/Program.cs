@@ -1,5 +1,4 @@
 using Microsoft.Extensions.WebEncoders.Testing;
-using Supabase.Tutorial.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,22 +15,6 @@ builder.Services.AddCors(options => {
         .AllowAnyMethod()
     );
 });
-
-//supabase
-var url = "https://wpbpraqupetwahqthuyg.supabase.co";
-var key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndwYnByYXF1cGV0d2FocXRodXlnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzQ4ODkzODUsImV4cCI6MjA1MDQ2NTM4NX0.69TUDB6EKfPloIOR9OrC2-s7-7G61ht-jZAfI6KExro";
-
-var options = new Supabase.SupabaseOptions
-{
-    AutoConnectRealtime = true
-};
-
-var supabase = new Supabase.Client(url, key, options);
-await supabase.InitializeAsync();
-
-// A result can be fetched like so.
-var result = await supabase.From<Test>().Get();
-var cities = result.Models;
 
 var app = builder.Build();
 
