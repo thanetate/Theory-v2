@@ -1,19 +1,15 @@
 using Postgrest.Models;
 using Postgrest.Attributes;
 
-
-namespace Supabase.Tutorial.Models;
-
-public class Test : BaseModel
+namespace Supabase.Tutorial.Models
 {
+    [Table("test")]
+    public class Test : BaseModel
+    {
+        [PrimaryKey("id")]
+        public int Id { get; set; }
 
-[Table("test")]
-class City : BaseModel
-{
-    [PrimaryKey("id")]
-    public int Id { get; set; }
-
-    [Column("name")]
-    public string Name { get; set; }
-}
+        [Column("name")]
+        public string? Name { get; set; }
+    }
 }
