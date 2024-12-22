@@ -48,9 +48,9 @@
               "target": "Package",
               "version": "[9.0.0, )"
             },
-            "supabase": {
+            "supabase-csharp": {
               "target": "Package",
-              "version": "[1.1.1, )"
+              "version": "[0.16.2, )"
             }
           },
           "imports": [
