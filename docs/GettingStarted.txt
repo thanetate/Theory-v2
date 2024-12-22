@@ -49,5 +49,6 @@ Server -
         2. dotnet run
         3. test -> curl curl http://localhost:5255/weatherforecast/
         4. add CORS
-        5. Connect to api in frontend 
-        6. use Axios to get endpoint from backend
+        5. make sure to add proxy to vite config
+        6. Connect to api in frontend 
+        7. use Axios to get endpoint from backend
