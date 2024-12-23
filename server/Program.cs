@@ -4,40 +4,44 @@ using Supabase.Interfaces;
 using Supabase.Tutorial.Contracts;
 using Supabase.Tutorial.Models;
 
+// initialize the web application
 var builder = WebApplication.CreateBuilder(args);
 
+// adds services to the dependency injection container
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-//connect to supabase
+// connection to supabase
 builder.Services.AddScoped<Supabase.Client>(_ =>
 
     new Supabase.Client(
         builder.Configuration["SupabaseUrl"],
         builder.Configuration["SupabaseKey"],
-        new SupabaseOptions {
+        new SupabaseOptions
+        {
             AutoRefreshToken = true,
             AutoConnectRealtime = true
         }
     )
 );
 
-
+// build the web application
 var app = builder.Build();
 
-if(app.Environment.IsDevelopment())
+// adds swagger UI in development environment
+if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
 
-//endpoints
+//Endpoints
 //POST
 app.MapPost("/newsletters", async (
     CreateNewsletterRequest request,
     Supabase.Client client) =>
     {
-        var newsletter = new Newsletter 
+        var newsletter = new Newsletter
         {
             Name = request.Name,
             Description = request.Description,
@@ -58,10 +62,10 @@ app.MapGet("/newsletters/{id}", async (long id, Supabase.Client client) =>
         .From<Newsletter>()
         .Where(n => n.Id == id)
         .Get();
-    
+
     var newsletter = response.Models.FirstOrDefault();
 
-    if(newsletter == null)
+    if (newsletter == null)
     {
         return Results.NotFound();
     }
@@ -84,7 +88,7 @@ app.MapDelete("/newsletters/{id}", async (long id, Supabase.Client client) =>
         .From<Newsletter>()
         .Where(n => n.Id == id)
         .Delete();
-    
+
     return Results.Ok();
 });
 
