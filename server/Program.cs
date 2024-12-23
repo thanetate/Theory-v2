@@ -37,6 +37,8 @@ if (app.Environment.IsDevelopment())
 
 // endpoints
 app.MapNewsletterEndpoints();
+app.MapProductEndpoints();
+
 
 app.UseHttpsRedirection();
 app.Run();
