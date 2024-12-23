@@ -11,6 +11,15 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+//add CORS 
+builder.Services.AddCors(options => {
+    options.AddPolicy("AllowViteClient",
+    policy => policy.WithOrigins("http://localhost:3000")
+        .AllowAnyHeader()
+        .AllowAnyMethod()
+    );
+});
+
 // connection to supabase
 builder.Services.AddScoped<Supabase.Client>(_ =>
 
@@ -27,6 +36,8 @@ builder.Services.AddScoped<Supabase.Client>(_ =>
 
 // build the web application
 var app = builder.Build();
+
+app.UseCors("AllowViteClient");
 
 // adds swagger UI in development environment
 if (app.Environment.IsDevelopment())

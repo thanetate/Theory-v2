@@ -5,21 +5,19 @@ import { Footer } from "./components/Footer/Footer";
 import { Header } from "./components/Header/Header";
 import { PromoBar } from "./components/PromoBar/PromoBar";
 import { Shop } from "./components/Shop/Shop";
-import axios from "axios";
+import { useAtom } from "jotai";
+import { getAllProducts } from "./atoms/productAtom";
 import { useEffect } from "react";
 
 function App() {
-	//custom hook
-	useEffect(() => {
-		axios
-			.get("http://localhost:5255/weatherforecast/")
-			.then((response) => {
-				console.log(response.data); // Log the weather forecast data to the console
-			})
-			.catch((error) => {
-				console.error("There was an error fetching the weather data!", error);
-			});
-	}, []);
+
+	const [, fetchProducts] = useAtom(getAllProducts);
+
+    useEffect(() => {
+        fetchProducts().then(() => {
+            console.log("Products fetched successfully:");
+        });
+    }, [fetchProducts]);
 
 	return (
 		<>
