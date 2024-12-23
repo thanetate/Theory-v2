@@ -55,6 +55,27 @@ app.MapPost("/newsletters", async (
         return Results.Ok(newNewsletter.Id);
     }
 );
+
+//GET ALL
+app.MapGet("/newsletters", async (Supabase.Client client) =>
+{
+    var response = await client.From<Newsletter>().Get();
+
+    // Map to DTO
+    var newsletters = response.Models.Select(n => new NewsletterResponse
+    {
+        Id = n.Id,
+        Name = n.Name,
+        Description = n.Description,
+        ReadTime = n.ReadTime,
+        CreatedAt = n.CreatedAt
+    });
+
+    return Results.Ok(newsletters);
+});
+
+
+
 //GET
 app.MapGet("/newsletters/{id}", async (long id, Supabase.Client client) =>
 {
