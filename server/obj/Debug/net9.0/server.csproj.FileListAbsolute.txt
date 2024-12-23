@@ -45,6 +45,9 @@
 /Users/thanetate/OneDrive/Desktop/Software Engineering/github/theory-v.2/theory-v.2/server/bin/Debug/net9.0/Supabase.Core.dll
 /Users/thanetate/OneDrive/Desktop/Software Engineering/github/theory-v.2/theory-v.2/server/bin/Debug/net9.0/Supabase.dll
 /Users/thanetate/OneDrive/Desktop/Software Engineering/github/theory-v.2/theory-v.2/server/bin/Debug/net9.0/Supabase.Storage.dll
+/Users/thanetate/OneDrive/Desktop/Software Engineering/github/theory-v.2/theory-v.2/server/bin/Debug/net9.0/Swashbuckle.AspNetCore.Swagger.dll
+/Users/thanetate/OneDrive/Desktop/Software Engineering/github/theory-v.2/theory-v.2/server/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/thanetate/OneDrive/Desktop/Software Engineering/github/theory-v.2/theory-v.2/server/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerUI.dll
 /Users/thanetate/OneDrive/Desktop/Software Engineering/github/theory-v.2/theory-v.2/server/bin/Debug/net9.0/System.IdentityModel.Tokens.Jwt.dll
 /Users/thanetate/OneDrive/Desktop/Software Engineering/github/theory-v.2/theory-v.2/server/bin/Debug/net9.0/System.Reactive.dll
 /Users/thanetate/OneDrive/Desktop/Software Engineering/github/theory-v.2/theory-v.2/server/bin/Debug/net9.0/Websocket.Client.dll

@@ -3,3 +3,6 @@ Libraries Used:
     - react-fast-marquee
     - react-modern-drawer
     - hamburger-react
+
+    - supabase-csharp
+    - Swashbuckle.AspNetCore

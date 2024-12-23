@@ -1,56 +1,92 @@
-using Microsoft.Extensions.WebEncoders.Testing;
+using Swashbuckle.AspNetCore.SwaggerGen;
+using Supabase;
+using Supabase.Interfaces;
+using Supabase.Tutorial.Contracts;
+using Supabase.Tutorial.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-Console.WriteLine("Mapping OpenAPI...");
-builder.Services.AddOpenApi();
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
 
-//add CORS 
-builder.Services.AddCors(options => {
-    options.AddPolicy("AllowViteClient",
-    policy => policy.WithOrigins("http://localhost:3000")
-        .AllowAnyHeader()
-        .AllowAnyMethod()
-    );
-});
+//connect to supabase
+builder.Services.AddScoped<Supabase.Client>(_ =>
+
+    new Supabase.Client(
+        builder.Configuration["SupabaseUrl"],
+        builder.Configuration["SupabaseKey"],
+        new SupabaseOptions {
+            AutoRefreshToken = true,
+            AutoConnectRealtime = true
+        }
+    )
+);
+
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+if(app.Environment.IsDevelopment())
 {
-    app.MapOpenApi();
+    app.UseSwagger();
+    app.UseSwaggerUI();
 }
+
+//endpoints
+//POST
+app.MapPost("/newsletters", async (
+    CreateNewsletterRequest request,
+    Supabase.Client client) =>
+    {
+        var newsletter = new Newsletter 
+        {
+            Name = request.Name,
+            Description = request.Description,
+            ReadTime = request.ReadTime
+        };
+
+        var response = await client.From<Newsletter>().Insert(newsletter);
+
+        var newNewsletter = response.Models.First();
+
+        return Results.Ok(newNewsletter.Id);
+    }
+);
+//GET
+app.MapGet("/newsletters/{id}", async (long id, Supabase.Client client) =>
+{
+    var response = await client
+        .From<Newsletter>()
+        .Where(n => n.Id == id)
+        .Get();
+    
+    var newsletter = response.Models.FirstOrDefault();
+
+    if(newsletter == null)
+    {
+        return Results.NotFound();
+    }
+
+    var newsletterResponse = new NewsletterResponse
+    {
+        Id = newsletter.Id,
+        Name = newsletter.Name,
+        Description = newsletter.Description,
+        ReadTime = newsletter.ReadTime,
+        CreatedAt = newsletter.CreatedAt
+    };
+    return Results.Ok(newsletterResponse);
+});
+
+//DELETE
+app.MapDelete("/newsletters/{id}", async (long id, Supabase.Client client) =>
+{
+    await client
+        .From<Newsletter>()
+        .Where(n => n.Id == id)
+        .Delete();
+    
+    return Results.Ok();
+});
 
 app.UseHttpsRedirection();
-
-//use the CORS policy
-app.UseCors("AllowViteClient");
-
-var summaries = new[]
-{
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-};
-
-app.MapGet("/weatherforecast", () =>
-{
-    var forecast =  Enumerable.Range(1, 5).Select(index =>
-        new WeatherForecast
-        (
-            DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-            Random.Shared.Next(-20, 55),
-            summaries[Random.Shared.Next(summaries.Length)]
-        ))
-        .ToArray();
-    return forecast;
-})
-.WithName("GetWeatherForecast");
-
 app.Run();
-
-record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
-{
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-}

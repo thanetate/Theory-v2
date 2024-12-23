@@ -1,6 +1,20 @@
 @server_HostAddress = http://localhost:5255
 
-GET {{server_HostAddress}}/weatherforecast/
-Accept: application/json
 
-###
+### Create a new newsletter
+POST http://localhost:5255/newsletters
+Content-Type: application/json
+
+{
+  "name": "Weekly Update",
+  "description": "A weekly update on the latest news.",
+  "readTime": 5
+}
+
+### GET
+GET http://localhost:5255/newsletters/1
+Content-Type: application/json
+
+### DELETE
+DELETE http://localhost:5255/newsletters/3
+Content-Type: application/json
