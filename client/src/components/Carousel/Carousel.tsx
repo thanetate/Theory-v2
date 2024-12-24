@@ -32,7 +32,7 @@ export function Carousel() {
 				</div>
 				<div className="carousel-btn-container">
 					<button className="carousel-btn" onClick={handlePrevClick}>
-						<img src="./icons/leftarrow.svg" alt="Left Arrow" />
+						<img src="/icons/leftarrow.svg" alt="Left Arrow" />
 					</button>
 					{images.map((_, index) => (
 						<div
@@ -41,11 +41,11 @@ export function Carousel() {
 								index === currentImage ? "active" : ""
 							}`}
 						>
-							<img src="./icons/circle.svg" alt="Circle" />
+							<img src="/icons/circle.svg" alt="Circle" />
 						</div>
 					))}
 					<button className="carousel-btn" onClick={handleNextClick}>
-						<img src="./icons/rightarrow.svg" alt="Right Arrow" />
+						<img src="/icons/rightarrow.svg" alt="Right Arrow" />
 					</button>
 				</div>
 			</div>

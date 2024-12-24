@@ -43,7 +43,7 @@ export function Footer() {
 					</div>
 				</div>
 				<div className="socialmedia-container">
-					<img src="./icons/instagram.svg" alt="Theory Instagram Icon" />
+					<img src="/icons/instagram.svg" alt="Theory Instagram Icon" />
 				</div>
 			</footer>
 			<div className="line"></div>
@@ -52,8 +52,8 @@ export function Footer() {
 					Website Designed & Created by <span>Thane Tate</span>
 				</h2>
 				<div className="icons-container">
-					<img src="./icons/github.svg" alt="Theory Github Icon" />
-					<img src="./icons/linkedin.svg" alt="Thane Tate LinkedIn Icon" />
+					<img src="/icons/github.svg" alt="Theory Github Icon" />
+					<img src="/icons/linkedin.svg" alt="Thane Tate LinkedIn Icon" />
 				</div>
 			</div>
 			<div className="copyright-container">

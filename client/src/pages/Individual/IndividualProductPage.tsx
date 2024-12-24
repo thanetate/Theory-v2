@@ -50,10 +50,10 @@ export function IndividualProductPage() {
                     </div>
 					<div className="carousel-btn-container">
 						<button className="carousel-btn" onClick={handlePrevClick}>
-							<img src="./icons/leftarrow.svg" alt="Left Arrow" />
+							<img src="/icons/leftarrow.svg" alt="Left Arrow" />
 						</button>
 						<button className="carousel-btn" onClick={handleNextClick}>
-							<img src="./icons/rightarrow.svg" alt="Right Arrow" />
+							<img src="/icons/rightarrow.svg" alt="Right Arrow" />
 						</button>
 					</div>
 				</div>
