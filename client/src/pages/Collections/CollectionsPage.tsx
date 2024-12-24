@@ -17,8 +17,6 @@ export function CollectionsPage() {
 		fetchProducts();
     }, [fetchProducts]);
 	
-    console.log("Products inside of product atom:", products);
-	
 	const navigate = useNavigate();
 
 	const handleProductClick = () => {
@@ -37,7 +35,7 @@ export function CollectionsPage() {
 						{products.map((product, index) => (
 							<div key={index} className="product-card" onClick={handleProductClick}>
 								<img src={product.image} className="product-img"/>
-								<div className="product-price">{product.price}</div>
+								<div className="product-price">${product.price}.00</div>
 							</div>
 						))}
 					</div>
