@@ -1,11 +1,18 @@
 import axios from "axios";
 import { atom } from "jotai";
 
+export interface Product {
+    id: number;
+    name: string;
+    image: string;
+    price: number;
+}
+
 // atom to store data into
-export const productAtom = atom([]);
+export const productAtom = atom<Product[]>([]);
 
 // atom to fetch all products
-export const getAllProducts = atom(
+export const fetchProductsAtom = atom(
     (get) => get(productAtom),
     async (get, set) => {
         console.log("fetchProducts called");

@@ -2,53 +2,28 @@ import { Footer } from "../../components/Footer/Footer";
 import { Header } from "../../components/Header/Header";
 import { PromoBar } from "../../components/PromoBar/PromoBar";
 import { useNavigate } from "react-router-dom";
+import { useAtom } from "jotai";
+import { productAtom } from "../../atoms/productAtom";
+import { fetchProductsAtom } from "../../atoms/productAtom";
+import { useEffect } from "react";
 import "./CollectionsPage.css";
 
-const products = [
-	{
-	  image: "./example-product.webp",
-	  alt: "Example Product",
-	  price: "$ 100.00",
-	},
-	{
-	  image: "./example-product.webp",
-	  alt: "Example Product",
-	  price: "$ 100.00",
-	},
-	{
-	  image: "./example-product.webp",
-	  alt: "Example Product",
-	  price: "$ 100.00",
-	},
-	{
-	  image: "./example-product.webp",
-	  alt: "Example Product",
-	  price: "$ 100.00",
-	},
-	{
-	  image: "./example-product.webp",
-	  alt: "Example Product",
-	  price: "$ 100.00",
-	},
-	{
-	  image: "./example-product.webp",
-	  alt: "Example Product",
-	  price: "$ 100.00",
-	},
-	{
-	  image: "./example-product.webp",
-	  alt: "Example Product",
-	  price: "$ 100.00",
-	},
-  ];
-
 export function CollectionsPage() {
+	
+	const [products] = useAtom(productAtom);
+	const [, fetchProducts] = useAtom(fetchProductsAtom);
+	
+	useEffect(() => {
+		fetchProducts();
+    }, [fetchProducts]);
+	
+    console.log("Products inside of product atom:", products);
+	
 	const navigate = useNavigate();
 
 	const handleProductClick = () => {
 		navigate("/product"); //change this later
 	}
-
 	return (
 		<>
 			<PromoBar />
@@ -61,7 +36,7 @@ export function CollectionsPage() {
 					<div className="product-img-container">
 						{products.map((product, index) => (
 							<div key={index} className="product-card" onClick={handleProductClick}>
-								<img src={product.image} alt={product.alt} className="product-img"/>
+								<img src={product.image} className="product-img"/>
 								<div className="product-price">{product.price}</div>
 							</div>
 						))}
