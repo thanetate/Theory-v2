@@ -2,9 +2,23 @@ import "./IndividualProductPage.css";
 import "../../components/Carousel/Carousel.css";
 import { Header } from "../../components/Header/Header";
 import { Footer } from "../../components/Footer/Footer";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useAtom } from "jotai";
+import { singleProductAtom } from "../../atoms/productAtom";
+import { fetchProductById } from "../../atoms/productAtom";
+import { useParams } from "react-router-dom";
 
 export function IndividualProductPage() {
+    const { productId } = useParams<{ productId: string }>();
+	const [product] = useAtom(singleProductAtom);
+	const [, fetchProduct] = useAtom(fetchProductById);
+
+    useEffect(() => {
+        if (productId) {
+			fetchProduct({ productId: Number(productId) });
+        }
+    }, [fetchProduct, productId]);
+
 	const handlePrevClick = () => {};
 	const handleNextClick = () => {};
 	const [quantity, setQuantity] = useState(1);
@@ -13,6 +27,10 @@ export function IndividualProductPage() {
 		setQuantity((prevQuantity) => Math.max(1, prevQuantity + amount));
 	};
 
+	if (!product) {
+        return <div>Loading...</div>;
+    }
+	
 	return (
 		<>
 			<Header />
@@ -20,15 +38,15 @@ export function IndividualProductPage() {
 				<div className="leftside">
 					<div className="i-product-img-container">
 						<img
-							src="./example-product.webp"
+							src={product.image}
 							alt="Product Image"
 							className="i-product-img"
 						/>
 					</div>
                     <div className="extra-img-container">
                         {/* todo: make buttons dynamic */}
-                        <img src="./example-product.webp" alt="Product Image" className="extra-img" />
-                        <img src="./example-product.webp" alt="Product Image" className="extra-img" />
+                        <img src="/example-product.webp" alt="Product Image" className="extra-img" />
+                        <img src="/example-product.webp" alt="Product Image" className="extra-img" />
                     </div>
 					<div className="carousel-btn-container">
 						<button className="carousel-btn" onClick={handlePrevClick}>
@@ -41,9 +59,9 @@ export function IndividualProductPage() {
 				</div>
 				<div className="rightside">
 					<div className="i-product-info">
-						<h1>Theory Trash Tee 2.0 | Oversized Tee </h1>
-						<h3 className="price">$50.00 USD</h3>
-						<p>Shipping calculated at checkout.</p>
+						<h1>{product.name}</h1>
+						<h3 className="price">${product.price}.00 USD</h3>
+						<p> Shipping calculated at checkout.</p>
 						<div className="size">
 							<h2>Size</h2>
 							<select name="size" className="size-container">

@@ -20,7 +20,7 @@ createRoot(document.getElementById('root')!).render(
         <Route path="/collections" element={<CollectionsPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
-        <Route path="/product" element={<IndividualProductPage />} />
+        <Route path="/collections/:productId" element={<IndividualProductPage />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>,

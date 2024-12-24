@@ -19,8 +19,8 @@ export function CollectionsPage() {
 	
 	const navigate = useNavigate();
 
-	const handleProductClick = () => {
-		navigate("/product"); //change this later
+	const handleProductClick = (productId: number) => {
+		navigate(`/collections/${productId}`); //change this later
 	}
 	return (
 		<>
@@ -33,7 +33,7 @@ export function CollectionsPage() {
 				<div className="product-container">
 					<div className="product-img-container">
 						{products.map((product, index) => (
-							<div key={index} className="product-card" onClick={handleProductClick}>
+							<div key={index} className="product-card" onClick={() => handleProductClick(product.id)}>
 								<img src={product.image} className="product-img"/>
 								<div className="product-price">${product.price}.00</div>
 							</div>
