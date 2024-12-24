@@ -7,6 +7,7 @@ import { useAtom } from "jotai";
 import { singleProductAtom } from "../../atoms/productAtom";
 import { fetchProductById } from "../../atoms/productAtom";
 import { useParams } from "react-router-dom";
+import { PromoBar } from "../../components/PromoBar/PromoBar";
 
 export function IndividualProductPage() {
     const { productId } = useParams<{ productId: string }>();
@@ -33,6 +34,7 @@ export function IndividualProductPage() {
 	
 	return (
 		<>
+			<PromoBar />
 			<Header />
 			<div className="product-page-container">
 				<div className="leftside">
