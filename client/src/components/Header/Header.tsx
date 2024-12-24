@@ -34,13 +34,13 @@ export function Header() {
 			<div className="right-icn-container">
 				<button className="search-btn" onClick={handleProfileClick}>
 					<img
-						src="./icons/user.svg"
+						src="/icons/user.svg"
 						alt="Profile Icon"
 						className="search-icn"
 					/>
 				</button>
 				<button className="cart-btn" onClick={handleCartClick}>
-					<img src="./icons/cart.svg" alt="Cart Icon" className="cart-icn" />
+					<img src="/icons/cart.svg" alt="Cart Icon" className="cart-icn" />
 				</button>
 			</div>
 		</header>
