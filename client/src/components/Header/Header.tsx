@@ -34,8 +34,11 @@ export function Header() {
 				<button onClick={handleAboutClick}>About</button>
 				<button onClick={handleContactClick}>Contact</button>
 			</div>
-			<div className="logo-container">
+			<div className="small logo-container">
 				<img src="/TheoryLogo.png" alt="Theory Logo" onClick={handleHomeCLick}/>
+			</div>
+			<div className="large logo-container">
+				<img src="/TheoryLogo2.png" alt="Theory Logo" onClick={handleHomeCLick}/>
 			</div>
 			<div className="right-icn-container">
 				<button className="search-btn" onClick={handleProfileClick}>
