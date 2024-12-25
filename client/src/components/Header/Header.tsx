@@ -20,6 +20,9 @@ export function Header() {
 	const handleProfileClick = () => {
 		navigate("/account");
 	}
+	const handleHomeCLick = () => {
+		navigate("/");
+	}
 
 	return (
 		<header className="header">
@@ -30,6 +33,9 @@ export function Header() {
 				<button onClick={handleShopClick}>Shop</button>
 				<button onClick={handleAboutClick}>About</button>
 				<button onClick={handleContactClick}>Contact</button>
+			</div>
+			<div className="logo-container">
+				<img src="/TheoryLogo.png" alt="Theory Logo" onClick={handleHomeCLick}/>
 			</div>
 			<div className="right-icn-container">
 				<button className="search-btn" onClick={handleProfileClick}>
