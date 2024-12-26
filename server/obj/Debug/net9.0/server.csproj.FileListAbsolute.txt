@@ -51,3 +51,7 @@
 /Users/thanetate/OneDrive/Desktop/Software Engineering/github/theory-v.2/theory-v.2/server/bin/Debug/net9.0/System.IdentityModel.Tokens.Jwt.dll
 /Users/thanetate/OneDrive/Desktop/Software Engineering/github/theory-v.2/theory-v.2/server/bin/Debug/net9.0/System.Reactive.dll
 /Users/thanetate/OneDrive/Desktop/Software Engineering/github/theory-v.2/theory-v.2/server/bin/Debug/net9.0/Websocket.Client.dll
+/Users/thanetate/OneDrive/Desktop/Software Engineering/github/theory-v.2/theory-v.2/server/bin/Debug/net9.0/secrets.json
+/Users/thanetate/OneDrive/Desktop/Software Engineering/github/theory-v.2/theory-v.2/server/bin/Debug/net9.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/thanetate/OneDrive/Desktop/Software Engineering/github/theory-v.2/theory-v.2/server/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.dll
+/Users/thanetate/OneDrive/Desktop/Software Engineering/github/theory-v.2/theory-v.2/server/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll

@@ -1,5 +1,4 @@
-@server_HostAddress = http://localhost:5255
-
+@HostAddress = http://localhost:5255
 
 ### Newsletter
 POST http://localhost:5255/newsletters
@@ -32,3 +31,10 @@ Content-Type: application/json
 ### GET
 GET http://localhost:5255/products/1
 Content-Type: application/json
+
+
+@AccessToken = eyJhbGciOiJIUzI1NiIsImtpZCI6Ijc2STEwTHU5djhGVXExSG8iLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NkZ2tjcnpqd3F1bGxoY3h4enJrLnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiJhYjA2Yjk0Yy1kYzkwLTQ1NmQtYjFhMi05N2ZiYmZkZWQ4NmEiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzM1MjM4MDYyLCJpYXQiOjE3MzUyMzQ0NjIsImVtYWlsIjoidGhhbmV0YXRlQG91dGxvb2suY29tIiwicGhvbmUiOiIiLCJhcHBfbWV0YWRhdGEiOnsicHJvdmlkZXIiOiJlbWFpbCIsInByb3ZpZGVycyI6WyJlbWFpbCJdfSwidXNlcl9tZXRhZGF0YSI6eyJlbWFpbF92ZXJpZmllZCI6dHJ1ZX0sInJvbGUiOiJhdXRoZW50aWNhdGVkIiwiYWFsIjoiYWFsMSIsImFtciI6W3sibWV0aG9kIjoicGFzc3dvcmQiLCJ0aW1lc3RhbXAiOjE3MzUyMzQ0NjJ9XSwic2Vzc2lvbl9pZCI6IjA3NDBhYTQ2LTZlZjEtNGQ5Ni05NzViLWY0ZjliMWE5MTJkYiIsImlzX2Fub255bW91cyI6ZmFsc2V9.F_obH_Rv30zs8sz6xtdS9dcWgHJABpnxO6E_IC2uqkE
+### GET
+GET {{HostAddress}}/user/
+Accept: application/json
+Authorization: Bearer {{AccessToken}}

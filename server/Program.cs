@@ -3,6 +3,9 @@ using Supabase;
 using Supabase.Interfaces;
 using Supabase.Tutorial.Contracts;
 using Supabase.Tutorial.Models;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
+using System.Security.Claims;
 
 // initialize the web application
 var builder = WebApplication.CreateBuilder(args);
@@ -10,6 +13,20 @@ var builder = WebApplication.CreateBuilder(args);
 // adds services to the dependency injection container
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddAuthorization();
+
+// add Authentication
+var bytes = Encoding.UTF8.GetBytes(builder.Configuration["JwtSecret"]!);
+builder.Services.AddAuthentication().AddJwtBearer(options => 
+{
+    options.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuerSigningKey = true,
+        IssuerSigningKey = new SymmetricSecurityKey(bytes),
+        ValidAudience = builder.Configuration["ValidAudience"],
+        ValidIssuer = builder.Configuration["ValidIssuer"]
+    };
+});
 
 //add CORS 
 builder.Services.AddCors(options => {
@@ -49,6 +66,15 @@ if (app.Environment.IsDevelopment())
 // endpoints
 app.MapNewsletterEndpoints();
 app.MapProductEndpoints();
+
+// test auth endpoint
+app.MapGet("/user", (ClaimsPrincipal principal) => 
+{
+    var claims = principal.Claims.ToDictionary(c => c.Type, c => c.Value);
+
+    return Results.Ok(claims);
+})
+.RequireAuthorization();
 
 
 app.UseHttpsRedirection();
