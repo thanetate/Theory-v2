@@ -15,13 +15,6 @@ export function CartPage() {
 	const navigate = useNavigate();
 	const [, setQuantity] = useState(1);
 
-	// useEffect(() => {
-	// 	if (!sessionId) {
-	// 		navigate("/account");
-	// 		return;
-	// 	}
-	// }, [sessionId]);
-
 	useEffect(() => {
 		fetchCartDetails();
 	}, [fetchCartDetails]);
@@ -33,6 +26,25 @@ export function CartPage() {
 	const handleGoShopping = () => {
 		navigate("/collections");
 	};
+
+	const handleRemoveFromCart = async (productId: number) => {
+        try {
+            const response = await fetch(`http://localhost:5255/user/${sessionId}/cart/${productId}`, {
+                method: 'DELETE',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+            });
+
+            if (!response.ok) {
+                throw new Error('Failed to remove product from cart');
+            }
+			
+            fetchCartDetails();
+        } catch (error) {
+            console.error('Failed to remove product from cart:', error);
+        }
+    };
 
 	return (
 		<>
@@ -67,7 +79,7 @@ export function CartPage() {
 												</button>
 											</div>
 										</div>
-										<button className="remove-btn">Remove Item</button>
+										<button onClick={() => handleRemoveFromCart(item.id)}className="remove-btn">Remove Item</button>
 									</div>
 								</li>
 							))}

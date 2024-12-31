@@ -3,6 +3,7 @@ import { atom } from "jotai";
 import { sessionIdAtom } from "./userAtom";
 
 export const cartDetailsAtom = atom<Array<{
+	id: number;
     name: string;
     description: string;
     image: string;
