@@ -81,7 +81,7 @@ public static class UserEndpoints
 
             return Results.Ok(new { Message = "Item added to cart", Cart = updatedCart });
         });
-        // DELETE item from Cart
+       // DELETE item from Cart
         app.MapDelete("/user/{userId:guid}/cart/{productId}", async (Guid userId, string productId, Supabase.Client client) =>
         {
             // Fetch the user
@@ -97,22 +97,32 @@ public static class UserEndpoints
                 return Results.NotFound($"User with id {userId} not found");
             }
 
-            // Remove the cart item
+            // Ensure the Cart is properly fetched and contains CartItems
             var updatedCart = user.Cart?.Select(c => c.ToObject<CartItem>()).ToList() ?? new List<CartItem>();
-            var itemToRemove = updatedCart.FirstOrDefault(c => c.Id.ToString() == productId);
+
+            // Find the item to remove
+            if (!int.TryParse(productId, out int productIdInt))
+            {
+                return Results.BadRequest($"Invalid product id {productId}");
+            }
+            var itemToRemove = updatedCart.FirstOrDefault(c => c.Id == productIdInt);  // Use `c.Id` if `productId` matches
 
             if (itemToRemove == null)
             {
                 return Results.NotFound($"Product with id {productId} not found in cart");
             }
 
+            // Remove the item from the cart
             updatedCart.Remove(itemToRemove);
 
-            // Update the user's cart
+            // Update the user's cart - now serialize the CartItem objects back into the Cart
             user.Cart = updatedCart.Select(c => JObject.FromObject(c)).ToList();
+
+            // Save the updated user data
             await client.From<User>().Update(user);
 
-            return Results.Ok(new { Message = "Item removed from cart", Cart = user.Cart });
+            // Return the updated cart in the response
+            return Results.Ok(new { Message = "Item removed from cart", Cart = updatedCart });
         });
     }
 }
