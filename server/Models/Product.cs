@@ -14,11 +14,11 @@ public class Product : BaseModel
 
     [Column("name")]
 
-    public string Name { get; set; }
+    public string? Name { get; set; }
 
     [Column("description")]
 
-    public string Description { get; set; }
+    public string? Description { get; set; }
 
     [Column("price")]
 
@@ -26,7 +26,7 @@ public class Product : BaseModel
 
     [Column("image")]
 
-    public string Image { get; set; }
+    public string? Image { get; set; }
 
     [Column("created_at")]
 

@@ -38,18 +38,43 @@ builder.Services.AddCors(options => {
 });
 
 // connection to supabase
-builder.Services.AddScoped<Supabase.Client>(_ =>
+// builder.Services.AddScoped<Supabase.Client>(_ =>
 
-    new Supabase.Client(
-        builder.Configuration["SupabaseUrl"],
-        builder.Configuration["SupabaseKey"],
+//     new Supabase.Client(
+//         builder.Configuration["SupabaseUrl"],
+//         builder.Configuration["SupabaseKey"],
+//         new SupabaseOptions
+//         {
+//             AutoRefreshToken = true,
+//             AutoConnectRealtime = true
+//         }
+//     )
+// );
+builder.Services.AddScoped<Supabase.Client>(_ =>
+{
+    var supabaseUrl = builder.Configuration["SupabaseUrl"];
+    var supabaseKey = builder.Configuration["SupabaseKey"];
+
+    if (string.IsNullOrEmpty(supabaseUrl))
+    {
+        throw new ArgumentNullException(nameof(supabaseUrl), "SupabaseUrl cannot be null or empty.");
+    }
+
+    if (string.IsNullOrEmpty(supabaseKey))
+    {
+        throw new ArgumentNullException(nameof(supabaseKey), "SupabaseKey cannot be null or empty.");
+    }
+
+    return new Supabase.Client(
+        supabaseUrl,
+        supabaseKey,
         new SupabaseOptions
         {
             AutoRefreshToken = true,
             AutoConnectRealtime = true
         }
-    )
-);
+    );
+});
 
 // build the web application
 var app = builder.Build();
@@ -64,7 +89,6 @@ if (app.Environment.IsDevelopment())
 }
 
 // endpoints
-app.MapNewsletterEndpoints();
 app.MapProductEndpoints();
 app.MapUserEndpoints();
 
