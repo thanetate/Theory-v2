@@ -2,7 +2,8 @@ import axios from "axios";
 import { atom } from "jotai";
 
 // Atom to store the session id
-export const sessionIdAtom = atom<string | null>(null);
+const storedSessionId = localStorage.getItem("sessionId");
+export const sessionIdAtom = atom<string | null>(storedSessionId);
 
 // Atom to store the user data
 export const userAtom = atom(null);

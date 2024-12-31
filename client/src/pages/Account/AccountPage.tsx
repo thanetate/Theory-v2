@@ -33,7 +33,15 @@ export function AccountPage() {
 		});
 
 		return () => subscription.unsubscribe();
-	}, []);
+	}, [setSessionId]);
+
+	useEffect(() => {
+        if (sessionId) {
+            localStorage.setItem("sessionId", sessionId);
+        } else {
+            localStorage.removeItem("sessionId");
+        }
+    }, [sessionId]);
 
 	const handleLogout = async () => {
 		const { error } = await supabase.auth.signOut();
