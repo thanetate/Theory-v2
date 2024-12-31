@@ -11,7 +11,7 @@ export function CartPage() {
 	const navigate = useNavigate();
 	const handleGoShopping = () => {
 		navigate("/collections");
-	}
+	};
 	const [cartDetails, setCartDetails] = useState<Array<{
 		name: string;
 		description: string;
@@ -100,11 +100,15 @@ export function CartPage() {
 								</li>
 							))}
 						</ul>
-						<button>Checkout</button>
+						<div className="checkout-container">
+							<button className="checkout">Checkout</button>
+						</div>
 					</div>
 				) : (
 					<div className="go-shopping-container">
-						<button className="go-shopping" onClick={handleGoShopping}>Go Shopping</button>
+						<button className="go-shopping" onClick={handleGoShopping}>
+							Go Shopping
+						</button>
 					</div>
 				)}
 			</div>

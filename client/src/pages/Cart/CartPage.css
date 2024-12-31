@@ -42,3 +42,7 @@
     height: 100%;
     margin-top: 45px;
 }
+.checkout-container {
+    display: flex;
+    justify-content: center;
+}

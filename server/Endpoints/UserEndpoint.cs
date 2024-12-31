@@ -60,7 +60,7 @@ public static class UserEndpoints
             var cart = user.Cart ?? new List<CartItem>();
             return Results.Ok(cart);
         });
-
+        // POST add item to Cart
         app.MapPost("/user/{id:guid}/add-to-cart", async (Guid id, CartItem cartItem, Supabase.Client client) =>
         {
             var response = await client
@@ -89,7 +89,6 @@ public static class UserEndpoints
 
             return Results.Ok(new { Message = "Item added to cart", Cart = updatedCart });
         });
-
         // DELETE item from Cart
         app.MapDelete("/user/{userId:guid}/cart/{productId}", async (Guid userId, string productId, Supabase.Client client) =>
         {
