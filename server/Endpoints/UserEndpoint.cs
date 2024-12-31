@@ -3,6 +3,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Supabase;
 using Supabase.Tutorial.Contracts;
 using Supabase.Tutorial.Models;
+using Newtonsoft.Json.Linq;
 
 public static class UserEndpoints
 {
@@ -27,7 +28,7 @@ public static class UserEndpoints
             var userResponse = new UserResponse
             {
                 Id = user.Id,
-                // Cart = user.Cart
+                Cart = user.Cart
             };
             return Results.Ok(userResponse);
         });
@@ -37,4 +38,5 @@ public static class UserEndpoints
 public class UserResponse
 {
     public Guid Id { get; set; }
+    public List<JObject> Cart { get; set; } = new List<JObject>();
 }
