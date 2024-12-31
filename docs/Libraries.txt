@@ -9,3 +9,4 @@ Libraries Used:
     - supabase-csharp
     - Swashbuckle.AspNetCore
     - Microsoft.AspNetCore.Authentication.JwtBearer
+    - Newtonsoft.Json

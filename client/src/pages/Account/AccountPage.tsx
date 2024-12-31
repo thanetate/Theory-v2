@@ -55,7 +55,7 @@ export function AccountPage() {
 				<PromoBar />
 				<Header />
 				<div className="account-container">
-					<div className="success-message">Log In Success</div>
+					<div className="success-message">Log In Success UID: {session.user?.id}</div>
 					<h1 className="welcome-message">Welcome, {session.user?.email}</h1>
 					<div className="logout-btn-container">
 						<button onClick={handleLogout} className="logout-btn">

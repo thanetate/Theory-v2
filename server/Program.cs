@@ -66,6 +66,7 @@ if (app.Environment.IsDevelopment())
 // endpoints
 app.MapNewsletterEndpoints();
 app.MapProductEndpoints();
+app.MapUserEndpoints();
 
 // test auth endpoint
 app.MapGet("/user", (ClaimsPrincipal principal) => 

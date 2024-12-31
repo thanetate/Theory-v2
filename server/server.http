@@ -38,3 +38,6 @@ Content-Type: application/json
 GET {{HostAddress}}/user/
 Accept: application/json
 Authorization: Bearer {{AccessToken}}
+
+### GET user by id
+GET http://localhost:5255/user/9846c653-c02b-4e81-b28c-7564d70dd377
