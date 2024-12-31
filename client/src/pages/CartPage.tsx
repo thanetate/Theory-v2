@@ -6,14 +6,13 @@ import { sessionIdAtom} from "../atoms/userAtom";
 import { useEffect } from "react";
 
 export function CartPage() {
-
 	const [sessionId] = useAtom(sessionIdAtom);
 	console.log("Session id in atom: ", sessionId);
 
 	useEffect(() => {
         const fetchCartDetails = async () => {
             try {
-                const response = await fetch('http://localhost:5255/user/9846c653-c02b-4e81-b28c-7564d70dd377/cart', {
+                const response = await fetch(`http://localhost:5255/user/${sessionId}/cart`, {
                     method: 'GET',
                     headers: {
                         'Content-Type': 'application/json',
@@ -35,7 +34,8 @@ export function CartPage() {
 		<>
 			<PromoBar />
 			<Header />
-			<div>Cart page</div>
+            <div className="success-message">Log In Success UID: {sessionId}</div>
+            
 			<Footer />
 		</>
 	);
