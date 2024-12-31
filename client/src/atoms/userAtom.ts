@@ -5,26 +5,34 @@ import { atom } from "jotai";
 const storedSessionId = localStorage.getItem("sessionId");
 export const sessionIdAtom = atom<string | null>(storedSessionId);
 
+// Retrieve user data from local storage
+const storedUserData = localStorage.getItem("userData");
+const initialUserData = storedUserData ? JSON.parse(storedUserData) : null;
+
 // Atom to store the user data
-export const userAtom = atom(null);
+export const userAtom = atom(initialUserData);
 
 export const fetchUserAtom = atom(
-	(get) => get(userAtom),
-	async (get, set) => {
-		console.log("fetchUser called");
-		const userId = "9846c653-c02b-4e81-b28c-7564d70dd377";
-		try {
-			const response = await axios.get(`http://localhost:5255/user/${userId}`, {
-				headers: {
-					Accept: "application/json",
-				},
-			});
-			console.log("Full Response:", response);
-			const userData = response.data;
-			set(userAtom, userData);
-			console.log("Product Data from Atom:", userData);
-		} catch (error) {
-			console.error("Error fetching products", error);
-		}
-	}
+    (get) => get(userAtom),
+    async (get, set) => {
+        console.log("fetchUser called");
+        const sessionId = get(sessionIdAtom);
+        if (!sessionId) {
+            console.error("No session ID found");
+            return;
+        }
+        try {
+            const response = await axios.get(`http://localhost:5255/user/${sessionId}`, {
+                headers: {
+                    Accept: "application/json",
+                },
+            });
+            console.log("Full Response:", response);
+            const userData = response.data;
+            set(userAtom, userData);
+			localStorage.setItem("userData", JSON.stringify(userData));
+        } catch (error) {
+            console.error("Error fetching user data", error);
+        }
+    }
 );

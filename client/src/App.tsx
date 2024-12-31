@@ -6,13 +6,17 @@ import { Header } from "./components/Header/Header";
 import { PromoBar } from "./components/PromoBar/PromoBar";
 import { Shop } from "./components/Shop/Shop";
 import { useAtom } from "jotai";
-import { sessionIdAtom } from "./atoms/userAtom";
+import { sessionIdAtom, userAtom } from "./atoms/userAtom";
 
 function App() {
 
 	const [sessionId] = useAtom(sessionIdAtom);
 
 	console.log("Session id in atom: ", sessionId);
+
+	const [user] = useAtom(userAtom);
+
+	console.log("data in userAtom: ", user);
 	
 	return (
 		<>

@@ -52,7 +52,6 @@ public static class UserEndpoints
             var cart = user.Cart?.Select(c => c.ToObject<CartItem>()).ToList() ?? new List<CartItem>();
             return Results.Ok(cart);
         });
-        // POST Add to Cart
         app.MapPost("/user/{id:guid}/add-to-cart", async (Guid id, CartItem cartItem, Supabase.Client client) =>
         {
             // Fetch the user
@@ -68,15 +67,19 @@ public static class UserEndpoints
                 return Results.NotFound($"User with id {id} not found");
             }
 
-            // Append the cart item to the cart array
+            // Fetch the existing cart, if any
             var updatedCart = user.Cart?.Select(c => c.ToObject<CartItem>()).ToList() ?? new List<CartItem>();
+
+            // Add the new cart item
             updatedCart.Add(cartItem);
 
-            // Update the user's cart
-            user.Cart = updatedCart.Select(c => JObject.FromObject(c)).ToList();
+            // Update the user's cart with the new item
+            user.Cart = updatedCart.Select(c => JObject.FromObject(c)).ToList();  // Ensure proper serialization
+
+            // Save the updated user data
             await client.From<User>().Update(user);
 
-            return Results.Ok(new { Message = "Item added to cart", Cart = user.Cart });
+            return Results.Ok(new { Message = "Item added to cart", Cart = updatedCart });
         });
         // DELETE item from Cart
         app.MapDelete("/user/{userId:guid}/cart/{productId}", async (Guid userId, string productId, Supabase.Client client) =>
