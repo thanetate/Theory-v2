@@ -41,3 +41,17 @@ Authorization: Bearer {{AccessToken}}
 
 ### GET user by id
 GET http://localhost:5255/user/9846c653-c02b-4e81-b28c-7564d70dd377
+
+### POST
+POST http://localhost:5255/user/9846c653-c02b-4e81-b28c-7564d70dd377/add-to-cart
+Content-Type: application/json
+
+{
+  "id": "6",
+  "name": "Climbing Boots",
+  "description": "High-performance climbing shoes",
+  "price": 10,
+  "image": "https://example.com/shoe.jpg",
+  "size": "M",
+  "quantity": 1
+}
