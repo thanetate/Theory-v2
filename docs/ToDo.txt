@@ -8,6 +8,9 @@ TODO
 
 BUGS / BEST PRACTICES
 
+Important 
+1. local storage cart functionalities, user doesnt have to make a profile to add to cart
+
 1. change cartpage.tsx useEffect -> axios and an atom?
 2. make custom hooks if needed
 3. understand all the backend api calls

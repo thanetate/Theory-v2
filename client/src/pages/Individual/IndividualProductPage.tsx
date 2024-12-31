@@ -8,11 +8,15 @@ import { singleProductAtom } from "../../atoms/productAtom";
 import { fetchProductById } from "../../atoms/productAtom";
 import { useParams } from "react-router-dom";
 import { PromoBar } from "../../components/PromoBar/PromoBar";
+import { sessionIdAtom } from "../../atoms/userAtom";
 
 export function IndividualProductPage() {
     const { productId } = useParams<{ productId: string }>();
 	const [product] = useAtom(singleProductAtom);
 	const [, fetchProduct] = useAtom(fetchProductById);
+	const [sessionId] = useAtom(sessionIdAtom); //session id
+	console.log("Session id in atom: ", sessionId);
+	const [size, setSize] = useState("x-small");
 
     useEffect(() => {
         if (productId) {
@@ -27,6 +31,35 @@ export function IndividualProductPage() {
 	const handleQuantityChange = (amount: number) => {
 		setQuantity((prevQuantity) => Math.max(1, prevQuantity + amount));
 	};
+
+	const handleSizeChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+        setSize(event.target.value);
+    };
+
+	const addToCart = async () => {
+        if (!product || !sessionId) return;
+
+        const response = await fetch(`http://localhost:5255/user/${sessionId}/add-to-cart`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                productId: product.id,
+                name: product.name,
+                price: product.price,
+                quantity: quantity,
+				size: size,
+                image: product.image,
+            }),
+        });
+
+        if (!response.ok) {
+            console.error('Failed to add product to cart');
+        } else {
+            console.log('Product added to cart successfully');
+        }
+    };
 
 	if (!product) {
         return <div>Loading...</div>;
@@ -66,7 +99,7 @@ export function IndividualProductPage() {
 						<p> Shipping calculated at checkout.</p>
 						<div className="size">
 							<h2>Size</h2>
-							<select name="size" className="size-container">
+							<select name="size" className="size-container" onChange={handleSizeChange}>
 								<option value="x-small">X-Small</option>
 								<option value="small">Small</option>
 								<option value="medium">Medium</option>
@@ -88,7 +121,7 @@ export function IndividualProductPage() {
 							</div>
 						</div>
 						<div className="checkout">
-							<button>Add to cart</button>
+							<button onClick={addToCart}>Add to cart</button>
 						</div>
 					</div>
 				</div>

@@ -15,12 +15,12 @@ export function CartPage() {
 	const navigate = useNavigate();
 	const [, setQuantity] = useState(1);
 
-	useEffect(() => {
-		if (!sessionId) {
-			navigate("/account");
-			return;
-		}
-	}, [sessionId]);
+	// useEffect(() => {
+	// 	if (!sessionId) {
+	// 		navigate("/account");
+	// 		return;
+	// 	}
+	// }, [sessionId]);
 
 	useEffect(() => {
 		fetchCartDetails();
