@@ -32,7 +32,26 @@ public static class UserEndpoints
              };
              return Results.Ok(userResponse);
          });
+        // GET user cart
+        app.MapGet("/user/{id:guid}/cart", async (Guid id, Supabase.Client client) =>
+        {
+            // Fetch the user
+            var response = await client
+               .From<User>()
+               .Where(p => p.Id == id)
+               .Get();
 
+            var user = response.Models.FirstOrDefault();
+
+            if (user == null)
+            {
+                return Results.NotFound($"User with id {id} not found");
+            }
+
+            // Return the user's cart
+            var cart = user.Cart?.Select(c => c.ToObject<CartItem>()).ToList() ?? new List<CartItem>();
+            return Results.Ok(cart);
+        });
         // POST Add to Cart
         app.MapPost("/user/{id:guid}/add-to-cart", async (Guid id, CartItem cartItem, Supabase.Client client) =>
         {
