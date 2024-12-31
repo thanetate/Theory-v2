@@ -7,7 +7,7 @@ import { createClient, Session } from "@supabase/supabase-js";
 import { Auth } from "@supabase/auth-ui-react";
 import { ThemeSupa } from "@supabase/auth-ui-shared";
 import { useAtom } from "jotai";
-import { fetchUserAtom } from "../../atoms/userAtom";
+import { sessionIdAtom } from "../../atoms/userAtom";
 
 const supabase = createClient(
 	"https://sdgkcrzjwqullhcxxzrk.supabase.co",
@@ -15,12 +15,15 @@ const supabase = createClient(
 );
 
 export function AccountPage() {
+	//session stuff
 	const [session, setSession] = useState<Session | null>(null);
-	const [user, fetchUser] = useAtom(fetchUserAtom);
+	const [sessionId, setSessionId] = useAtom(sessionIdAtom);
 
 	useEffect(() => {
 		supabase.auth.getSession().then(({ data: { session } }) => {
 			setSession(session);
+			//set session id in atom
+			setSessionId(session?.user?.id || null);
 		});
 
 		const {
@@ -40,17 +43,8 @@ export function AccountPage() {
 		setSession(null);
 	};
 
-	useEffect(() => {
-        fetchUser();
-    }, [fetchUser]);
-
-    useEffect(() => {
-        if (user) {
-            console.log("User Data:", user);
-        }
-    }, [user]);
-
-
+	console.log("Session id in atom: ", sessionId);
+	
 	if (!session) {
 		return (
 			<>
