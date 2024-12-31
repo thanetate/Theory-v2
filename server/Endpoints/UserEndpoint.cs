@@ -78,6 +78,39 @@ public static class UserEndpoints
 
             return Results.Ok(new { Message = "Item added to cart", Cart = user.Cart });
         });
+        // DELETE item from Cart
+        app.MapDelete("/user/{userId:guid}/cart/{productId}", async (Guid userId, string productId, Supabase.Client client) =>
+        {
+            // Fetch the user
+            var response = await client
+                .From<User>()
+                .Where(p => p.Id == userId)
+                .Get();
+
+            var user = response.Models.FirstOrDefault();
+
+            if (user == null)
+            {
+                return Results.NotFound($"User with id {userId} not found");
+            }
+
+            // Remove the cart item
+            var updatedCart = user.Cart?.Select(c => c.ToObject<CartItem>()).ToList() ?? new List<CartItem>();
+            var itemToRemove = updatedCart.FirstOrDefault(c => c.Id.ToString() == productId);
+
+            if (itemToRemove == null)
+            {
+                return Results.NotFound($"Product with id {productId} not found in cart");
+            }
+
+            updatedCart.Remove(itemToRemove);
+
+            // Update the user's cart
+            user.Cart = updatedCart.Select(c => JObject.FromObject(c)).ToList();
+            await client.From<User>().Update(user);
+
+            return Results.Ok(new { Message = "Item removed from cart", Cart = user.Cart });
+        });
     }
 }
 
