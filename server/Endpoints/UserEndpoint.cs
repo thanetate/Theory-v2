@@ -9,7 +9,7 @@ public static class UserEndpoints
 {
     public static void MapUserEndpoints(this WebApplication app)
     {
-        // GET
+        // GET user by Id
         app.MapGet("/user/{id:guid}", async (Guid id, Supabase.Client client) =>
          {
              var response = await client
@@ -62,6 +62,7 @@ public static class UserEndpoints
     }
 }
 
+//Todo: move this to a model
 public class CartItem
 {
     public int Id { get; set; }

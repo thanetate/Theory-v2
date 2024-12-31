@@ -6,6 +6,8 @@ import { useState, useEffect } from "react";
 import { createClient, Session } from "@supabase/supabase-js";
 import { Auth } from "@supabase/auth-ui-react";
 import { ThemeSupa } from "@supabase/auth-ui-shared";
+import { useAtom } from "jotai";
+import { fetchUserAtom } from "../../atoms/userAtom";
 
 const supabase = createClient(
 	"https://sdgkcrzjwqullhcxxzrk.supabase.co",
@@ -14,6 +16,7 @@ const supabase = createClient(
 
 export function AccountPage() {
 	const [session, setSession] = useState<Session | null>(null);
+	const [user, fetchUser] = useAtom(fetchUserAtom);
 
 	useEffect(() => {
 		supabase.auth.getSession().then(({ data: { session } }) => {
@@ -36,6 +39,17 @@ export function AccountPage() {
 		}
 		setSession(null);
 	};
+
+	useEffect(() => {
+        fetchUser();
+    }, [fetchUser]);
+
+    useEffect(() => {
+        if (user) {
+            console.log("User Data:", user);
+        }
+    }, [user]);
+
 
 	if (!session) {
 		return (

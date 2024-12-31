@@ -19,7 +19,7 @@ export const fetchProductsAtom = atom(
     async (get, set) => {
         console.log("fetchProducts called");
         try {
-            const response = await axios.get(`http://localhost:5255/products`);
+            const response = await axios.get(`/products`);
             const productData = response.data;
             set(productAtom, productData);
             console.log("Product Data from Atom:", productData);
