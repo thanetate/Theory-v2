@@ -17,6 +17,30 @@ export function CartPage() {
 	}, [fetchUser]);
 
 	console.log("data in fetchUserAtom: ", user);
+
+	useEffect(() => {
+        const fetchCartDetails = async () => {
+            try {
+                const response = await fetch('http://localhost:5255/user/9846c653-c02b-4e81-b28c-7564d70dd377/cart', {
+                    method: 'GET',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                });
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                const cartDetails = await response.json();
+                console.log('Cart details:', cartDetails);
+            } catch (error) {
+                console.error('Failed to fetch cart details:', error);
+            }
+        };
+
+        fetchCartDetails();
+    }, []);
+
+    console.log("data in fetchUserAtom: ", user);
 	return (
 		<>
 			<PromoBar />
