@@ -9,6 +9,7 @@ import { fetchProductById } from "../../atoms/productAtom";
 import { useParams } from "react-router-dom";
 import { PromoBar } from "../../components/PromoBar/PromoBar";
 import { sessionIdAtom } from "../../atoms/userAtom";
+import { addToCartAtom } from "../../atoms/cartAtom";
 
 export function IndividualProductPage() {
     const { productId } = useParams<{ productId: string }>();
@@ -17,6 +18,7 @@ export function IndividualProductPage() {
 	const [sessionId] = useAtom(sessionIdAtom); //session id
 	console.log("Session id in atom: ", sessionId);
 	const [size, setSize] = useState("x-small");
+	const [addToCart] = useAtom(addToCartAtom);
 
     useEffect(() => {
         if (productId) {
@@ -34,31 +36,6 @@ export function IndividualProductPage() {
 
 	const handleSizeChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
         setSize(event.target.value);
-    };
-
-	const addToCart = async () => {
-        if (!product || !sessionId) return;
-
-        const response = await fetch(`http://localhost:5255/user/${sessionId}/add-to-cart`, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-                productId: product.id,
-                name: product.name,
-                price: product.price,
-                quantity: quantity,
-				size: size,
-                image: product.image,
-            }),
-        });
-
-        if (!response.ok) {
-            console.error('Failed to add product to cart');
-        } else {
-            console.log('Product added to cart successfully');
-        }
     };
 
 	if (!product) {
@@ -121,7 +98,7 @@ export function IndividualProductPage() {
 							</div>
 						</div>
 						<div className="checkout">
-							<button onClick={addToCart}>Add to cart</button>
+							<button onClick={() => addToCart(product, quantity, size)}>Add to cart</button>
 						</div>
 					</div>
 				</div>

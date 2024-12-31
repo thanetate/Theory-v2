@@ -10,6 +10,12 @@ export const cartDetailsAtom = atom<Array<{
     size: string;
     quantity: number;
 }> | null>(null);
+interface Product {
+    id: number;
+    name: string;
+    price: number;
+    image: string;
+}
 
 export const fetchCartDetailsAtom = atom(
     (get) => get(cartDetailsAtom),
@@ -37,3 +43,31 @@ export const fetchCartDetailsAtom = atom(
         }
     }
 );
+
+export const addToCartAtom = atom(
+    (get) => async (product: Product, quantity: number, size: string) => {
+      const sessionId = get(sessionIdAtom);
+      if (!product || !sessionId) return;
+  
+      const response = await fetch(`http://localhost:5255/user/${sessionId}/add-to-cart`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          productId: product.id,
+          name: product.name,
+          price: product.price,
+          quantity: quantity,
+          size: size,
+          image: product.image,
+        }),
+      });
+  
+      if (!response.ok) {
+        console.error('Failed to add product to cart');
+      } else {
+        console.log('Product added to cart successfully');
+      }
+    }
+  );
