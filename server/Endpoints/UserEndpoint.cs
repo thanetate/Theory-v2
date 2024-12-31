@@ -11,35 +11,11 @@ public static class UserEndpoints
     {
         // GET user by Id
         app.MapGet("/user/{id:guid}", async (Guid id, Supabase.Client client) =>
-         {
-             var response = await client
-                 .From<User>()
-                 .Where(p => p.Id == id)
-                 .Get();
-
-             var user = response.Models.FirstOrDefault();
-
-             if (user == null)
-             {
-                 Console.WriteLine($"User with id: {id} found");
-                 return Results.NotFound();
-             }
-
-             var userResponse = new UserResponse
-             {
-                 Id = user.Id,
-                 Cart = user.Cart
-             };
-             return Results.Ok(userResponse);
-         });
-        // GET user cart
-        app.MapGet("/user/{id:guid}/cart", async (Guid id, Supabase.Client client) =>
         {
-            // Fetch the user
             var response = await client
-               .From<User>()
-               .Where(p => p.Id == id)
-               .Get();
+                .From<User>()
+                .Where(p => p.Id == id)
+                .Get();
 
             var user = response.Models.FirstOrDefault();
 
@@ -48,11 +24,24 @@ public static class UserEndpoints
                 return Results.NotFound($"User with id {id} not found");
             }
 
-            // Return the user's cart
-            var cart = user.Cart?.Select(c => c.ToObject<CartItem>()).ToList() ?? new List<CartItem>();
-            return Results.Ok(cart);
+            // Ensure Cart is deserialized properly, if it's a JSON object or string
+            if (user.Cart != null && user.Cart.Count == 0)
+            {
+                // You can explicitly check if Cart is an empty list
+                user.Cart = new List<CartItem>();  // Set to an empty list if it's not deserialized properly
+            }
+
+            var userResponse = new UserResponse
+            {
+                Id = user.Id,
+                Cart = user.Cart?.Select(item => JObject.FromObject(item)).ToList() ?? new List<JObject>()
+            };
+
+            return Results.Ok(userResponse);
         });
-        app.MapPost("/user/{id:guid}/add-to-cart", async (Guid id, CartItem cartItem, Supabase.Client client) =>
+
+        // GET user cart
+        app.MapGet("/user/{id:guid}/cart", async (Guid id, Supabase.Client client) =>
         {
             // Fetch the user
             var response = await client
@@ -67,21 +56,41 @@ public static class UserEndpoints
                 return Results.NotFound($"User with id {id} not found");
             }
 
+            // Directly return the user's cart
+            var cart = user.Cart ?? new List<CartItem>();
+            return Results.Ok(cart);
+        });
+
+        app.MapPost("/user/{id:guid}/add-to-cart", async (Guid id, CartItem cartItem, Supabase.Client client) =>
+        {
+            var response = await client
+                .From<User>()
+                .Where(p => p.Id == id)
+                .Get();
+
+            var user = response.Models.FirstOrDefault();
+
+            if (user == null)
+            {
+                return Results.NotFound($"User with id {id} not found");
+            }
+
             // Fetch the existing cart, if any
-            var updatedCart = user.Cart?.Select(c => c.ToObject<CartItem>()).ToList() ?? new List<CartItem>();
+            var updatedCart = user.Cart ?? new List<CartItem>();
 
             // Add the new cart item
             updatedCart.Add(cartItem);
 
             // Update the user's cart with the new item
-            user.Cart = updatedCart.Select(c => JObject.FromObject(c)).ToList();  // Ensure proper serialization
+            user.Cart = updatedCart;
 
             // Save the updated user data
             await client.From<User>().Update(user);
 
             return Results.Ok(new { Message = "Item added to cart", Cart = updatedCart });
         });
-       // DELETE item from Cart
+
+        // DELETE item from Cart
         app.MapDelete("/user/{userId:guid}/cart/{productId}", async (Guid userId, string productId, Supabase.Client client) =>
         {
             // Fetch the user
@@ -98,14 +107,15 @@ public static class UserEndpoints
             }
 
             // Ensure the Cart is properly fetched and contains CartItems
-            var updatedCart = user.Cart?.Select(c => c.ToObject<CartItem>()).ToList() ?? new List<CartItem>();
+            var updatedCart = user.Cart ?? new List<CartItem>();
 
             // Find the item to remove
             if (!int.TryParse(productId, out int productIdInt))
             {
                 return Results.BadRequest($"Invalid product id {productId}");
             }
-            var itemToRemove = updatedCart.FirstOrDefault(c => c.Id == productIdInt);  // Use `c.Id` if `productId` matches
+
+            var itemToRemove = updatedCart.FirstOrDefault(c => c.Id == productIdInt);
 
             if (itemToRemove == null)
             {
@@ -115,8 +125,8 @@ public static class UserEndpoints
             // Remove the item from the cart
             updatedCart.Remove(itemToRemove);
 
-            // Update the user's cart - now serialize the CartItem objects back into the Cart
-            user.Cart = updatedCart.Select(c => JObject.FromObject(c)).ToList();
+            // Update the user's cart with the modified list of CartItems
+            user.Cart = updatedCart;
 
             // Save the updated user data
             await client.From<User>().Update(user);
@@ -124,6 +134,7 @@ public static class UserEndpoints
             // Return the updated cart in the response
             return Results.Ok(new { Message = "Item removed from cart", Cart = updatedCart });
         });
+
     }
 }
 

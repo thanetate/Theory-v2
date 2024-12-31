@@ -15,5 +15,5 @@ public class User : BaseModel
     public Guid Id { get; set; }
 
     [Column("cart")]
-    public List<JObject> Cart { get; set; } = new List<JObject>();
+    public List<CartItem> Cart { get; set; } = new List<CartItem>();
 }
