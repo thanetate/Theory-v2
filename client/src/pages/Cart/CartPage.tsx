@@ -6,23 +6,14 @@ import { sessionIdAtom } from "../../atoms/userAtom";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./CartPage.css";
+import { fetchCartDetailsAtom } from "../../atoms/cartAtom";
 
 export function CartPage() {
-	const navigate = useNavigate();
-	const handleGoShopping = () => {
-		navigate("/collections");
-	};
-	const [cartDetails, setCartDetails] = useState<Array<{
-		name: string;
-		description: string;
-		image: string;
-		price: number;
-		size: string;
-		quantity: number;
-	}> | null>(null);
-
-	const [sessionId] = useAtom(sessionIdAtom);
+	const [sessionId] = useAtom(sessionIdAtom); //session id
 	console.log("Session id in atom: ", sessionId);
+	const [cartDetails, fetchCartDetails] = useAtom(fetchCartDetailsAtom); //fetch cart
+	const navigate = useNavigate();
+	const [, setQuantity] = useState(1);
 
 	useEffect(() => {
 		if (!sessionId) {
@@ -32,36 +23,17 @@ export function CartPage() {
 	}, [sessionId]);
 
 	useEffect(() => {
-		const fetchCartDetails = async () => {
-			try {
-				const response = await fetch(
-					`http://localhost:5255/user/${sessionId}/cart`,
-					{
-						method: "GET",
-						headers: {
-							"Content-Type": "application/json",
-						},
-					}
-				);
-				if (!response.ok) {
-					throw new Error("Network response was not ok");
-				}
-				const cartDetails = await response.json();
-				setCartDetails(cartDetails); // Set the cart details in the state
-				console.log("Cart details:", cartDetails);
-			} catch (error) {
-				console.error("Failed to fetch cart details:", error);
-			}
-		};
-
 		fetchCartDetails();
-	}, [sessionId]);
-
-	const [, setQuantity] = useState(1);
+	}, [fetchCartDetails]);
 
 	const handleQuantityChange = (amount: number) => {
 		setQuantity((prevQuantity) => Math.max(1, prevQuantity + amount));
 	};
+
+	const handleGoShopping = () => {
+		navigate("/collections");
+	};
+
 	return (
 		<>
 			<PromoBar />
