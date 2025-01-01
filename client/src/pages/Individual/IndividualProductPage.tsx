@@ -12,19 +12,19 @@ import { sessionIdAtom } from "../../atoms/userAtom";
 import { addToCartAtom } from "../../atoms/cartAtom";
 
 export function IndividualProductPage() {
-    const { productId } = useParams<{ productId: string }>();
+	const { productId } = useParams<{ productId: string }>();
 	const [product] = useAtom(singleProductAtom);
 	const [, fetchProduct] = useAtom(fetchProductById);
-	const [sessionId] = useAtom(sessionIdAtom); //session id
+	const [sessionId] = useAtom(sessionIdAtom);
 	console.log("Session id in atom: ", sessionId);
 	const [size, setSize] = useState("x-small");
 	const [addToCart] = useAtom(addToCartAtom);
 
-    useEffect(() => {
-        if (productId) {
+	useEffect(() => {
+		if (productId) {
 			fetchProduct({ productId: Number(productId) });
-        }
-    }, [fetchProduct, productId]);
+		}
+	}, [fetchProduct, productId]);
 
 	const handlePrevClick = () => {};
 	const handleNextClick = () => {};
@@ -35,13 +35,13 @@ export function IndividualProductPage() {
 	};
 
 	const handleSizeChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
-        setSize(event.target.value);
-    };
+		setSize(event.target.value);
+	};
 
 	if (!product) {
-        return <div>Loading...</div>;
-    }
-	
+		return <div>Loading...</div>;
+	}
+
 	return (
 		<>
 			<PromoBar />
@@ -55,11 +55,19 @@ export function IndividualProductPage() {
 							className="i-product-img"
 						/>
 					</div>
-                    <div className="extra-img-container">
-                        {/* todo: make buttons dynamic */}
-                        <img src="/example-product.webp" alt="Product Image" className="extra-img" />
-                        <img src="/example-product.webp" alt="Product Image" className="extra-img" />
-                    </div>
+					<div className="extra-img-container">
+						{/* todo: make buttons dynamic */}
+						<img
+							src="/example-product.webp"
+							alt="Product Image"
+							className="extra-img"
+						/>
+						<img
+							src="/example-product.webp"
+							alt="Product Image"
+							className="extra-img"
+						/>
+					</div>
 					<div className="carousel-btn-container">
 						<button className="carousel-btn" onClick={handlePrevClick}>
 							<img src="/icons/leftarrow.svg" alt="Left Arrow" />
@@ -76,7 +84,11 @@ export function IndividualProductPage() {
 						<p> Shipping calculated at checkout.</p>
 						<div className="size">
 							<h2>Size</h2>
-							<select name="size" className="size-container" onChange={handleSizeChange}>
+							<select
+								name="size"
+								className="size-container"
+								onChange={handleSizeChange}
+							>
 								<option value="x-small">X-Small</option>
 								<option value="small">Small</option>
 								<option value="medium">Medium</option>
@@ -98,7 +110,9 @@ export function IndividualProductPage() {
 							</div>
 						</div>
 						<div className="checkout">
-							<button onClick={() => addToCart(product, quantity, size)}>Add to cart</button>
+							<button onClick={() => addToCart(product, quantity, size)}>
+								Add to cart
+							</button>
 						</div>
 					</div>
 				</div>
