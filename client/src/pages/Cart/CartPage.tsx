@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./CartPage.css";
 import { fetchCartDetailsAtom } from "../../atoms/cartAtom";
+import toast from "react-hot-toast";
 
 export function CartPage() {
 	const [sessionId] = useAtom(sessionIdAtom); //session id
@@ -42,9 +43,10 @@ export function CartPage() {
 			if (!response.ok) {
 				throw new Error("Failed to remove product from cart");
 			}
-
+			toast.success("Removed from cart");
 			fetchCartDetails();
 		} catch (error) {
+			toast.error("Failed to remove product from cart");
 			console.error("Failed to remove product from cart:", error);
 		}
 	};
@@ -54,7 +56,7 @@ export function CartPage() {
 			<PromoBar />
 			<Header />
 			<div className="cart-page">
-				{cartDetails ? (
+				{cartDetails && cartDetails.length > 0 ? (
 					<div>
 						<ul>
 							{cartDetails.map((item, index) => (

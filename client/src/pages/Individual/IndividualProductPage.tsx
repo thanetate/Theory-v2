@@ -11,6 +11,7 @@ import { PromoBar } from "../../components/PromoBar/PromoBar";
 import { sessionIdAtom } from "../../atoms/userAtom";
 import { addToCartAtom } from "../../atoms/cartAtom";
 import { useNavigate } from "react-router-dom";
+import toast from "react-hot-toast";
 
 export function IndividualProductPage() {
 	const { productId } = useParams<{ productId: string }>();
@@ -46,6 +47,7 @@ export function IndividualProductPage() {
 		}
 		else {
 			if (product) {
+				toast.success("Added to cart");
 				addToCart(product, quantity, size);
 			}
 		}

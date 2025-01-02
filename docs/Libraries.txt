@@ -4,7 +4,8 @@ Libraries Used:
     - react-modern-drawer
     - hamburger-react
     - jotai
-    -@supabase/supabase-js @supabase/auth-ui-react @supabase/auth-ui-shared
+    - @supabase/supabase-js @supabase/auth-ui-react @supabase/auth-ui-shared
+    - react-hot-toast
 
     - supabase-csharp
     - Swashbuckle.AspNetCore
