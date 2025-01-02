@@ -10,6 +10,7 @@ import { useParams } from "react-router-dom";
 import { PromoBar } from "../../components/PromoBar/PromoBar";
 import { sessionIdAtom } from "../../atoms/userAtom";
 import { addToCartAtom } from "../../atoms/cartAtom";
+import { useNavigate } from "react-router-dom";
 
 export function IndividualProductPage() {
 	const { productId } = useParams<{ productId: string }>();
@@ -19,6 +20,7 @@ export function IndividualProductPage() {
 	console.log("Session id in atom: ", sessionId);
 	const [size, setSize] = useState("x-small");
 	const [addToCart] = useAtom(addToCartAtom);
+	const navigate = useNavigate();
 
 	useEffect(() => {
 		if (productId) {
@@ -38,9 +40,22 @@ export function IndividualProductPage() {
 		setSize(event.target.value);
 	};
 
+	const handleAddToCart = () => {
+		if (!sessionId) {
+			navigate("/account");
+		}
+		else {
+			if (product) {
+				addToCart(product, quantity, size);
+			}
+		}
+	}
+
 	if (!product) {
 		return <div>Loading...</div>;
 	}
+
+	console.log("Session ID", sessionId);
 
 	return (
 		<>
@@ -110,7 +125,7 @@ export function IndividualProductPage() {
 							</div>
 						</div>
 						<div className="checkout">
-							<button onClick={() => addToCart(product, quantity, size)}>
+							<button onClick={handleAddToCart}>
 								Add to cart
 							</button>
 						</div>
