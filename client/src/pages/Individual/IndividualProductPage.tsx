@@ -17,7 +17,7 @@ export function IndividualProductPage() {
 	const [product] = useAtom(singleProductAtom);
 	const [, fetchProduct] = useAtom(fetchProductById);
 	const [sessionId] = useAtom(sessionIdAtom);
-	console.log("Session id in atom: ", sessionId);
+	console.log("Session Id (Atom): ", sessionId);
 	const [size, setSize] = useState("x-small");
 	const [addToCart] = useAtom(addToCartAtom);
 	const navigate = useNavigate();

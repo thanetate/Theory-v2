@@ -53,7 +53,7 @@ export function AccountPage() {
 		resetSessionId(null);
 	};
 
-	console.log("Session id in atom: ", sessionId);
+	console.log("Session Id (Atom): ", sessionId);
 
 	if (!session) {
 		return (

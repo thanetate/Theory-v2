@@ -21,7 +21,7 @@ export const fetchProductsAtom = atom(
 			const response = await axios.get(`http://localhost:5255/products`);
 			const productData = response.data;
 			set(productAtom, productData);
-			console.log("Product Data from Atom:", productData);
+			console.log("All Products Data (Atom):", productData);
 		} catch (error) {
 			console.error("Error fetching products", error);
 		}
@@ -38,7 +38,7 @@ export const fetchProductById = atom(
 			);
 			const productData = response.data;
 			set(singleProductAtom, productData);
-			console.log("Single Product Data from Atom:", productData);
+			console.log("Product Data (Atom):", productData);
 		} catch (error) {
 			console.error("Error fetching product", error);
 		}
