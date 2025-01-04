@@ -7,6 +7,7 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using System.Security.Claims;
 using Stripe;
+using Stripe.Checkout;
 
 // initialize the web application
 var builder = WebApplication.CreateBuilder(args);
@@ -84,15 +85,31 @@ if (app.Environment.IsDevelopment())
 app.MapProductEndpoints();
 app.MapUserEndpoints();
 
-// test auth endpoint
-app.MapGet("/user", (ClaimsPrincipal principal) => 
+// test stripe endpoint
+app.MapPost("/create-checkout-session", async (HttpContext context) =>
 {
-    var claims = principal.Claims.ToDictionary(c => c.Type, c => c.Value);
+    var domain = "http://localhost:3000";  // Redirect to the client URL
+    var options = new SessionCreateOptions
+    {
+        LineItems = new List<SessionLineItemOptions>
+        {
+            new SessionLineItemOptions
+            {
+                Price = "price_1QdcW9HlTIjZxktq1tqJ2ulu",  // Replace this with your actual price_id
+                Quantity = 1,
+            },
+        },
+        Mode = "payment",
+        SuccessUrl = domain + "?success=true",
+        CancelUrl = domain + "?canceled=true",
+    };
 
-    return Results.Ok(claims);
-})
-.RequireAuthorization();
+    var service = new SessionService();
+    Session session = service.Create(options);
 
+    context.Response.Headers.Add("Location", session.Url);  // Redirect to the session URL
+    return Results.StatusCode(303);  // HTTP 303 Redirect
+}).RequireAuthorization();
 
 app.UseHttpsRedirection();
 app.Run();
