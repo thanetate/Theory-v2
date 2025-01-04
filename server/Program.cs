@@ -6,6 +6,7 @@ using Supabase.Tutorial.Models;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using System.Security.Claims;
+using Stripe;
 
 // initialize the web application
 var builder = WebApplication.CreateBuilder(args);
@@ -63,6 +64,9 @@ builder.Services.AddScoped<Supabase.Client>(_ =>
         }
     );
 });
+
+// stripe configuration
+StripeConfiguration.ApiKey = builder.Configuration["StripeSecretKey"];
 
 // build the web application
 var app = builder.Build();
