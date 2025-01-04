@@ -11,3 +11,4 @@ Libraries Used:
     - Swashbuckle.AspNetCore
     - Microsoft.AspNetCore.Authentication.JwtBearer
     - Newtonsoft.Json
+    - Stripe.net

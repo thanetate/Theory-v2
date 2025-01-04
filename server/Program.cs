@@ -37,19 +37,7 @@ builder.Services.AddCors(options => {
     );
 });
 
-// connection to supabase
-// builder.Services.AddScoped<Supabase.Client>(_ =>
-
-//     new Supabase.Client(
-//         builder.Configuration["SupabaseUrl"],
-//         builder.Configuration["SupabaseKey"],
-//         new SupabaseOptions
-//         {
-//             AutoRefreshToken = true,
-//             AutoConnectRealtime = true
-//         }
-//     )
-// );
+//connection to supabase
 builder.Services.AddScoped<Supabase.Client>(_ =>
 {
     var supabaseUrl = builder.Configuration["SupabaseUrl"];

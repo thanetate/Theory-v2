@@ -51,6 +51,8 @@ export function CartPage() {
 		}
 	};
 
+	console.log("Cart details: ", cartDetails);	
+
 	return (
 		<>
 			<PromoBar />
