@@ -109,7 +109,7 @@ app.MapPost("/create-checkout-session", async (HttpContext context) =>
 
     context.Response.Headers.Add("Location", session.Url);  // Redirect to the session URL
     return Results.StatusCode(303);  // HTTP 303 Redirect
-}).RequireAuthorization();
+});
 
 app.UseHttpsRedirection();
 app.Run();
