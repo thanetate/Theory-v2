@@ -6,6 +6,8 @@ using Supabase.Tutorial.Models;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using System.Security.Claims;
+using Stripe;
+using Stripe.Checkout;
 
 // initialize the web application
 var builder = WebApplication.CreateBuilder(args);
@@ -37,19 +39,7 @@ builder.Services.AddCors(options => {
     );
 });
 
-// connection to supabase
-// builder.Services.AddScoped<Supabase.Client>(_ =>
-
-//     new Supabase.Client(
-//         builder.Configuration["SupabaseUrl"],
-//         builder.Configuration["SupabaseKey"],
-//         new SupabaseOptions
-//         {
-//             AutoRefreshToken = true,
-//             AutoConnectRealtime = true
-//         }
-//     )
-// );
+//connection to supabase
 builder.Services.AddScoped<Supabase.Client>(_ =>
 {
     var supabaseUrl = builder.Configuration["SupabaseUrl"];
@@ -76,6 +66,9 @@ builder.Services.AddScoped<Supabase.Client>(_ =>
     );
 });
 
+// stripe configuration
+StripeConfiguration.ApiKey = builder.Configuration["StripeSecretKey"];
+
 // build the web application
 var app = builder.Build();
 
@@ -92,15 +85,31 @@ if (app.Environment.IsDevelopment())
 app.MapProductEndpoints();
 app.MapUserEndpoints();
 
-// test auth endpoint
-app.MapGet("/user", (ClaimsPrincipal principal) => 
+// test stripe endpoint
+app.MapPost("/create-checkout-session", async (HttpContext context) =>
 {
-    var claims = principal.Claims.ToDictionary(c => c.Type, c => c.Value);
+    var domain = "http://localhost:3000";  // Redirect to the client URL
+    var options = new SessionCreateOptions
+    {
+        LineItems = new List<SessionLineItemOptions>
+        {
+            new SessionLineItemOptions
+            {
+                Price = "price_1QdcW9HlTIjZxktq1tqJ2ulu",  // Replace this with your actual price_id
+                Quantity = 1,
+            },
+        },
+        Mode = "payment",
+        SuccessUrl = $"{domain}/checkout-success?session_id={{CHECKOUT_SESSION_ID}}",
+        CancelUrl = $"{domain}/cart",
+    };
 
-    return Results.Ok(claims);
-})
-.RequireAuthorization();
+    var service = new SessionService();
+    Session session = service.Create(options);
 
+    context.Response.ContentType = "application/json";
+    await context.Response.WriteAsJsonAsync(new { url = session.Url });
+});
 
 app.UseHttpsRedirection();
 app.Run();
