@@ -8,6 +8,8 @@ using System.Text;
 using System.Security.Claims;
 using Stripe;
 using Stripe.Checkout;
+using YourNamespace.Models;
+using YourNamespace.Contracts;
 
 // initialize the web application
 var builder = WebApplication.CreateBuilder(args);
@@ -88,24 +90,47 @@ app.MapUserEndpoints();
 // test stripe endpoint
 app.MapPost("/create-checkout-session", async (HttpContext context) =>
 {
-    var domain = "http://localhost:3000";  // Redirect to the client URL
+    var domain = "http://localhost:3000"; // change this later
+
+    // Read cart details from the request body
+    var body = await context.Request.ReadFromJsonAsync<CartRequest>();
+
+    // Error handling
+    if (body == null || body.Cart == null || !body.Cart.Any())
+    {
+        context.Response.StatusCode = 400;
+        await context.Response.WriteAsJsonAsync(new { error = "Cart is empty or invalid." });
+        return;
+    }
+
+    // Map cart details to Stripe LineItems
+    var lineItems = body.Cart.Select(item => new SessionLineItemOptions
+    {
+        PriceData = new SessionLineItemPriceDataOptions
+        {
+            Currency = "usd",
+            ProductData = new SessionLineItemPriceDataProductDataOptions
+            {
+                Name = item.Name,
+                Description = item.Description 
+            },
+            UnitAmount = item.Price * 100,
+        },
+        Quantity = item.Quantity,
+    }).ToList();
+
+    // Create a Stripe session with the dynamically generated LineItems
     var options = new SessionCreateOptions
     {
-        LineItems = new List<SessionLineItemOptions>
-        {
-            new SessionLineItemOptions
-            {
-                Price = "price_1QdcW9HlTIjZxktq1tqJ2ulu",  // Replace this with your actual price_id
-                Quantity = 1,
-            },
-        },
+        LineItems = lineItems,
         Mode = "payment",
         SuccessUrl = $"{domain}/checkout-success?session_id={{CHECKOUT_SESSION_ID}}",
         CancelUrl = $"{domain}/cart",
+        AutomaticTax = new SessionAutomaticTaxOptions { Enabled = true },
     };
 
     var service = new SessionService();
-    Session session = service.Create(options);
+    var session = service.Create(options);
 
     context.Response.ContentType = "application/json";
     await context.Response.WriteAsJsonAsync(new { url = session.Url });

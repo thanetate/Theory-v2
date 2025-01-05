@@ -59,7 +59,7 @@ export function CartPage() {
 			// Request the checkout session from the backend
 			const response = await axios.post(
 				"http://localhost:5255/create-checkout-session",
-				{}, // Body can include additional information if needed
+				{ cart: cartDetails }, // Send the cart details to the backend
 				{
 					headers: {
 						"Content-Type": "application/json",
