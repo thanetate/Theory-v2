@@ -32,7 +32,7 @@ builder.Services.AddAuthentication().AddJwtBearer(options =>
     };
 });
 
-//add CORS 
+// add CORS 
 builder.Services.AddCors(options => {
     options.AddPolicy("AllowViteClient",
     policy => policy.WithOrigins("http://localhost:3000")
@@ -87,15 +87,15 @@ if (app.Environment.IsDevelopment())
 app.MapProductEndpoints();
 app.MapUserEndpoints();
 
-// test stripe endpoint
+// stripe endpoint
 app.MapPost("/create-checkout-session", async (HttpContext context) =>
 {
     var domain = "http://localhost:3000"; // change this later
 
-    // Read cart details from the request body
+    // read cart details from the request body
     var body = await context.Request.ReadFromJsonAsync<CartRequest>();
 
-    // Error handling
+    // error handling
     if (body == null || body.Cart == null || !body.Cart.Any())
     {
         context.Response.StatusCode = 400;
@@ -103,7 +103,7 @@ app.MapPost("/create-checkout-session", async (HttpContext context) =>
         return;
     }
 
-    // Map cart details to Stripe LineItems
+    // map cart details to Stripe LineItems
     var lineItems = body.Cart.Select(item => new SessionLineItemOptions
     {
         PriceData = new SessionLineItemPriceDataOptions
@@ -119,7 +119,7 @@ app.MapPost("/create-checkout-session", async (HttpContext context) =>
         Quantity = item.Quantity,
     }).ToList();
 
-    // Create a Stripe session with the dynamically generated LineItems
+    // create a Stripe session with the dynamically generated LineItems
     var options = new SessionCreateOptions
     {
         LineItems = lineItems,

@@ -11,9 +11,9 @@ import toast from "react-hot-toast";
 import axios from "axios";
 
 export function CartPage() {
-	const [sessionId] = useAtom(sessionIdAtom); //session id
+	const [sessionId] = useAtom(sessionIdAtom);
 	console.log("Session id in atom: ", sessionId);
-	const [cartDetails, fetchCartDetails] = useAtom(fetchCartDetailsAtom); //fetch cart
+	const [cartDetails, fetchCartDetails] = useAtom(fetchCartDetailsAtom);
 	const navigate = useNavigate();
 	const [, setQuantity] = useState(1);
 
@@ -54,12 +54,10 @@ export function CartPage() {
 
 	const handleCheckout = async (event: React.FormEvent) => {
 		event.preventDefault();
-
 		try {
-			// Request the checkout session from the backend
 			const response = await axios.post(
 				"http://localhost:5255/create-checkout-session",
-				{ cart: cartDetails }, // Send the cart details to the backend
+				{ cart: cartDetails }, // send the cart details to the backend
 				{
 					headers: {
 						"Content-Type": "application/json",
@@ -67,9 +65,9 @@ export function CartPage() {
 				}
 			);
 
-			// Extract the URL from the response and redirect
+			// extract the URL from the response and redirect
 			if (response.data.url) {
-				window.location.href = response.data.url; // Redirect to Stripe's checkout page
+				window.location.href = response.data.url; // redirect to Stripe's checkout page
 			} else {
 				console.error("Checkout session URL not found in response.");
 			}
@@ -78,6 +76,7 @@ export function CartPage() {
 		}
 	};
 
+	//TODO: delete this later
 	console.log("Cart details: ", cartDetails);
 
 	return (
@@ -125,7 +124,9 @@ export function CartPage() {
 						</ul>
 						<div className="checkout-container">
 							<form onSubmit={handleCheckout}>
-								<button className="checkout" type="submit">Checkout</button>
+								<button className="checkout" type="submit">
+									Checkout
+								</button>
 							</form>
 						</div>
 					</div>

@@ -9,7 +9,6 @@ import { CollectionsPage } from "./pages/Collections/CollectionsPage.tsx";
 import { AboutPage } from "./pages/About/AboutPage.tsx";
 import { ContactPage } from "./pages/Contact/ContactPage.tsx";
 import { IndividualProductPage } from "./pages/Individual/IndividualProductPage.tsx";
-import { CheckoutPage } from "./pages/Checkout/CheckoutPage.tsx";
 import { Toaster } from "react-hot-toast";
 
 createRoot(document.getElementById("root")!).render(
@@ -32,7 +31,6 @@ createRoot(document.getElementById("root")!).render(
 				<Route path="/collections" element={<CollectionsPage />} />
 				<Route path="/about" element={<AboutPage />} />
 				<Route path="/contact" element={<ContactPage />} />
-				<Route path="/checkout" element={<CheckoutPage />} />
 				<Route
 					path="/collections/:productId"
 					element={<IndividualProductPage />}
