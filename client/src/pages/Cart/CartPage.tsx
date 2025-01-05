@@ -8,6 +8,7 @@ import { useNavigate } from "react-router-dom";
 import "./CartPage.css";
 import { fetchCartDetailsAtom } from "../../atoms/cartAtom";
 import toast from "react-hot-toast";
+import axios from "axios";
 
 export function CartPage() {
 	const [sessionId] = useAtom(sessionIdAtom); //session id
@@ -51,7 +52,33 @@ export function CartPage() {
 		}
 	};
 
-	console.log("Cart details: ", cartDetails);	
+	const handleCheckout = async (event: React.FormEvent) => {
+		event.preventDefault();
+
+		try {
+			// Request the checkout session from the backend
+			const response = await axios.post(
+				"http://localhost:5255/create-checkout-session",
+				{}, // Body can include additional information if needed
+				{
+					headers: {
+						"Content-Type": "application/json",
+					},
+				}
+			);
+
+			// Extract the URL from the response and redirect
+			if (response.data.url) {
+				window.location.href = response.data.url; // Redirect to Stripe's checkout page
+			} else {
+				console.error("Checkout session URL not found in response.");
+			}
+		} catch (error) {
+			console.error("Error creating checkout session:", error);
+		}
+	};
+
+	console.log("Cart details: ", cartDetails);
 
 	return (
 		<>
@@ -97,7 +124,9 @@ export function CartPage() {
 							))}
 						</ul>
 						<div className="checkout-container">
-							<button className="checkout">Checkout</button>
+							<form onSubmit={handleCheckout}>
+								<button className="checkout" type="submit">Checkout</button>
+							</form>
 						</div>
 					</div>
 				) : (
