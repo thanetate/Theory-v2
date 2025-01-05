@@ -100,15 +100,15 @@ app.MapPost("/create-checkout-session", async (HttpContext context) =>
             },
         },
         Mode = "payment",
-        SuccessUrl = domain + "?success=true",
-        CancelUrl = domain + "?canceled=true",
+        SuccessUrl = $"{domain}/checkout-success?session_id={{CHECKOUT_SESSION_ID}}",
+        CancelUrl = $"{domain}/cart",
     };
 
     var service = new SessionService();
     Session session = service.Create(options);
 
-    context.Response.Headers.Add("Location", session.Url);  // Redirect to the session URL
-    return Results.StatusCode(303);  // HTTP 303 Redirect
+    context.Response.ContentType = "application/json";
+    await context.Response.WriteAsJsonAsync(new { url = session.Url });
 });
 
 app.UseHttpsRedirection();
