@@ -28,7 +28,9 @@ export function AccountPage() {
 	const StripeSessionId = searchParams.get("session_id");
 
 	// orders state
-	const [orders, setOrders] = useState<{ id: string; description: string; quantity: number }[]>([]);
+	const [orders, setOrders] = useState<
+		{ id: string; description: string; quantity: number }[]
+	>([]);
 
 	// supabase hooks
 	useEffect(() => {
@@ -76,6 +78,13 @@ export function AccountPage() {
 		resetSessionId(null);
 	};
 
+	const clearStripeSesssionId = () => {
+		const searchParams = new URLSearchParams(window.location.search);
+		searchParams.delete("session_id");
+		const newUrl = `${window.location.pathname}?${searchParams.toString()}`;
+		window.history.replaceState({}, '', newUrl);
+	};
+
 	// gets order from stripe
 	const handleStripeGetOrders = async (sessionId: string | null) => {
 		try {
@@ -86,17 +95,18 @@ export function AccountPage() {
 			const stripeOrderData = response.data;
 			if (stripeOrderData) {
 				console.log("Data:", stripeOrderData);
-				stripeOrderData.forEach(
-					(item: { id: string; description: string; quantity: number }) => {
+				for (const item of stripeOrderData) {
 						console.log("Stripe Item ID:", item.id);
 						console.log("Stripe Item Description:", item.description);
 						console.log("Stripe Item Quantity:", item.quantity);
 
 						//TODO: only run on mount not on refresh
-						handleAddToOrders(item.id, item.description, item.quantity);
-						handleDeleteCart();
+						await handleAddToOrders(item.id, item.description, item.quantity);
+						console.log("Test2");
+						await handleDeleteCart();
+						console.log("Test3");
+						clearStripeSesssionId();
 					}
-				);
 			}
 		} catch (error) {
 			console.error("Error fetching data from Stripe", error);
@@ -119,7 +129,7 @@ export function AccountPage() {
 					quantity: quantity,
 				}
 			);
-
+			console.log("Test1");
 			const orderData = response.data;
 			console.log("Order Data", orderData);
 		} catch (error) {
@@ -156,7 +166,7 @@ export function AccountPage() {
 		} catch (error) {
 			console.error("Error deleting cart", error);
 		}
-	}
+	};
 
 	if (!session) {
 		return (
