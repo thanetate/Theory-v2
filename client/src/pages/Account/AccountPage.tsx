@@ -94,6 +94,7 @@ export function AccountPage() {
 
 						//TODO: only run on mount not on refresh
 						handleAddToOrders(item.id, item.description, item.quantity);
+						handleDeleteCart();
 					}
 				);
 			}
@@ -141,6 +142,21 @@ export function AccountPage() {
 			console.error("Error fetching orders", error);
 		}
 	};
+
+	// delete all items from cart
+	const handleDeleteCart = async () => {
+		if (!sessionId) return;
+		try {
+			const response = await axios.delete(
+				`http://localhost:5255/user/${sessionId}/cart`
+			);
+
+			const cartData = response.data;
+			console.log("Deleted Cart", cartData);
+		} catch (error) {
+			console.error("Error deleting cart", error);
+		}
+	}
 
 	if (!session) {
 		return (
