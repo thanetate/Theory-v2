@@ -11,18 +11,23 @@ import { sessionIdAtom } from "../../atoms/userAtom";
 import { useSearchParams } from "react-router-dom";
 import axios from "axios";
 
+//TODO: hide keys
 const supabase = createClient(
 	"https://sdgkcrzjwqullhcxxzrk.supabase.co",
 	"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNkZ2tjcnpqd3F1bGxoY3h4enJrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzQ5ODI4OTIsImV4cCI6MjA1MDU1ODg5Mn0.evOCxyCaAc0KOIdAHnpRHdady3RJ89D3_8viOjO0-iQ"
 );
 
 export function AccountPage() {
-	//session stuff
+	// supabase session Ids
 	const [session, setSession] = useState<Session | null>(null);
 	const [sessionId, setSessionId] = useAtom(sessionIdAtom);
 	const resetSessionId = useSetAtom(sessionIdAtom);
+
+	// stripe session Ids
 	const [searchParams] = useSearchParams();
 	const StripeSessionId = searchParams.get("session_id");
+
+	// supabase hooks
 	useEffect(() => {
 		supabase.auth.getSession().then(({ data: { session } }) => {
 			setSession(session);
@@ -47,6 +52,18 @@ export function AccountPage() {
 		}
 	}, [sessionId]);
 
+	// stripe hooks
+	useEffect(() => {
+		if (StripeSessionId) {
+			handleStripeGetOrders(StripeSessionId);
+		}
+	}, [StripeSessionId]);
+
+	useEffect(() => {
+		handleFetchOrders();
+	}, [sessionId]);
+
+	// logout user
 	const handleLogout = async () => {
 		const { error } = await supabase.auth.signOut();
 		if (error) {
@@ -56,35 +73,33 @@ export function AccountPage() {
 		resetSessionId(null);
 	};
 
-	// gets order from stripe (only works if one order)
+	// gets order from stripe
 	const handleStripeGetOrders = async (sessionId: string | null) => {
 		try {
 			const response = await axios.get("http://localhost:5255/get-line-items", {
 				params: { session_id: sessionId },
 			});
 
-			if (response.data) {
-				console.log("Data:", response.data);
-
-				response.data.forEach(
+			const stripeOrderData = response.data;
+			if (stripeOrderData) {
+				console.log("Data:", stripeOrderData);
+				stripeOrderData.forEach(
 					(item: { id: string; description: string; quantity: number }) => {
-						console.log("Item ID:", item.id);
-						console.log("Item Description:", item.description);
-						console.log("Item Quantity:", item.quantity);
+						console.log("Stripe Item ID:", item.id);
+						console.log("Stripe Item Description:", item.description);
+						console.log("Stripe Item Quantity:", item.quantity);
 
-						//TODO: only add order if item.id isnt in the user profile
+						//TODO: only run on mount not on refresh
 						handleAddToOrders(item.id, item.description, item.quantity);
 					}
 				);
-			} else {
-				console.error("No data found in response.");
 			}
 		} catch (error) {
-			console.error("Error fetching data:", error);
+			console.error("Error fetching data from Stripe", error);
 		}
 	};
 
-	// add order to user profile in db
+	// add order to user
 	const handleAddToOrders = async (
 		id: string,
 		description: string,
@@ -101,45 +116,27 @@ export function AccountPage() {
 				}
 			);
 
-			if (response.data) {
-				console.log("Data:", response.data);
-			} else {
-				console.error("No data found in response.");
-			}
+			const orderData = response.data;
+			console.log("Order Data", orderData);
 		} catch (error) {
-			console.error("Error fetching data:", error);
+			console.error("Error posting orders", error);
 		}
 	};
 
-	// get order from db
+	// get order from user
 	const handleFetchOrders = async () => {
-		if (!sessionId) {
-			console.error("Session ID is null");
-			return;
-		}
+		if (!sessionId) return;
 		try {
 			const response = await axios.get(
 				`http://localhost:5255/user/${sessionId}/orders`
 			);
 
-			const orders = response.data;
-			console.log("Orders:", orders);
+			const ordersData = response.data;
+			console.log("Order Data", ordersData);
 		} catch (error) {
-			console.error("Error fetching data:", error);
+			console.error("Error fetching orders", error);
 		}
 	};
-
-	useEffect(() => {
-		if (StripeSessionId) {
-			handleStripeGetOrders(StripeSessionId);
-		}
-	}, [StripeSessionId]);
-
-	useEffect(() => {
-		handleFetchOrders();
-	}, [sessionId]);
-
-	console.log("Session Id (Atom): ", sessionId);
 
 	if (!session) {
 		return (
@@ -184,6 +181,7 @@ export function AccountPage() {
 							<h1>No Orders found.</h1>
 						</div>
 					)} */}
+
 					<div className="logout-btn-container">
 						<button onClick={handleLogout} className="logout-btn">
 							Log out
