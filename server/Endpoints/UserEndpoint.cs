@@ -134,10 +134,60 @@ public static class UserEndpoints
             return Results.Ok(new { Message = "Item removed from cart", Cart = updatedCart });
         });
 
+         // GET user orders
+        app.MapGet("/user/{id:guid}/orders", async (Guid id, Supabase.Client client) =>
+        {
+            // Fetch the user
+            var response = await client
+                .From<User>()
+                .Where(p => p.Id == id)
+                .Get();
+
+            var user = response.Models.FirstOrDefault();
+
+            if (user == null)
+            {
+                return Results.NotFound($"User with id {id} not found");
+            }
+
+            // Directly return the user's orders
+            var orders = user.Orders ?? new List<OrdersItem>();
+            return Results.Ok(orders);
+        });
+        // POST create order
+        app.MapPost("/user/{id:guid}/add-to-orders", async (Guid id, OrdersItem ordersItem, Supabase.Client client) =>
+        {
+            var response = await client
+                .From<User>()
+                .Where(p => p.Id == id)
+                .Get();
+
+            var user = response.Models.FirstOrDefault();
+
+            if (user == null)
+            {
+                return Results.NotFound($"User with id {id} not found");
+            }
+
+            // Fetch the existing cart, if any
+            var updatedOrder = user.Orders ?? new List<OrdersItem>();
+
+            // Add the new cart item
+            updatedOrder.Add(ordersItem);
+
+            // Update the user's cart with the new item
+            user.Orders = updatedOrder;
+
+            // Save the updated user data
+            await client.From<User>().Update(user);
+
+            return Results.Ok(new { Message = "Items added to orders", Order = updatedOrder });
+        }); 
+
     }
 }
 
-//Todo: move this to a model
+//Todo: move these to a model
 public class CartItem
 {
     public int Id { get; set; }
@@ -146,5 +196,12 @@ public class CartItem
     public int Price { get; set; }
     public string? Image { get; set; }
     public string? Size { get; set; }
+    public int Quantity { get; set; }
+}
+
+public class OrdersItem
+{
+    public string? Description { get; set; }
+    public int Id { get; set; }
     public int Quantity { get; set; }
 }

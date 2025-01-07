@@ -16,4 +16,8 @@ public class User : BaseModel
 
     [Column("cart")]
     public List<CartItem> Cart { get; set; } = new List<CartItem>();
+
+    [Column("orders")]
+
+    public List<OrdersItem> Orders { get; set; } = new List<OrdersItem>();
 }
