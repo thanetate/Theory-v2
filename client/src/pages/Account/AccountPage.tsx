@@ -23,9 +23,6 @@ export function AccountPage() {
 	const resetSessionId = useSetAtom(sessionIdAtom);
 	const [searchParams] = useSearchParams();
 	const StripeSessionId = searchParams.get("session_id");
-	const [lineItems, setLineItems] = useState<
-		{ description: string; quantity: number }[]
-	>([]);
 
 	useEffect(() => {
 		supabase.auth.getSession().then(({ data: { session } }) => {
@@ -60,7 +57,8 @@ export function AccountPage() {
 		resetSessionId(null);
 	};
 
-	const handleOrders = async (sessionId: string | null) => {
+	// gets order from stripe (only works if one order)
+	const handleStripeGetOrders = async (sessionId: string | null) => {
 		try {
 			const response = await axios.get("http://localhost:5255/get-line-items", {
 				params: { session_id: sessionId },
@@ -68,7 +66,44 @@ export function AccountPage() {
 
 			if (response.data) {
 				console.log("Data:", response.data);
-				setLineItems(response.data);
+
+				response.data.forEach(
+					(item: { id: string; description: string; quantity: number }) => {
+						console.log("Item ID:", item.id);
+						console.log("Item Description:", item.description);
+						console.log("Item Quantity:", item.quantity);
+
+						//TODO: only add order if item.id isnt in the user profile
+						handleAddToOrders(item.id, item.description, item.quantity);
+					}
+				);
+			} else {
+				console.error("No data found in response.");
+			}
+		} catch (error) {
+			console.error("Error fetching data:", error);
+		}
+	};
+
+	// add order to user profile in db
+	const handleAddToOrders = async (
+		id: string,
+		description: string,
+		quantity: number
+	) => {
+		if (!sessionId) return;
+		try {
+			const response = await axios.post(
+				`http://localhost:5255/user/${sessionId}/add-to-orders`,
+				{
+					id: id,
+					description: description,
+					quantity: quantity,
+				}
+			);
+
+			if (response.data) {
+				console.log("Data:", response.data);
 			} else {
 				console.error("No data found in response.");
 			}
@@ -79,7 +114,7 @@ export function AccountPage() {
 
 	useEffect(() => {
 		if (StripeSessionId) {
-			handleOrders(StripeSessionId);
+			handleStripeGetOrders(StripeSessionId);
 		}
 	}, [StripeSessionId]);
 
@@ -111,7 +146,7 @@ export function AccountPage() {
 					</div>
 					<h1 className="welcome-message">Welcome, {session.user?.email}</h1>
 
-					{lineItems.length > 0 ? (
+					{/* {lineItems.length > 0 ? (
 						<div className="orders-container">
 							<h1>Orders : </h1>
 							{lineItems.map((item, index) => (
@@ -127,7 +162,7 @@ export function AccountPage() {
 						<div className="orders-container">
 							<h1>No Orders found.</h1>
 						</div>
-					)}
+					)} */}
 					<div className="logout-btn-container">
 						<button onClick={handleLogout} className="logout-btn">
 							Log out
