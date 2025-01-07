@@ -23,7 +23,6 @@ export function AccountPage() {
 	const resetSessionId = useSetAtom(sessionIdAtom);
 	const [searchParams] = useSearchParams();
 	const StripeSessionId = searchParams.get("session_id");
-
 	useEffect(() => {
 		supabase.auth.getSession().then(({ data: { session } }) => {
 			setSession(session);
@@ -112,11 +111,33 @@ export function AccountPage() {
 		}
 	};
 
+	// get order from db
+	const handleFetchOrders = async () => {
+		if (!sessionId) {
+			console.error("Session ID is null");
+			return;
+		}
+		try {
+			const response = await axios.get(
+				`http://localhost:5255/user/${sessionId}/orders`
+			);
+
+			const orders = response.data;
+			console.log("Orders:", orders);
+		} catch (error) {
+			console.error("Error fetching data:", error);
+		}
+	};
+
 	useEffect(() => {
 		if (StripeSessionId) {
 			handleStripeGetOrders(StripeSessionId);
 		}
 	}, [StripeSessionId]);
+
+	useEffect(() => {
+		handleFetchOrders();
+	}, [sessionId]);
 
 	console.log("Session Id (Atom): ", sessionId);
 
