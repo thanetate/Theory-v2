@@ -27,6 +27,9 @@ export function AccountPage() {
 	const [searchParams] = useSearchParams();
 	const StripeSessionId = searchParams.get("session_id");
 
+	// orders state
+	const [orders, setOrders] = useState<{ id: string; description: string; quantity: number }[]>([]);
+
 	// supabase hooks
 	useEffect(() => {
 		supabase.auth.getSession().then(({ data: { session } }) => {
@@ -123,7 +126,7 @@ export function AccountPage() {
 		}
 	};
 
-	// get order from user
+	// get orders from user
 	const handleFetchOrders = async () => {
 		if (!sessionId) return;
 		try {
@@ -133,6 +136,7 @@ export function AccountPage() {
 
 			const ordersData = response.data;
 			console.log("Order Data", ordersData);
+			setOrders(ordersData);
 		} catch (error) {
 			console.error("Error fetching orders", error);
 		}
@@ -164,10 +168,10 @@ export function AccountPage() {
 					</div>
 					<h1 className="welcome-message">Welcome, {session.user?.email}</h1>
 
-					{/* {lineItems.length > 0 ? (
+					{orders.length > 0 ? (
 						<div className="orders-container">
 							<h1>Orders : </h1>
-							{lineItems.map((item, index) => (
+							{orders.map((item, index) => (
 								<div key={index} className="order-item">
 									<div className="order-item-name">{item.description}</div>
 									<div className="order-item-quantity">
@@ -180,7 +184,7 @@ export function AccountPage() {
 						<div className="orders-container">
 							<h1>No Orders found.</h1>
 						</div>
-					)} */}
+					)}
 
 					<div className="logout-btn-container">
 						<button onClick={handleLogout} className="logout-btn">
