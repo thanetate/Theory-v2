@@ -124,7 +124,7 @@ app.MapPost("/create-checkout-session", async (HttpContext context) =>
     {
         LineItems = lineItems,
         Mode = "payment",
-        SuccessUrl = $"{domain}/checkout-success?session_id={{CHECKOUT_SESSION_ID}}",
+        SuccessUrl = $"{domain}/account?session_id={{CHECKOUT_SESSION_ID}}",
         CancelUrl = $"{domain}/cart",
         AutomaticTax = new SessionAutomaticTaxOptions { Enabled = true },
     };

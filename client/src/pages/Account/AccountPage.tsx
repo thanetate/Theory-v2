@@ -8,6 +8,7 @@ import { Auth } from "@supabase/auth-ui-react";
 import { ThemeSupa } from "@supabase/auth-ui-shared";
 import { useAtom, useSetAtom } from "jotai";
 import { sessionIdAtom } from "../../atoms/userAtom";
+import { useSearchParams } from "react-router-dom";
 
 const supabase = createClient(
 	"https://sdgkcrzjwqullhcxxzrk.supabase.co",
@@ -19,6 +20,8 @@ export function AccountPage() {
 	const [session, setSession] = useState<Session | null>(null);
 	const [sessionId, setSessionId] = useAtom(sessionIdAtom);
 	const resetSessionId = useSetAtom(sessionIdAtom);
+	const [searchParams] = useSearchParams();
+	const StripeSessionId = searchParams.get("session_id");
 
 	useEffect(() => {
 		supabase.auth.getSession().then(({ data: { session } }) => {
@@ -75,6 +78,9 @@ export function AccountPage() {
 				<div className="account-container">
 					<div className="success-message">
 						Log In Success UID: {session.user?.id}
+					</div>
+					<div className="success-message">
+						Stripe Order Success, UID: {StripeSessionId}
 					</div>
 					<h1 className="welcome-message">Welcome, {session.user?.email}</h1>
 					<div className="logout-btn-container">
