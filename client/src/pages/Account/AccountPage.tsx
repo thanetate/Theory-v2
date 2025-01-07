@@ -9,6 +9,7 @@ import { ThemeSupa } from "@supabase/auth-ui-shared";
 import { useAtom, useSetAtom } from "jotai";
 import { sessionIdAtom } from "../../atoms/userAtom";
 import { useSearchParams } from "react-router-dom";
+import axios from "axios";
 
 const supabase = createClient(
 	"https://sdgkcrzjwqullhcxxzrk.supabase.co",
@@ -22,6 +23,9 @@ export function AccountPage() {
 	const resetSessionId = useSetAtom(sessionIdAtom);
 	const [searchParams] = useSearchParams();
 	const StripeSessionId = searchParams.get("session_id");
+	const [lineItems, setLineItems] = useState<
+		{ description: string; quantity: number }[]
+	>([]);
 
 	useEffect(() => {
 		supabase.auth.getSession().then(({ data: { session } }) => {
@@ -56,6 +60,29 @@ export function AccountPage() {
 		resetSessionId(null);
 	};
 
+	const handleOrders = async (sessionId: string | null) => {
+		try {
+			const response = await axios.get("http://localhost:5255/get-line-items", {
+				params: { session_id: sessionId },
+			});
+
+			if (response.data) {
+				console.log("Data:", response.data);
+				setLineItems(response.data);
+			} else {
+				console.error("No data found in response.");
+			}
+		} catch (error) {
+			console.error("Error fetching data:", error);
+		}
+	};
+
+	useEffect(() => {
+		if (StripeSessionId) {
+			handleOrders(StripeSessionId);
+		}
+	}, [StripeSessionId]);
+
 	console.log("Session Id (Atom): ", sessionId);
 
 	if (!session) {
@@ -83,6 +110,24 @@ export function AccountPage() {
 						Stripe Order Success, UID: {StripeSessionId}
 					</div>
 					<h1 className="welcome-message">Welcome, {session.user?.email}</h1>
+
+					{lineItems.length > 0 ? (
+						<div className="orders-container">
+							<h1>Orders : </h1>
+							{lineItems.map((item, index) => (
+								<div key={index} className="order-item">
+									<div className="order-item-name">{item.description}</div>
+									<div className="order-item-quantity">
+										Quantity: {item.quantity}
+									</div>
+								</div>
+							))}
+						</div>
+					) : (
+						<div className="orders-container">
+							<h1>No Orders found.</h1>
+						</div>
+					)}
 					<div className="logout-btn-container">
 						<button onClick={handleLogout} className="logout-btn">
 							Log out
