@@ -65,3 +65,6 @@ Content-Type: application/json
 
 ### Checkout
 curl -X POST http://localhost:5255/create-checkout-session -H "Content-Type: application/json" -d '{}'
+
+### GET Line Items from Account Page
+GET http://localhost:5255/get-line-items?session_id=cs_test_a1RVXxHgqOHw9Lvi3LZ1vg9WEm5i5g2z3QuBYo1E1yTzzrDh21zvIJQmPy

@@ -21,7 +21,7 @@ builder.Services.AddAuthorization();
 
 // add Authentication
 var bytes = Encoding.UTF8.GetBytes(builder.Configuration["JwtSecret"]!);
-builder.Services.AddAuthentication().AddJwtBearer(options => 
+builder.Services.AddAuthentication().AddJwtBearer(options =>
 {
     options.TokenValidationParameters = new TokenValidationParameters
     {
@@ -33,7 +33,8 @@ builder.Services.AddAuthentication().AddJwtBearer(options =>
 });
 
 // add CORS 
-builder.Services.AddCors(options => {
+builder.Services.AddCors(options =>
+{
     options.AddPolicy("AllowViteClient",
     policy => policy.WithOrigins("http://localhost:3000")
         .AllowAnyHeader()
@@ -112,7 +113,7 @@ app.MapPost("/create-checkout-session", async (HttpContext context) =>
             ProductData = new SessionLineItemPriceDataProductDataOptions
             {
                 Name = item.Name,
-                Description = item.Description 
+                Description = item.Description
             },
             UnitAmount = item.Price * 100,
         },
@@ -134,6 +135,18 @@ app.MapPost("/create-checkout-session", async (HttpContext context) =>
 
     context.Response.ContentType = "application/json";
     await context.Response.WriteAsJsonAsync(new { url = session.Url });
+});
+
+// get line items from session
+app.MapGet("/get-line-items", async (HttpContext context) =>
+{
+    var session_id = context.Request.Query["session_id"];
+    var service = new Stripe.Checkout.SessionLineItemService();
+    StripeList<LineItem> lineItems = service.List(session_id);
+
+    // return line items in response
+    context.Response.ContentType = "application/json";
+    await context.Response.WriteAsJsonAsync(lineItems);
 });
 
 app.UseHttpsRedirection();
