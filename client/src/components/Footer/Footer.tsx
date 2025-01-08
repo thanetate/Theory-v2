@@ -18,7 +18,7 @@ export function Footer() {
 	};
 	const handleContactClick = () => {
 		navigate("/contact");
-	}
+	};
 	return (
 		<>
 			<div className="line"></div>
@@ -39,7 +39,10 @@ export function Footer() {
 					</div>
 					<div className="contact-container">
 						<h1>Contact</h1>
-						<h2>Please contact thanetate1@gmail.com for any questions.</h2>
+							<h2>
+								Please contact <a href="mailto:thanetate1@gmail.com"><span>thanetate1@gmail.com</span></a> for any
+								questions.
+							</h2>
 					</div>
 				</div>
 				<div className="socialmedia-container">
@@ -52,8 +55,12 @@ export function Footer() {
 					Website Designed & Created by <span>Thane Tate</span>
 				</h2>
 				<div className="icons-container">
-					<img src="/icons/github.svg" alt="Theory Github Icon" />
-					<img src="/icons/linkedin.svg" alt="Thane Tate LinkedIn Icon" />
+					<a href="https://github.com/thanetate">
+						<img src="/icons/github.svg" alt="Theory Github Icon" />
+					</a>
+					<a href="https://linkedin.com/in/thanetate">
+						<img src="/icons/linkedin.svg" alt="Thane Tate LinkedIn Icon" />
+					</a>
 				</div>
 			</div>
 			<div className="copyright-container">

@@ -132,6 +132,7 @@ export function CartPage() {
 					</div>
 				) : (
 					<div className="go-shopping-container">
+						<h1>Your cart is empty.</h1>
 						<button className="go-shopping" onClick={handleGoShopping}>
 							Go Shopping
 						</button>

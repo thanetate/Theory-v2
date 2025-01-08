@@ -38,9 +38,24 @@
 .go-shopping-container {
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
     width: 100%;
-    height: 100%;
-    margin-top: 45px;
+    height: 40vh;
+}
+.go-shopping-container h1 {
+    margin-bottom: 30px;
+}
+.go-shopping {
+    border-color: white;
+    border-style: solid;
+    padding: 5px;
+    border-radius: 5px;
+    border-width: 1px;
+}
+.go-shopping:hover {
+    border-color: black;
+    border-style: solid;
 }
 .checkout-container {
     display: flex;

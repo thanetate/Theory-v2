@@ -65,10 +65,19 @@
 	display: flex;
 	justify-content: center;
 	margin-top: 30px;
+	width: 100%;
 }
 .checkout button {
-	width: 100%;
 	padding: 10px;
+	border-color: white;
+    border-style: solid;
+    padding: 5px;
+    border-radius: 5px;
+    border-width: 1px;
+}
+.checkout button:hover {
+    border-color: black;
+    border-style: solid;
 }
 @media (min-width: 750px) {
 	.product-page-container {

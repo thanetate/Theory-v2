@@ -30,6 +30,13 @@
 .contact-container h2 {
 	margin-top: 10px;
 }
+.contact-container a {
+    text-decoration: none;
+    color: black;
+}
+.contact-container a span {
+    text-decoration: underline;
+}
 .createdby-container {
     margin-top: 45px;
     margin-left: 15px;

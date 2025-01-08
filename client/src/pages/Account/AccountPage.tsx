@@ -78,6 +78,7 @@ export function AccountPage() {
 		resetSessionId(null);
 	};
 
+	// clear stripe session id from url
 	const clearStripeSesssionId = () => {
 		const searchParams = new URLSearchParams(window.location.search);
 		searchParams.delete("session_id");
