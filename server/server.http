@@ -82,7 +82,13 @@ Content-Type: application/json
 {
   "id": "hasdfas234",
   "description": "Low-performance climbing Boots",
-  "quantity": 2
+  "quantity": 2,
+  "city": "Denton",
+  "country": "USA",
+  "line1": "123 Main St",
+  "line2": "Apt 1",
+  "postal_code": "76201",
+  "state": "TX"
 }
 
 ### Get Orders

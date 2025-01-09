@@ -158,8 +158,8 @@ public static class UserEndpoints
 
             return Results.Ok(new { Message = "Cart cleared", Cart = user.Cart });
         });
-        
-         // GET user orders
+
+        // GET user orders
         app.MapGet("/user/{id:guid}/orders", async (Guid id, Supabase.Client client) =>
         {
             // Fetch the user
@@ -207,7 +207,7 @@ public static class UserEndpoints
             await client.From<User>().Update(user);
 
             return Results.Ok(new { Message = "Items added to orders", Order = updatedOrder });
-        }); 
+        });
 
     }
 }
@@ -229,4 +229,11 @@ public class OrdersItem
     public string? Description { get; set; }
     public string? Id { get; set; }
     public int Quantity { get; set; }
+
+    public string? City { get; set; }
+    public string? Country { get; set; }
+    public string? Line1 { get; set; }
+    public string? Line2 { get; set; }
+    public string? PostalCode { get; set; }
+    public string? State { get; set; }
 }

@@ -45,7 +45,10 @@
 .order-item-name {
 	margin-bottom: 5px;
 }
-
+.order-shipping-address {
+	margin-top: 10px;
+	font-size: 14px;
+}
 @media (max-width: 800px) {
 	.auth-container {
 		margin: 15px;

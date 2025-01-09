@@ -29,7 +29,7 @@ export function AccountPage() {
 
 	// orders state
 	const [orders, setOrders] = useState<
-		{ id: string; description: string; quantity: number }[]
+		{ id: string; description: string; quantity: number; city: string; country: string; line1: string; line2: string; postalCode: string; state: string }[]
 	>([]);
 
 	// supabase hooks
@@ -84,7 +84,7 @@ export function AccountPage() {
 		const searchParams = new URLSearchParams(window.location.search);
 		searchParams.delete("session_id");
 		const newUrl = `${window.location.pathname}?${searchParams.toString()}`;
-		window.history.replaceState({}, '', newUrl);
+		window.history.replaceState({}, "", newUrl);
 	};
 
 	// gets order from stripe
@@ -96,20 +96,24 @@ export function AccountPage() {
 
 			const stripeOrderData = response.data;
 			if (stripeOrderData) {
-				console.log("###Stripe Order Data:", stripeOrderData);
-				for (const item of stripeOrderData) {
-						console.log("Stripe Item ID:", item.id);
-						console.log("Stripe Item Description:", item.description);
-						console.log("Stripe Item Quantity:", item.quantity);
+				// Get shipping details
+				const shippingDetails = await handleGetShippingAddress(sessionId);
 
-						//TODO: only run on mount not on refresh
-						await handleGetShippingAddress(sessionId);
-						await handleAddToOrders(item.id, item.description, item.quantity);
-						console.log("Test2");
-						await handleDeleteCart();
-						console.log("Test3");
-						clearStripeSesssionId();
-					}
+				for (const item of stripeOrderData) {
+					await handleAddToOrders(
+						item.id,
+						item.description,
+						item.quantity,
+						shippingDetails.city,
+						shippingDetails.country,
+						shippingDetails.line1,
+						shippingDetails.line2,
+						shippingDetails.postalCode,
+						shippingDetails.state
+					);
+					await handleDeleteCart();
+					clearStripeSesssionId();
+				}
 			}
 		} catch (error) {
 			console.error("Error fetching data from Stripe", error);
@@ -119,30 +123,34 @@ export function AccountPage() {
 	// get shipping address from stripe
 	const handleGetShippingAddress = async (sessionId: string | null) => {
 		try {
-			const response = await axios.get("http://localhost:5255/get-shipping-details", {
-				params: { session_id: sessionId },
-			});
+			const response = await axios.get(
+				"http://localhost:5255/get-shipping-details",
+				{
+					params: { session_id: sessionId },
+				}
+			);
 
-			const stripeOrderData = response.data;
-			if (stripeOrderData) {
-				console.log("###Stripe Shipping Data:", stripeOrderData);
-				console.log("Stripe Item city:", stripeOrderData.city);
-				console.log("Stripe Item country:", stripeOrderData.country);
-				console.log("Stripe Item line1:", stripeOrderData.line1);
-				console.log("Stripe Item line2:", stripeOrderData.line2);
-				console.log("Stripe Item postalCode:", stripeOrderData.postalCode);
-				console.log("Stripe Item state:", stripeOrderData.state);
+			const stripeShippingData = response.data;
+			if (stripeShippingData) {
+				return stripeShippingData;
 			}
 		} catch (error) {
-			console.error("Error fetching data from Stripe", error);
+			console.error("Error fetching shipping data from Stripe", error);
 		}
+		return null;
 	};
 
 	// add order to user
 	const handleAddToOrders = async (
 		id: string,
 		description: string,
-		quantity: number
+		quantity: number,
+		city: string,
+		country: string,
+		line1: string,
+		line2: string,
+		postalCode: string,
+		state: string
 	) => {
 		if (!sessionId) return;
 		try {
@@ -152,11 +160,16 @@ export function AccountPage() {
 					id: id,
 					description: description,
 					quantity: quantity,
+					city: city,
+					country: country,
+					line1: line1,
+					line2: line2,
+					postalCode: postalCode,
+					state: state,
 				}
 			);
-			console.log("Test1");
 			const orderData = response.data;
-			console.log("Order Data", orderData);
+			console.log("Order Data: ", orderData);
 		} catch (error) {
 			console.error("Error posting orders", error);
 		}
@@ -171,7 +184,7 @@ export function AccountPage() {
 			);
 
 			const ordersData = response.data;
-			console.log("Order Data", ordersData);
+			console.log("Order Data: ", ordersData);
 			setOrders(ordersData);
 		} catch (error) {
 			console.error("Error fetching orders", error);
@@ -187,7 +200,7 @@ export function AccountPage() {
 			);
 
 			const cartData = response.data;
-			console.log("Deleted Cart", cartData);
+			console.log("Deleted Cart.", cartData);
 		} catch (error) {
 			console.error("Error deleting cart", error);
 		}
@@ -227,6 +240,12 @@ export function AccountPage() {
 									<div className="order-item-name">{item.description}</div>
 									<div className="order-item-quantity">
 										Quantity: {item.quantity}
+									</div>
+									<div className="order-shipping">
+										<div className="order-shipping-address">
+											{item.line1} {item.line2}, {item.city}, {item.state},{" "}
+											{item.postalCode}, {item.country}
+										</div>
 									</div>
 								</div>
 							))}
