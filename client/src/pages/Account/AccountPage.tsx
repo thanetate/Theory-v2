@@ -61,6 +61,7 @@ export function AccountPage() {
 	useEffect(() => {
 		if (StripeSessionId) {
 			handleStripeGetOrders(StripeSessionId);
+			handleGetShippingAddress(StripeSessionId);
 		}
 	}, [StripeSessionId]);
 
@@ -95,19 +96,42 @@ export function AccountPage() {
 
 			const stripeOrderData = response.data;
 			if (stripeOrderData) {
-				console.log("Data:", stripeOrderData);
+				console.log("###Stripe Order Data:", stripeOrderData);
 				for (const item of stripeOrderData) {
 						console.log("Stripe Item ID:", item.id);
 						console.log("Stripe Item Description:", item.description);
 						console.log("Stripe Item Quantity:", item.quantity);
 
 						//TODO: only run on mount not on refresh
+						await handleGetShippingAddress(sessionId);
 						await handleAddToOrders(item.id, item.description, item.quantity);
 						console.log("Test2");
 						await handleDeleteCart();
 						console.log("Test3");
 						clearStripeSesssionId();
 					}
+			}
+		} catch (error) {
+			console.error("Error fetching data from Stripe", error);
+		}
+	};
+
+	// get shipping address from stripe
+	const handleGetShippingAddress = async (sessionId: string | null) => {
+		try {
+			const response = await axios.get("http://localhost:5255/get-shipping-details", {
+				params: { session_id: sessionId },
+			});
+
+			const stripeOrderData = response.data;
+			if (stripeOrderData) {
+				console.log("###Stripe Shipping Data:", stripeOrderData);
+				console.log("Stripe Item city:", stripeOrderData.city);
+				console.log("Stripe Item country:", stripeOrderData.country);
+				console.log("Stripe Item line1:", stripeOrderData.line1);
+				console.log("Stripe Item line2:", stripeOrderData.line2);
+				console.log("Stripe Item postalCode:", stripeOrderData.postalCode);
+				console.log("Stripe Item state:", stripeOrderData.state);
 			}
 		} catch (error) {
 			console.error("Error fetching data from Stripe", error);

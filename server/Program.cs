@@ -124,10 +124,29 @@ app.MapPost("/create-checkout-session", async (HttpContext context) =>
     var options = new SessionCreateOptions
     {
         LineItems = lineItems,
+        ShippingAddressCollection = new Stripe.Checkout.SessionShippingAddressCollectionOptions 
+        {
+            AllowedCountries = new List<string> { "US" },
+        },
+        // ShippingOptions = new List<Stripe.Checkout.SessionShippingOptionOptions>
+        // {
+        //     new Stripe.Checkout.SessionShippingOptionOptions
+        //     {
+        //         ShippingRateData = new Stripe.Checkout.SessionShippingOptionShippingRateDataOptions
+        //         {
+        //             Type = "fixed_amount",
+        //             FixedAmount = new Stripe.Checkout.SessionShippingOptionShippingRateDataFixedAmountOptions
+        //             {
+        //                 Amount = 500,
+        //                 Currency = "usd",
+        //             },
+        //         },
+        //     },
+        // },
         Mode = "payment",
         SuccessUrl = $"{domain}/account?session_id={{CHECKOUT_SESSION_ID}}",
         CancelUrl = $"{domain}/cart",
-        AutomaticTax = new SessionAutomaticTaxOptions { Enabled = true },
+        AutomaticTax = new Stripe.Checkout.SessionAutomaticTaxOptions { Enabled = true },
     };
 
     var service = new SessionService();
@@ -147,6 +166,32 @@ app.MapGet("/get-line-items", async (HttpContext context) =>
     // return line items in response
     context.Response.ContentType = "application/json";
     await context.Response.WriteAsJsonAsync(lineItems);
+});
+
+// get shipping details from session
+app.MapGet("/get-shipping-details", async (HttpContext context) =>
+{
+    var sessionId = context.Request.Query["session_id"];
+
+    // make sure you have session id
+    if (string.IsNullOrEmpty(sessionId))
+    {
+        context.Response.StatusCode = 400;
+        await context.Response.WriteAsync("Session ID is required.");
+        return;
+    }
+
+    // get checkout session from stripe
+    var sessionService = new Stripe.Checkout.SessionService();
+    var session = await sessionService.GetAsync(sessionId);
+
+    // retrieve payment intent details
+    var paymentIntentService = new Stripe.PaymentIntentService();
+    var paymentIntent = await paymentIntentService.GetAsync(session.PaymentIntentId);
+
+    // return shipping details in response
+    context.Response.ContentType = "application/json";
+    await context.Response.WriteAsJsonAsync(paymentIntent.Shipping.Address);
 });
 
 app.UseHttpsRedirection();
