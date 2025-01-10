@@ -38,10 +38,16 @@
 	z-index: 1;
 }
 .logo-container img {
-	margin-top: 20px;
+	margin-top: 10px;
 	width: auto;
 	height: 50px;
 	cursor: pointer;
+}
+.small img {
+	height: 70px;
+}
+.large img {
+	margin-top: 10px;
 }
 .large {
 	display: none;

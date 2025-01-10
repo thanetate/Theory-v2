@@ -2,10 +2,14 @@
     margin-top: 30px;
 }
 .about-logo {
-    /* maybe use a different font */
     padding-top: 15px;
+    margin-top: 20px;
     display: flex;
     justify-content: center;
+}
+.about-logo img {
+    width: auto;
+    height: 30px;
 }
 .about-desc {
     padding-left: 15px;
