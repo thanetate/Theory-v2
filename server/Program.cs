@@ -113,18 +113,24 @@ app.MapPost("/create-checkout-session", async (HttpContext context) =>
             ProductData = new SessionLineItemPriceDataProductDataOptions
             {
                 Name = item.Name,
-                Description = item.Description
+                Description = item.Description,
             },
             UnitAmount = item.Price * 100,
         },
         Quantity = item.Quantity,
     }).ToList();
 
+    // collect additional information using Metadata
+    var metadata = body.Cart.ToDictionary(
+        item => item.Name, //key
+        item => item.Size  //value
+    );
+
     // create a Stripe session with the dynamically generated LineItems
     var options = new SessionCreateOptions
     {
         LineItems = lineItems,
-        ShippingAddressCollection = new Stripe.Checkout.SessionShippingAddressCollectionOptions 
+        ShippingAddressCollection = new Stripe.Checkout.SessionShippingAddressCollectionOptions
         {
             AllowedCountries = new List<string> { "US" },
         },
@@ -147,6 +153,7 @@ app.MapPost("/create-checkout-session", async (HttpContext context) =>
         SuccessUrl = $"{domain}/account?session_id={{CHECKOUT_SESSION_ID}}",
         CancelUrl = $"{domain}/cart",
         AutomaticTax = new Stripe.Checkout.SessionAutomaticTaxOptions { Enabled = true },
+        Metadata = metadata
     };
 
     var service = new SessionService();
@@ -193,6 +200,31 @@ app.MapGet("/get-shipping-details", async (HttpContext context) =>
     context.Response.ContentType = "application/json";
     await context.Response.WriteAsJsonAsync(paymentIntent.Shipping.Address);
 });
+
+// get metadata from session
+app.MapGet("/get-checkout-session-metadata", async (HttpContext context) =>
+{
+    var sessionId = context.Request.Query["session_id"];
+
+    // make sure you have session id
+    if (string.IsNullOrEmpty(sessionId))
+    {
+        context.Response.StatusCode = 400;
+        await context.Response.WriteAsync("Session ID is required.");
+        return;
+    }
+
+    // get session from stripe
+    var sessionService = new Stripe.Checkout.SessionService();
+    var session = await sessionService.GetAsync(sessionId);
+
+    // Extract metadata from session
+    var metadata = session.Metadata;
+
+    context.Response.ContentType = "application/json";
+    await context.Response.WriteAsJsonAsync(new { metadata });
+});
+
 
 app.UseHttpsRedirection();
 app.Run();

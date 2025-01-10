@@ -29,7 +29,18 @@ export function AccountPage() {
 
 	// orders state
 	const [orders, setOrders] = useState<
-		{ id: string; description: string; quantity: number; city: string; country: string; line1: string; line2: string; postalCode: string; state: string }[]
+		{
+			id: string;
+			description: string;
+			quantity: number;
+			city: string;
+			country: string;
+			line1: string;
+			line2: string;
+			postalCode: string;
+			state: string;
+			size: string;
+		}[]
 	>([]);
 
 	// supabase hooks
@@ -98,8 +109,17 @@ export function AccountPage() {
 			if (stripeOrderData) {
 				// Get shipping details
 				const shippingDetails = await handleGetShippingAddress(sessionId);
+				// Get metadata
+				const metaDataResponse = await handleGetMetaData(sessionId);
+				const metaData = metaDataResponse.metadata;
+				console.log("Meta Data: ", metaData);
 
 				for (const item of stripeOrderData) {
+
+					const size = metaData[item.description];
+					console.log("Item Desc:", item.description);
+                	console.log("Stripe Item Size:", size);
+
 					await handleAddToOrders(
 						item.id,
 						item.description,
@@ -109,10 +129,13 @@ export function AccountPage() {
 						shippingDetails.line1,
 						shippingDetails.line2,
 						shippingDetails.postalCode,
-						shippingDetails.state
+						shippingDetails.state,
+						size
 					);
 					await handleDeleteCart();
 					clearStripeSesssionId();
+					// window.location.reload();
+					console.log("SESSION ID", sessionId);
 				}
 			}
 		} catch (error) {
@@ -140,6 +163,25 @@ export function AccountPage() {
 		return null;
 	};
 
+	//get meta data from stripe
+	const handleGetMetaData = async (sessionId: string | null) => {
+		try {
+			const response = await axios.get(
+				"http://localhost:5255/get-checkout-session-metadata",
+				{
+					params: { session_id: sessionId },
+				}
+			);
+
+			const stripeMetaData = response.data;
+			if (stripeMetaData) {
+				return stripeMetaData;
+			}
+		} catch (error) {
+			console.error("Error fetching metadata from Stripe", error);
+		}
+	};
+
 	// add order to user
 	const handleAddToOrders = async (
 		id: string,
@@ -150,7 +192,8 @@ export function AccountPage() {
 		line1: string,
 		line2: string,
 		postalCode: string,
-		state: string
+		state: string,
+		size: string
 	) => {
 		if (!sessionId) return;
 		try {
@@ -166,6 +209,7 @@ export function AccountPage() {
 					line2: line2,
 					postalCode: postalCode,
 					state: state,
+					size: size,
 				}
 			);
 			const orderData = response.data;
@@ -193,7 +237,10 @@ export function AccountPage() {
 
 	// delete all items from cart
 	const handleDeleteCart = async () => {
-		if (!sessionId) return;
+		if (!sessionId) {
+			console.error("Session Id not found.");
+			return;
+		}
 		try {
 			const response = await axios.delete(
 				`http://localhost:5255/user/${sessionId}/cart`
@@ -202,7 +249,11 @@ export function AccountPage() {
 			const cartData = response.data;
 			console.log("Deleted Cart.", cartData);
 		} catch (error) {
-			console.error("Error deleting cart", error);
+			if (axios.isAxiosError(error)) {
+				console.error("Error deleting cart", error.response?.data);
+			} else {
+				console.error("Unexpected error deleting cart", error);
+			}
 		}
 	};
 
@@ -239,7 +290,7 @@ export function AccountPage() {
 								<div key={index} className="order-item">
 									<div className="order-item-name">{item.description}</div>
 									<div className="order-item-quantity">
-										Quantity: {item.quantity}
+										{item.quantity}, {item.size}
 									</div>
 									<div className="order-shipping">
 										<div className="order-shipping-address">

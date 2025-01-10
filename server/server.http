@@ -70,7 +70,10 @@ DELETE http://localhost:5255/user/9846c653-c02b-4e81-b28c-7564d70dd377/cart
 curl -X POST http://localhost:5255/create-checkout-session -H "Content-Type: application/json" -d '{}'
 
 ### GET Line Items from Account Page
-GET http://localhost:5255/get-line-items?session_id=cs_test_a1RVXxHgqOHw9Lvi3LZ1vg9WEm5i5g2z3QuBYo1E1yTzzrDh21zvIJQmPy
+GET http://localhost:5255/get-line-items?session_id=cs_test_a18NikcS4suKScEY8szTFqY4qc0SRKheRgrIbNcHgdno0fffv82EP2Kjh5
+
+### GET MetaData from Account Page
+GET http://localhost:5255/get-checkout-session-metadata?session_id=cs_test_a18NikcS4suKScEY8szTFqY4qc0SRKheRgrIbNcHgdno0fffv82EP2Kjh5
 
 ### GET Order Items from Account Page
 GET http://localhost:5255/get-shipping-details?session_id=cs_test_a1ZyZFtzL5ZznQap3V8b30S5z0nVGUrwEy4tJcpXQlkeuA3t7vfq1Dwh7t

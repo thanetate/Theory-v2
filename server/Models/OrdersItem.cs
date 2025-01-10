@@ -12,6 +12,7 @@ namespace YourNamespace.Models
         public string? Line2 { get; set; }
         public string? PostalCode { get; set; }
         public string? State { get; set; }
+        public string? Size { get; set; }
 
     }
 }
