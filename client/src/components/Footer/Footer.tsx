@@ -39,14 +39,19 @@ export function Footer() {
 					</div>
 					<div className="contact-container">
 						<h1>Contact</h1>
-							<h2>
-								Please contact <a href="mailto:thanetate1@gmail.com"><span>thanetate1@gmail.com</span></a> for any
-								questions.
-							</h2>
+						<h2>
+							Please contact{" "}
+							<a href="mailto:thanetate1@gmail.com">
+								<span>thanetate1@gmail.com</span>
+							</a>{" "}
+							for any questions.
+						</h2>
 					</div>
 				</div>
 				<div className="socialmedia-container">
-					<img src="/icons/instagram.svg" alt="Theory Instagram Icon" />
+					<a href="https://www.instagram.com/theoryclimb/">
+						<img src="/icons/instagram.svg" alt="Theory Instagram Icon" />
+					</a>
 				</div>
 			</footer>
 			<div className="line"></div>
