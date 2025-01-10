@@ -122,8 +122,8 @@ app.MapPost("/create-checkout-session", async (HttpContext context) =>
 
     // collect additional information using Metadata
     var metadata = body.Cart.ToDictionary(
-        item => item.Name, //key
-        item => item.Size  //value
+        item => item.Name ?? string.Empty, //key
+        item => item.Size ?? string.Empty  //value
     );
 
     // create a Stripe session with the dynamically generated LineItems

@@ -4,6 +4,6 @@ namespace YourNamespace.Contracts
 {
     public class OrdersRequest
     {
-        public List<CartItem> Orders { get; set; }
+        public List<CartItem>? Orders { get; set; }
     }
 }

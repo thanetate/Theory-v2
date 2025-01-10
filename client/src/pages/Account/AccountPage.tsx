@@ -134,7 +134,7 @@ export function AccountPage() {
 					);
 					await handleDeleteCart();
 					clearStripeSesssionId();
-					// window.location.reload();
+					window.location.reload();
 					console.log("SESSION ID", sessionId);
 				}
 			}
