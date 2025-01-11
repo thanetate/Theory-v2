@@ -1,0 +1,5 @@
+### LIST OF IDEAS FOR THE FUTURE
+
+1. local storage, add to cart functionalities 
+2. Add UIDs to products
+3. Add more security

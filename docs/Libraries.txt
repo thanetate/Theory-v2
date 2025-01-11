@@ -6,6 +6,7 @@ Libraries Used:
     - jotai
     - @supabase/supabase-js @supabase/auth-ui-react @supabase/auth-ui-shared
     - react-hot-toast
+    - dotenv
 
     - supabase-csharp
     - Swashbuckle.AspNetCore

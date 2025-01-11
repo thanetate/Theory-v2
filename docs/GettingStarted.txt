@@ -1,54 +1,17 @@
-## This is the general outline of the app
+### GENERAL IDEAS
 
 Tech Stack -
-    1. Frontend: React
-            - Vite (TypeScript)
+    1. Frontend: React (TypeScript)
+            - Vite
             - Jotai (State Management Library)
 
-    2. Backend: C#, .NET
-    3. Database: PostgreSQL
-            - SupaBase
+    2. Backend: .NET Core WebApi (C#)
+    3. Database: Supabase (PostgreSQL)
 
 
-Needs -
+MVP (Minimal Viable Product) -
     1. Authentication
-            - SupaBase
-    2. Database Connection
+    2. Secure Checkout Experience
     3. Responsive Design 
-            - Best CSS Practices
-    4. Security and Scalability
+    4. Security
     5. Public URL
-            - Deploy on Azure or AWS
-            - VM
-
-Other - 
-    1. Design Patterns for C#, E-Commerce, React
-            - UML Diagrams
-    2. Include Frontend Designs
-            - Figma
-    3. Frontend Recourses 
-            - typewolf.com (Typeography)
-                 Fonts — Galaxie Copernicus, Tiempos Text, Styrene 
-                 Fonts - Editorial Old, Surt
-                 Fonts - Times Now, Suisse Int’l 
-
-Phone -
-        h1 -> 20px normal 400 (option - opacity 1)
-        h2 -> 14px normal 400
-Desktop -
-        h1 -> 24px normal 400 (option - opacity 1)
-        h2 -> 14px normal 400
-
-Client -
-        1. npm create vite@latest .
-        2. change port 5174 -> 3000
-        3. npm install
-
-Server - 
-        1. dotnet new webapi
-        2. dotnet run
-        3. test -> curl curl http://localhost:5255/weatherforecast/
-        4. add CORS
-        5. make sure to add proxy to vite config
-        6. Connect to api in frontend 
-        7. use Axios to get endpoint from backend
