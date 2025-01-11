@@ -10,11 +10,17 @@ This is version 2.0 of the website. Originally built with Next.js, I wanted to c
 
 ### Tech Stack
 Client - 
+
     1. React (TypeScript)
+
     2. Jotai (State Management Library)
+
 Server -
+
     1. .NET Core (C#)
+    
 Database -
+
     1. Supabase (PostgreSQL)
 
 ### Demo
