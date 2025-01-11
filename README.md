@@ -2,11 +2,11 @@
 Check it out here: [Link to your website]
 
 ### Overview
-As someone who has been passionate about Rock Climbing for over 7 years now, I’ve always wanted to create my own clothing brand. This project has given me the opportunity to finally bring that vision to life. 
+As an avid rock climber with over 7 years of experience, I’ve always dreamed of creating my own clothing brand. This project has allowed me to finally bring that vision to life.
 
-Theory Climbing was built by utilizing Supabase Authentication API and Stripe Checkout Sessions API. These RESTful APIS, allowed me to create a website with secure user authentication and a secure, stateless checkout experience. 
+Theory Climbing v2 is the result of my passion for both climbing and web development. The website was built using a modern tech stack, including Supabase for secure authentication and Stripe Checkout for a smooth, stateless checkout experience.
 
-This is version 2.0 of my website, originally built with Next.js, I wanted to challenge myself and try and build it again, but better.
+This is version 2.0 of the website. Originally built with Next.js, I wanted to challenge myself and improve the project by rebuilding it with a more refined tech stack and a fresh approach.
 
 ### Tech Stack
 Client - 
