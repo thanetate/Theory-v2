@@ -11,10 +11,9 @@ import { sessionIdAtom } from "../../atoms/userAtom";
 import { useSearchParams } from "react-router-dom";
 import axios from "axios";
 
-//TODO: hide keys
 const supabase = createClient(
-	"https://sdgkcrzjwqullhcxxzrk.supabase.co",
-	"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNkZ2tjcnpqd3F1bGxoY3h4enJrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzQ5ODI4OTIsImV4cCI6MjA1MDU1ODg5Mn0.evOCxyCaAc0KOIdAHnpRHdady3RJ89D3_8viOjO0-iQ"
+	import.meta.env.VITE_SUPABASE_URL,
+	import.meta.env.VITE_SUPABASE_KEY	
 );
 
 export function AccountPage() {
