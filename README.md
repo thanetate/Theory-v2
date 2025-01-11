@@ -1,4 +1,4 @@
-# Theory Climbing v2
+# Theory Climbing
 Check it out here: [Link to your website]
 
 ### Overview
