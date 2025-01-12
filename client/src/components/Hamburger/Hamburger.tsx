@@ -1,4 +1,4 @@
-import "./hamburger.css";
+import "./Hamburger.css";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Drawer from "react-modern-drawer";
