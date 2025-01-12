@@ -15,7 +15,7 @@ export const singleProductAtom = atom<Product | null>(null);
 // atom to fetch all products
 export const fetchProductsAtom = atom(
 	(get) => get(productAtom),
-	async (get, set) => {
+	async (_, set) => {
 		console.log("fetchProducts called");
 		try {
 			const response = await axios.get(`http://localhost:5255/products`);
@@ -31,7 +31,7 @@ export const fetchProductsAtom = atom(
 // atom to fetch product by id
 export const fetchProductById = atom(
 	(get) => get(singleProductAtom),
-	async (get, set, { productId }) => {
+	async (_, set, { productId }) => {
 		try {
 			const response = await axios.get(
 				`http://localhost:5255/products/${productId}`
