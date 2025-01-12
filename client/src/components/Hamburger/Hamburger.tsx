@@ -3,12 +3,13 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Drawer from "react-modern-drawer";
 import "react-modern-drawer/dist/index.css";
-import { Squash as HamburgerIcon } from "hamburger-react";
+import { Turn as HamburgerIcon } from 'hamburger-react'
 
 export function Hamburger() {
-	const [isOpen, setIsOpen] = useState(false);
+	const [isOpen, setOpen] = useState(false)
+	
 	const toggleDrawer = () => {
-		setIsOpen((prevState) => !prevState);
+		setOpen((prevState) => !prevState);
 	};
 
 	const navigate = useNavigate();
@@ -24,7 +25,7 @@ export function Hamburger() {
 	return (
 		<>
 			<div className="hamburger-icn">
-				<HamburgerIcon toggled={isOpen} toggle={toggleDrawer} size={25} />
+			<HamburgerIcon toggled={isOpen} toggle={setOpen} />
 			</div>
 			<Drawer
 				open={isOpen}

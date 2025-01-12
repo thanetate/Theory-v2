@@ -18,13 +18,13 @@
 	cursor: pointer;
 	padding: 10px;
 	border: none;
-	z-index: 2;
+	z-index: 1;
 }
 .cart-btn {
 	cursor: pointer;
 	padding: 10px;
 	border: none;
-	z-index: 2;
+	z-index: 1;
 }
 .large-nav {
 	display: none;
