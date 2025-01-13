@@ -11,6 +11,7 @@ using Stripe.Checkout;
 using YourNamespace.Models;
 using YourNamespace.Contracts;
 
+//test comment
 // initialize the web application
 var builder = WebApplication.CreateBuilder(args);
 
@@ -78,11 +79,8 @@ var app = builder.Build();
 app.UseCors("AllowViteClient");
 
 // adds swagger UI in development environment
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+app.UseSwagger();
+app.UseSwaggerUI();
 
 // endpoints
 app.MapProductEndpoints();
