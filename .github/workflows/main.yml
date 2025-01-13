@@ -30,7 +30,7 @@ jobs:
 
       # Publish the project to a folder (ready for deployment)
       - name: Publish the project
-        run: dotnet publish ./server/server.csproj --configuration Release --no-build --output '${{ env.AZURE_WEBAPP_PACKAGE_PATH }}'  # Publish to output folder
+        run: dotnet publish ./server/server.csproj --configuration Release --no-build
 
       # Deploy to Azure Web App using the Azure Publish Profile
 
