@@ -1,0 +1,36 @@
+name: .NET Core CI/CD to Azure
+
+on:
+  push:
+    branches:
+      - main  # Trigger the workflow when you push to the main branch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      # Checkout the repository code
+      - name: Checkout code
+        uses: actions/checkout@v3
+        
+      # Set up .NET SDK (this installs the .NET SDK in the GitHub Actions runner)
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '9.0.x'
+
+      # Restore dependencies for the backend (server folder)
+      - name: Restore dependencies
+        run: dotnet restore ./server/server.csproj
+
+      # Build the project (server folder)
+      - name: Build the project
+        run: dotnet build ./server/server.csproj --configuration Release --no-restore  # Build in Release mode
+
+      # Publish the project to a folder (ready for deployment)
+      - name: Publish the project
+        run: dotnet publish ./server/server.csproj --configuration Release --no-build --output '${{ env.AZURE_WEBAPP_PACKAGE_PATH }}'  # Publish to output folder
+
+      # Deploy to Azure Web App using the Azure Publish Profile
+
