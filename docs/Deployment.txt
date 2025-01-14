@@ -37,3 +37,4 @@ Steps to Deploy the Server Application
     -name: app-theory-web
     -region: central canada 
     * make sure basic authentication is enabled or you cannot download publish profile
+    * make sure environment variables are stored in Azure
