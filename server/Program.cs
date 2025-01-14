@@ -76,6 +76,8 @@ StripeConfiguration.ApiKey = builder.Configuration["StripeSecretKey"];
 // build the web application
 var app = builder.Build();
 
+app.UseHttpsRedirection();
+
 app.UseCors("AllowViteClient");
 
 // adds swagger UI in development environment
@@ -223,6 +225,4 @@ app.MapGet("/get-checkout-session-metadata", async (HttpContext context) =>
     await context.Response.WriteAsJsonAsync(new { metadata });
 });
 
-
-app.UseHttpsRedirection();
 app.Run();
