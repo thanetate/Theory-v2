@@ -32,7 +32,7 @@ export function CartPage() {
 	const handleRemoveFromCart = async (productId: number) => {
 		try {
 			const response = await fetch(
-				`http://localhost:5255/user/${sessionId}/cart/${productId}`,
+				`https://theory-web.azurewebsites.net/user/${sessionId}/cart/${productId}`,
 				{
 					method: "DELETE",
 					headers: {
@@ -56,7 +56,7 @@ export function CartPage() {
 		event.preventDefault();
 		try {
 			const response = await axios.post(
-				"http://localhost:5255/create-checkout-session",
+				"https://theory-web.azurewebsites.net/create-checkout-session",
 				{ cart: cartDetails }, // send the cart details to the backend
 				{
 					headers: {
