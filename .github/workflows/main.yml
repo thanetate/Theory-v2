@@ -30,7 +30,13 @@ jobs:
 
       # Publish the project to a folder (ready for deployment)
       - name: Publish the project
-        run: dotnet publish ./server/server.csproj --configuration Release --no-build
+        run: dotnet publish ./server/server.csproj --configuration Release --no-build --output './server/publish'
 
       # Deploy to Azure Web App using the Azure Publish Profile
+      - name: Deployment
+        uses: azure/webapps-deploy@v2
+        with:
+          app-name: 'theory-web'
+          publish-profile: ${{ secrets.AZURE_PUBLISH_PROFILE }}
+          package: './server/publish'
 
