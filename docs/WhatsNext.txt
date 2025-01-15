@@ -3,3 +3,10 @@
 1. local storage, add to cart functionalities 
 2. Add UIDs to products
 3. Add more security
+
+
+TODO
+    - Add Tax to stripe checkout sessions
+    - Add shipping fees to stripe checkout sessions
+    - Swap Stripe keys on Azure and Github
+    - Fix Local Storage Bug
