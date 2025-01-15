@@ -26,7 +26,7 @@ export const fetchCartDetailsAtom = atom(
 
 		try {
 			const response = await axios.get(
-				`https://theory-web.azurewebsites.net/user/${sessionId}/cart`,
+				`http://localhost:5255/user/${sessionId}/cart`,
 				{
 					headers: {
 						Accept: "application/json",
@@ -48,7 +48,7 @@ export const addToCartAtom = atom(
 
 		try {
 			const response = await axios.post(
-				`https://theory-web.azurewebsites.net/user/${sessionId}/add-to-cart`,
+				`http://localhost:5255/user/${sessionId}/add-to-cart`,
 				{
 					productId: product.id,
 					name: product.name,
