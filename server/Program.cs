@@ -135,21 +135,21 @@ app.MapPost("/create-checkout-session", async (HttpContext context) =>
         {
             AllowedCountries = new List<string> { "US" },
         },
-        ShippingOptions = new List<Stripe.Checkout.SessionShippingOptionOptions>
-        {
-            new Stripe.Checkout.SessionShippingOptionOptions
-            {
-                 ShippingRateData = new Stripe.Checkout.SessionShippingOptionShippingRateDataOptions
-                 {
-                    Type = "fixed_amount",
-                    FixedAmount = new Stripe.Checkout.SessionShippingOptionShippingRateDataFixedAmountOptions
-                    {
-                        Amount = 500,
-                        Currency= "usd",
-                    },
-                 },
-            },
-        },
+        // ShippingOptions = new List<Stripe.Checkout.SessionShippingOptionOptions>
+        // {
+        //     new Stripe.Checkout.SessionShippingOptionOptions
+        //     {
+        //          ShippingRateData = new Stripe.Checkout.SessionShippingOptionShippingRateDataOptions
+        //          {
+        //             Type = "fixed_amount",
+        //             FixedAmount = new Stripe.Checkout.SessionShippingOptionShippingRateDataFixedAmountOptions
+        //             {
+        //                 Amount = 500,
+        //                 Currency= "usd",
+        //             },
+        //          },
+        //     },
+        // },
         Mode = "payment",
         SuccessUrl = $"{domain}/account?session_id={{CHECKOUT_SESSION_ID}}",
         CancelUrl = $"{domain}/cart",
