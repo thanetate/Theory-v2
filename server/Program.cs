@@ -77,8 +77,6 @@ StripeConfiguration.ApiKey = builder.Configuration["StripeSecretKey"];
 // build the web application
 var app = builder.Build();
 
-app.UseStaticFiles();
-
 app.UseHttpsRedirection();
 
 app.UseCors("AllowViteClient");
@@ -227,5 +225,5 @@ app.MapGet("/get-checkout-session-metadata", async (HttpContext context) =>
     context.Response.ContentType = "application/json";
     await context.Response.WriteAsJsonAsync(new { metadata });
 });
-app.MapFallbackToFile("index.html");
+
 app.Run();
