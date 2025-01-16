@@ -12,7 +12,7 @@ import { sessionIdAtom } from "../../atoms/userAtom";
 import { addToCartAtom } from "../../atoms/cartAtom";
 import { useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
-import ClipLoader from "react-spinners/ClipLoader";
+//import ClipLoader from "react-spinners/ClipLoader";
 
 export function IndividualProductPage() {
 	const { productId } = useParams<{ productId: string }>();
@@ -57,11 +57,11 @@ export function IndividualProductPage() {
 		return (
 			<>
 				<div className="spinner-container">
-					<ClipLoader
+					{/* <ClipLoader
 						size={150}
 						aria-label="Loading Spinner"
 						data-testid="loader"
-					/>
+					/> */}
 				</div>
 			</>
 		);
