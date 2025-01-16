@@ -2,6 +2,7 @@ import { Footer } from "../../components/Footer/Footer";
 import { Header } from "../../components/Header/Header";
 import { PromoBar } from "../../components/PromoBar/PromoBar";
 import { useAtom } from "jotai";
+import { Loading } from "../../components/Loading/Loading";
 import { sessionIdAtom } from "../../atoms/userAtom";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
@@ -15,10 +16,13 @@ export function CartPage() {
 	console.log("Session id in atom: ", sessionId);
 	const [cartDetails, fetchCartDetails] = useAtom(fetchCartDetailsAtom);
 	const navigate = useNavigate();
+	const [loading, setLoading] = useState(true); // Add loading state
 	const [, setQuantity] = useState(1);
 
 	useEffect(() => {
+		setLoading(true);
 		fetchCartDetails();
+		setLoading(false);
 	}, [fetchCartDetails]);
 
 	const handleQuantityChange = (amount: number) => {
@@ -78,6 +82,17 @@ export function CartPage() {
 
 	//TODO: delete this later
 	console.log("Cart details: ", cartDetails);
+
+	if (loading) {
+		return (
+			<>
+				<PromoBar />
+				<Header />
+				<Loading />
+				<Footer />
+			</>
+		);
+	}
 
 	return (
 		<>
