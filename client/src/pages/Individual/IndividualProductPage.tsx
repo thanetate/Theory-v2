@@ -12,6 +12,7 @@ import { sessionIdAtom } from "../../atoms/userAtom";
 import { addToCartAtom } from "../../atoms/cartAtom";
 import { useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
+import ClipLoader from "react-spinners/ClipLoader";
 
 export function IndividualProductPage() {
 	const { productId } = useParams<{ productId: string }>();
@@ -44,17 +45,26 @@ export function IndividualProductPage() {
 	const handleAddToCart = () => {
 		if (!sessionId) {
 			navigate("/account");
-		}
-		else {
+		} else {
 			if (product) {
 				toast.success("Added to cart");
 				addToCart(product, quantity, size);
 			}
 		}
-	}
+	};
 
 	if (!product) {
-		return <div>Loading...</div>;
+		return (
+			<>
+				<div className="spinner-container">
+					<ClipLoader
+						size={150}
+						aria-label="Loading Spinner"
+						data-testid="loader"
+					/>
+				</div>
+			</>
+		);
 	}
 
 	console.log("Session ID", sessionId);
@@ -127,9 +137,7 @@ export function IndividualProductPage() {
 							</div>
 						</div>
 						<div className="checkout">
-							<button onClick={handleAddToCart}>
-								Add to cart
-							</button>
+							<button onClick={handleAddToCart}>Add to cart</button>
 						</div>
 					</div>
 				</div>

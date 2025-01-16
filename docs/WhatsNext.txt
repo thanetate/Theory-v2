@@ -5,8 +5,7 @@
 3. Add more security
 
 
-TODO
-    - Add Tax to stripe checkout sessions
+TODO:
     - Add shipping fees to stripe checkout sessions
     - Swap Stripe keys on Azure and Github
-    - Fix Local Storage Bug
+    - Restore back to Browser Router and add server side rendering support
