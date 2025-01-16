@@ -2,7 +2,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
 import App from "./App.tsx";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import { CartPage } from "./pages/Cart/CartPage.tsx";
 import { AccountPage } from "./pages/Account/AccountPage.tsx";
 import { CollectionsPage } from "./pages/Collections/CollectionsPage.tsx";
@@ -13,7 +13,7 @@ import { Toaster } from "react-hot-toast";
 
 createRoot(document.getElementById("root")!).render(
 	<StrictMode>
-		<BrowserRouter>
+		<HashRouter>
 			<Toaster
 				position="bottom-center"
 				toastOptions={{
@@ -36,6 +36,6 @@ createRoot(document.getElementById("root")!).render(
 					element={<IndividualProductPage />}
 				/>
 			</Routes>
-		</BrowserRouter>
+		</HashRouter>
 	</StrictMode>
 );
