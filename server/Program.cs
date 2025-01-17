@@ -151,8 +151,8 @@ app.MapPost("/create-checkout-session", async (HttpContext context) =>
         //     },
         // },
         Mode = "payment",
-        SuccessUrl = $"{domain}/account?session_id={{CHECKOUT_SESSION_ID}}",
-        CancelUrl = $"{domain}/cart",
+        SuccessUrl = $"{domain}/#/account?session_id={{CHECKOUT_SESSION_ID}}",
+        CancelUrl = $"{domain}/#/cart",
         AutomaticTax = new Stripe.Checkout.SessionAutomaticTaxOptions { Enabled = true },
         Metadata = metadata
     };
