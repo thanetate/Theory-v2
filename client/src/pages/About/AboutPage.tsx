@@ -18,10 +18,15 @@ export function AboutPage() {
 				</div>
 				<div className="aboutpage-desc-container">
 					<h1 className="aboutpage-desc">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
-						mollitia sequi similique asperiores pariatur doloribus, enim aliquid
-						quisquam temporibus accusamus sint quo cum ipsam officiis, dolore
-						libero, cupiditate maxime eaque.
+						Theory is a climbing brand built by three friends from the DFW area
+						who share a deep love for the sport. Our mission is simple: to
+						create clothing we want to wear. Designed to be functional, minimal,
+						and modern, our pieces are made to support your adventures on and
+						off the wall. We started Theory to bring thoughtful design to
+						climbing apparel and to share it with the community that has
+						inspired us. Thank you for supporting our journey. If you’d like to
+						connect, share your ideas, or just say hello, reach out to us on
+						Instagram or via email! – The Theory Team
 					</h1>
 				</div>
 			</div>
