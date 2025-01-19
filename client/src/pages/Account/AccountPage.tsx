@@ -274,12 +274,12 @@ export function AccountPage() {
 				<PromoBar />
 				<Header />
 				<div className="account-container">
-					<div className="success-message">
+					{/* <div className="success-message">
 						Log In Success UID: {session.user?.id}
 					</div>
 					<div className="success-message">
 						Stripe Order Success, UID: {StripeSessionId}
-					</div>
+					</div> */}
 					<h1 className="welcome-message">Welcome, {session.user?.email}</h1>
 
 					{orders.length > 0 ? (

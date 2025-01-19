@@ -6,7 +6,6 @@ const images = [
 	"./Carousel2.png",
 	"./Carousel6.png",
 	"./Carousel4.png",
-	"./Carousel3.png",
 	"./Carousel1.png",
 	"./Carousel5.png",
 ];

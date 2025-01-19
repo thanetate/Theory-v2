@@ -85,12 +85,12 @@ export function IndividualProductPage() {
 					<div className="extra-img-container">
 						{/* todo: make buttons dynamic */}
 						<img
-							src="/example-product.webp"
+							src="/example-product.png"
 							alt="Product Image"
 							className="extra-img"
 						/>
 						<img
-							src="/example-product.webp"
+							src="/example-product.png"
 							alt="Product Image"
 							className="extra-img"
 						/>
