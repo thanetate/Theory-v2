@@ -1,6 +1,5 @@
 # Theory Climbing
-Check it out here: [Link to your website]
-
+Check it out here: 🔗 https://www.theoryclimbing.com/
 ### Overview
 As an avid rock climber with over 7 years of experience, I’ve always dreamed of creating my own clothing brand. This project has allowed me to finally bring that vision to life.
 
