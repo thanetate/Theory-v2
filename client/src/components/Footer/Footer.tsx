@@ -41,8 +41,8 @@ export function Footer() {
 						<h1>Contact</h1>
 						<h2>
 							Please contact{" "}
-							<a href="mailto:thanetate1@gmail.com">
-								<span>thanetate1@gmail.com</span>
+							<a href="mailto:theoryclimbing@gmail.com">
+								<span>theoryclimbing@gmail.com</span>
 							</a>{" "}
 							for any questions.
 						</h2>

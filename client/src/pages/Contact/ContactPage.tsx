@@ -11,7 +11,7 @@ export function ContactPage() {
 			<div className="contact-page">
 				<h1>
 					We are here to help you. If you have any questions, feel free to
-					contact us at <a href="mailto:thanetate1@gmail.com"><span>thanetate1@gmail.com</span></a>
+					contact us at <a href="mailto:theoryclimbing@gmail.com"><span>theoryclimbing@gmail.com</span></a>
 				</h1>
 			</div>
 			<Footer />
