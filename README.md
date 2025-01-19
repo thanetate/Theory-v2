@@ -14,9 +14,13 @@ Client -
 
     2. Jotai (State Management Library)
 
+    3. Vercel (Deployment)
+
 Server -
 
     1. .NET Core (C#)
+
+    2. Azure (Deployment)
     
 Database -
 
