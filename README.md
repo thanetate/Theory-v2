@@ -27,3 +27,4 @@ Database -
     1. Supabase (PostgreSQL)
 
 ### Demo
+https://github.com/user-attachments/assets/cf8dff1f-6921-4818-bd40-9f2c2829f92a
