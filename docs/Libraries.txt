@@ -8,6 +8,7 @@ Libraries Used:
     - react-hot-toast
     - dotenv
     - react-spinners
+    - react-slick
 
     - supabase-csharp
     - Swashbuckle.AspNetCore

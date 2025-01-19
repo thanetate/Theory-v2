@@ -1,5 +1,7 @@
-import "./Carousel.css";
-import { useState } from "react";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+import { useRef } from "react";
 
 const images = [
 	"./Carousel2.png",
@@ -11,39 +13,41 @@ const images = [
 ];
 
 export function Carousel() {
-	const [currentImage, setCurrentImage] = useState(0);
+	const sliderRef = useRef<Slider>(null);
+
+	const settings = {
+		infinite: true,
+		speed: 500,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+	};
 
 	const handlePrevClick = () => {
-		setCurrentImage((prevIndex) =>
-			prevIndex === 0 ? images.length - 1 : prevIndex - 1
-		);
+		if (sliderRef.current) {
+			sliderRef.current.slickPrev();
+		}
 	};
+
 	const handleNextClick = () => {
-		setCurrentImage((prevIndex) =>
-			prevIndex === images.length - 1 ? 0 : prevIndex + 1
-		);
+		if (sliderRef.current) {
+			sliderRef.current.slickNext();
+		}
 	};
 
 	return (
 		<div className="carousel-outter-container">
-			<div className="carousel-container">
-				<div className="carousel-img">
-					<img src={images[currentImage]} alt="Carousel" />
-				</div>
+			<div className="slider-container">
+				<Slider ref={sliderRef} {...settings}>
+					{images.map((image, index) => (
+						<div key={index} className="carousel-img">
+							<img src={image} alt={`Carousel ${index}`} />
+						</div>
+					))}
+				</Slider>
 				<div className="carousel-btn-container">
 					<button className="carousel-btn" onClick={handlePrevClick}>
 						<img src="/icons/leftarrow.svg" alt="Left Arrow" />
 					</button>
-					{images.map((_, index) => (
-						<div
-							key={index}
-							className={`carousel-circle ${
-								index === currentImage ? "active" : ""
-							}`}
-						>
-							<img src="/icons/circle.svg" alt="Circle" />
-						</div>
-					))}
 					<button className="carousel-btn" onClick={handleNextClick}>
 						<img src="/icons/rightarrow.svg" alt="Right Arrow" />
 					</button>
