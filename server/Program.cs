@@ -85,6 +85,12 @@ app.UseCors("AllowViteClient");
 app.UseSwagger();
 app.UseSwaggerUI();
 
+app.MapGet("/", context =>
+{
+    context.Response.Redirect("/swagger");
+    return Task.CompletedTask;
+});
+
 // endpoints
 app.MapProductEndpoints();
 app.MapUserEndpoints();
