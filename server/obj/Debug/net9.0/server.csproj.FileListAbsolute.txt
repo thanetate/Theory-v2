@@ -148,3 +148,5 @@
 /Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/y3rdd624fy-esctadgjiq.gz
 /Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/hflpgo3jhw-gippcuy942.gz
 /Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/78ivns09oz-69kjnsiwqx.gz
+/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/bin/Debug/net9.0/appsettings.json
+/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/bin/Debug/net9.0/secrets.json

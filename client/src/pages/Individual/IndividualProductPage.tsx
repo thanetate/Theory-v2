@@ -23,6 +23,13 @@ export function IndividualProductPage() {
 	const [size, setSize] = useState("small");
 	const [addToCart] = useAtom(addToCartAtom);
 	const navigate = useNavigate();
+	const [displayPrice, setDisplayPrice] = useState<number | null>(null);
+
+	useEffect(() => {
+		if (product) {
+			setDisplayPrice(product.price);
+		}
+	}, [product]);
 
 	useEffect(() => {
 		if (productId) {
@@ -39,7 +46,17 @@ export function IndividualProductPage() {
 	};
 
 	const handleSizeChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
-		setSize(event.target.value);
+		const selectedSize = event.target.value;
+		setSize(selectedSize);
+	
+		if (product) {
+			// Example price adjustment logic:
+			if (selectedSize === "large") {
+				setDisplayPrice(product.price + 10); // Adjust by +$10 for large
+			} else {
+				setDisplayPrice(product.price); // Default price for small
+			}
+		}
 	};
 
 	const handleAddToCart = () => {
@@ -106,7 +123,8 @@ export function IndividualProductPage() {
 				<div className="rightside">
 					<div className="i-product-info">
 						<h1>{product.name}</h1>
-						<h3 className="price">${product.price}.00 USD</h3>
+						{/* <h3 className="price">${product.price}.00 USD</h3> */}
+						<h3 className="price">${displayPrice !== null ? displayPrice.toFixed(2) : product.price.toFixed(2)} USD</h3>
 						<p>{product.description}</p>
 						<p> Shipping calculated at checkout.</p>
 						<div className="size">
