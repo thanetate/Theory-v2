@@ -82,8 +82,7 @@ export function IndividualProductPage() {
 							className="i-product-img"
 						/>
 					</div>
-					<div className="extra-img-container">
-						{/* todo: make buttons dynamic */}
+					{/* <div className="extra-img-container">
 						<img
 							src="/example-product.png"
 							alt="Product Image"
@@ -94,7 +93,7 @@ export function IndividualProductPage() {
 							alt="Product Image"
 							className="extra-img"
 						/>
-					</div>
+					</div> */}
 					<div className="carousel-btn-container">
 						<button className="carousel-btn" onClick={handlePrevClick}>
 							<img src="/icons/leftarrow.svg" alt="Left Arrow" />
@@ -108,6 +107,7 @@ export function IndividualProductPage() {
 					<div className="i-product-info">
 						<h1>{product.name}</h1>
 						<h3 className="price">${product.price}.00 USD</h3>
+						<p> ${product.description}</p>
 						<p> Shipping calculated at checkout.</p>
 						<div className="size">
 							<h2>Size</h2>
@@ -116,11 +116,11 @@ export function IndividualProductPage() {
 								className="size-container"
 								onChange={handleSizeChange}
 							>
-								<option value="x-small">X-Small</option>
-								<option value="small">Small</option>
-								<option value="medium">Medium</option>
-								<option value="large">Large</option>
-								<option value="x-large">X-Large</option>
+								{/* <option value="x-small">X-Small</option> */}
+								<option value="small">12" x 15"</option>
+								{/* <option value="medium">Medium</option> */}
+								<option value="large">16" x 20"</option>
+								{/* <option value="x-large">X-Large</option> */}
 							</select>
 						</div>
 						<div className="quantity">
