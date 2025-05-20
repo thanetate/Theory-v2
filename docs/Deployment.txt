@@ -33,8 +33,8 @@ Steps to Deploy the Server Application
     * If we had a microservice architecture or wanted consistency with development, testing and production we would use a docker image. 
 3. Now we need to deploy our app in the YAML file using Azure Publish Profile
 4. Setup Azure App Service
-    -resource group: app-theory-eastus-dev-001
-    -name: app-theory-web
+    -resource group: theory-webapp
+    -name: theory-webapp
     -region: central canada 
     * make sure basic authentication is enabled or you cannot download publish profile
     * make sure environment variables are stored in Azure
