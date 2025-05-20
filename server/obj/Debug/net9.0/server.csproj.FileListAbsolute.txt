@@ -136,3 +136,17 @@
 /Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/server.pdb
 /Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/server.genruntimeconfig.cache
 /Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/ref/server.dll
+/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/kni10n16kz-ihywopaqtv.gz
+/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/ef3kfgv4th-93o34hv7qw.gz
+/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/txl1vvqtn2-yj7lzv7blh.gz
+/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/hxqexa16vw-wfj5s1x547.gz
+/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/t9op571jas-99olruv0s2.gz
+/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/vahf7lmhpg-orkblwnjqa.gz
+/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/d62ap6qrji-ixw2yoixs8.gz
+/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/ks6lrrep39-09crdraxxz.gz
+/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/uqef6uoo4m-acgtipgbda.gz
+/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/dhtx5wmbr0-9srf4khzjj.gz
+/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/bvx6vt6b61-mri1s7pb04.gz
+/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/y3rdd624fy-esctadgjiq.gz
+/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/hflpgo3jhw-gippcuy942.gz
+/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/78ivns09oz-69kjnsiwqx.gz

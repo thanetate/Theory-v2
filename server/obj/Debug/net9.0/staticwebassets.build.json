@@ -1,12 +1,5812 @@
 {
   "Version": 1,
-  "Hash": "cGifSLNzTzd2u7nwRViX9XSIdpfM/PZJ54btAXk9aTI=",
+  "Hash": "W8axXRluHglJzI+fea+zbqyH6FzlIgaZsLYv3V9fDes=",
   "Source": "server",
   "BasePath": "_content/server",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": [],
-  "Endpoints": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "server/wwwroot",
+      "Source": "server",
+      "ContentRoot": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/",
+      "BasePath": "_content/server",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/78ivns09oz-69kjnsiwqx.gz",
+      "SourceId": "server",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/server",
+      "RelativePath": "vite#[.{fingerprint=69kjnsiwqx}]?.svg.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/vite.svg",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "hm65djmsrs",
+      "Integrity": "yWlQkwTAgXoqC96r+Qj4NzYKqSD17ZhnVXCy8hnGHHk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/vite.svg"
+    },
+    {
+      "Identity": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/bvx6vt6b61-mri1s7pb04.gz",
+      "SourceId": "server",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/server",
+      "RelativePath": "icons/rightarrow#[.{fingerprint=mri1s7pb04}]?.svg.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/icons/rightarrow.svg",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "ma72t1vb1f",
+      "Integrity": "biLAjeagZnVMP8tKZ/7dHiDSMqZglhP/p+NnpIP9UbY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/icons/rightarrow.svg"
+    },
+    {
+      "Identity": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/d62ap6qrji-ixw2yoixs8.gz",
+      "SourceId": "server",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/server",
+      "RelativePath": "icons/hamburger#[.{fingerprint=ixw2yoixs8}]?.svg.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/icons/hamburger.svg",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "59um3l52dv",
+      "Integrity": "V5YiimcUP1jhhzlSENK9aT05Wgqb37BJaTKHWOVrxg4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/icons/hamburger.svg"
+    },
+    {
+      "Identity": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/dhtx5wmbr0-9srf4khzjj.gz",
+      "SourceId": "server",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/server",
+      "RelativePath": "icons/linkedin#[.{fingerprint=9srf4khzjj}]?.svg.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/icons/linkedin.svg",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "7iqedav1w9",
+      "Integrity": "r0IHamTN6sw10cjDq5DkA2nSwkK3uwBL+jUs28DPnu4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/icons/linkedin.svg"
+    },
+    {
+      "Identity": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/ef3kfgv4th-93o34hv7qw.gz",
+      "SourceId": "server",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/server",
+      "RelativePath": "assets/index-DxxjtocE#[.{fingerprint=93o34hv7qw}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/assets/index-DxxjtocE.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "axkposukkh",
+      "Integrity": "0uHjZ8vmiAiViSie34ce8cyrFlfIRPj8wcH8mmHqPY8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/assets/index-DxxjtocE.js"
+    },
+    {
+      "Identity": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/hflpgo3jhw-gippcuy942.gz",
+      "SourceId": "server",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/server",
+      "RelativePath": "index#[.{fingerprint=gippcuy942}]?.html.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/index.html",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "c3wk1vuhms",
+      "Integrity": "iINxR9zCzi6W04gyKkFzpbm2JE9idyFSLebZap/RQqw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/index.html"
+    },
+    {
+      "Identity": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/hxqexa16vw-wfj5s1x547.gz",
+      "SourceId": "server",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/server",
+      "RelativePath": "icons/cart#[.{fingerprint=wfj5s1x547}]?.svg.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/icons/cart.svg",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "wyl33cirdl",
+      "Integrity": "+ASwPFsn0fg9OnaXgUF9j45iAKqixxzTClZJT94HY5g=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/icons/cart.svg"
+    },
+    {
+      "Identity": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/kni10n16kz-ihywopaqtv.gz",
+      "SourceId": "server",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/server",
+      "RelativePath": "assets/browser-4PE-i8Mq#[.{fingerprint=ihywopaqtv}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/assets/browser-4PE-i8Mq.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "wwqw9k48ef",
+      "Integrity": "QAlL2RwPJ/xuNWr5RxiX7Jez5YEmHGGhWm6Q6o6sfAo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/assets/browser-4PE-i8Mq.js"
+    },
+    {
+      "Identity": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/ks6lrrep39-09crdraxxz.gz",
+      "SourceId": "server",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/server",
+      "RelativePath": "icons/instagram#[.{fingerprint=09crdraxxz}]?.svg.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/icons/instagram.svg",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "2iry9wyl7n",
+      "Integrity": "ukhSwZ10+I5XOWr9XKWm/SR1sSe3EZyXVN1/HJ33PYY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/icons/instagram.svg"
+    },
+    {
+      "Identity": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/t9op571jas-99olruv0s2.gz",
+      "SourceId": "server",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/server",
+      "RelativePath": "icons/circle#[.{fingerprint=99olruv0s2}]?.svg.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/icons/circle.svg",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "wwqop9v5ov",
+      "Integrity": "QEvgVk5FWpkbEPPqy++OVkcukofpJ4mj4SaBTZ6InII=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/icons/circle.svg"
+    },
+    {
+      "Identity": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/txl1vvqtn2-yj7lzv7blh.gz",
+      "SourceId": "server",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/server",
+      "RelativePath": "assets/index-ZMk4oHDS#[.{fingerprint=yj7lzv7blh}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/assets/index-ZMk4oHDS.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "pch0xcelpz",
+      "Integrity": "2ehglkGiS0Nrl+W8NKfohspAocuwHXuUMnxjoJu5MIM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/assets/index-ZMk4oHDS.css"
+    },
+    {
+      "Identity": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/uqef6uoo4m-acgtipgbda.gz",
+      "SourceId": "server",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/server",
+      "RelativePath": "icons/leftarrow#[.{fingerprint=acgtipgbda}]?.svg.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/icons/leftarrow.svg",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "rzc3j8m6sn",
+      "Integrity": "eajoQGlCeIaSKcWrmbBdjSb42SZ+nO/ONXFv7spATHs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/icons/leftarrow.svg"
+    },
+    {
+      "Identity": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/vahf7lmhpg-orkblwnjqa.gz",
+      "SourceId": "server",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/server",
+      "RelativePath": "icons/github#[.{fingerprint=orkblwnjqa}]?.svg.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/icons/github.svg",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "1sf8kq9ut3",
+      "Integrity": "H7JIcCSn7lreuL0Jy1WTzgeIz9oUuCJ+8uO81msusKI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/icons/github.svg"
+    },
+    {
+      "Identity": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/y3rdd624fy-esctadgjiq.gz",
+      "SourceId": "server",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/server",
+      "RelativePath": "icons/user#[.{fingerprint=esctadgjiq}]?.svg.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/icons/user.svg",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "hwyg6wuzv0",
+      "Integrity": "TwUQgkrRuIvnKJ6JKrKN+/cMCtkoxHLfS8r/vOrpv2o=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/icons/user.svg"
+    },
+    {
+      "Identity": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/assets/browser-4PE-i8Mq.js",
+      "SourceId": "server",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/",
+      "BasePath": "_content/server",
+      "RelativePath": "assets/browser-4PE-i8Mq#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ihywopaqtv",
+      "Integrity": "ak0lQU8NEeXydStUnodHIAhnGHVuRJ2YF286qauCeUk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/assets/browser-4PE-i8Mq.js"
+    },
+    {
+      "Identity": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/assets/index-DxxjtocE.js",
+      "SourceId": "server",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/",
+      "BasePath": "_content/server",
+      "RelativePath": "assets/index-DxxjtocE#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "93o34hv7qw",
+      "Integrity": "tbT+A4t+YD4/fPZ73rKfVohF4v9bfxnmRkbnml6lvVk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/assets/index-DxxjtocE.js"
+    },
+    {
+      "Identity": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/assets/index-ZMk4oHDS.css",
+      "SourceId": "server",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/",
+      "BasePath": "_content/server",
+      "RelativePath": "assets/index-ZMk4oHDS#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "yj7lzv7blh",
+      "Integrity": "fiiZr++nISQBIdwxEWnpu6n4u/w3dOnSaZW9XrYD9PA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/assets/index-ZMk4oHDS.css"
+    },
+    {
+      "Identity": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/Carousel1.png",
+      "SourceId": "server",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/",
+      "BasePath": "_content/server",
+      "RelativePath": "Carousel1#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "tsvu0o1qnd",
+      "Integrity": "gxP+aLnPUfficCRzuTfMg735KbLcoyeO+IOUu9LQhs4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Carousel1.png"
+    },
+    {
+      "Identity": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/Carousel2.png",
+      "SourceId": "server",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/",
+      "BasePath": "_content/server",
+      "RelativePath": "Carousel2#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "u7gnjwmhz1",
+      "Integrity": "2sQwlURfRSh38uUR0Wjw+Neyr1dOyGIrQNUGfm+Vw7Q=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Carousel2.png"
+    },
+    {
+      "Identity": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/Carousel4.png",
+      "SourceId": "server",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/",
+      "BasePath": "_content/server",
+      "RelativePath": "Carousel4#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "pm71golur2",
+      "Integrity": "H+NKLwwCZvO9FFVYXD4pXB7gLTIIqCkn3+e5qeLlVts=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Carousel4.png"
+    },
+    {
+      "Identity": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/Carousel5.png",
+      "SourceId": "server",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/",
+      "BasePath": "_content/server",
+      "RelativePath": "Carousel5#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "v4fpez0hxd",
+      "Integrity": "35KU7vCf9fteidoS3oXet5tD7lW7z+z0nM/r5oDGhj8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Carousel5.png"
+    },
+    {
+      "Identity": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/Carousel6.png",
+      "SourceId": "server",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/",
+      "BasePath": "_content/server",
+      "RelativePath": "Carousel6#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "t06zrdkwuo",
+      "Integrity": "PZh6ArllInMEvnebAI7CZFmtYXR1de+QhuzcZxPC+cY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Carousel6.png"
+    },
+    {
+      "Identity": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/example-product.png",
+      "SourceId": "server",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/",
+      "BasePath": "_content/server",
+      "RelativePath": "example-product#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "nazo0019ob",
+      "Integrity": "rxgFQP2CGstJAJiTsDADlv2ENagIEmXOkWNA2ApQgQU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/example-product.png"
+    },
+    {
+      "Identity": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/icons/cart.svg",
+      "SourceId": "server",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/",
+      "BasePath": "_content/server",
+      "RelativePath": "icons/cart#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "wfj5s1x547",
+      "Integrity": "VH6rZ/wKjCu3IehvqXD3xuIvS+RNHrW4HO5yE7lCCXs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/icons/cart.svg"
+    },
+    {
+      "Identity": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/icons/circle.svg",
+      "SourceId": "server",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/",
+      "BasePath": "_content/server",
+      "RelativePath": "icons/circle#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "99olruv0s2",
+      "Integrity": "8262I6v8cmSxSCfU4Xu67+ql8Cz0cHelCp8mGd/CC6o=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/icons/circle.svg"
+    },
+    {
+      "Identity": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/icons/github.svg",
+      "SourceId": "server",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/",
+      "BasePath": "_content/server",
+      "RelativePath": "icons/github#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "orkblwnjqa",
+      "Integrity": "HN1N1o/oLkjS2/AGUbYU6Ge6wyyYAQpR8p2iW73fZlI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/icons/github.svg"
+    },
+    {
+      "Identity": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/icons/hamburger.svg",
+      "SourceId": "server",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/",
+      "BasePath": "_content/server",
+      "RelativePath": "icons/hamburger#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ixw2yoixs8",
+      "Integrity": "yspFfbXI5c72/1eFB6DoFXPINho0hAF8wFXneTEx/7g=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/icons/hamburger.svg"
+    },
+    {
+      "Identity": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/icons/instagram.svg",
+      "SourceId": "server",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/",
+      "BasePath": "_content/server",
+      "RelativePath": "icons/instagram#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "09crdraxxz",
+      "Integrity": "PDAWm0vWkivD5TXNvCgYu6Ckul3nqSRU0FK8sP8yKAI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/icons/instagram.svg"
+    },
+    {
+      "Identity": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/icons/leftarrow.svg",
+      "SourceId": "server",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/",
+      "BasePath": "_content/server",
+      "RelativePath": "icons/leftarrow#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "acgtipgbda",
+      "Integrity": "+g1vJqLe4Tsx/gLcjBecKySRoGDhqyuBEZp0Ai49p9U=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/icons/leftarrow.svg"
+    },
+    {
+      "Identity": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/icons/linkedin.svg",
+      "SourceId": "server",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/",
+      "BasePath": "_content/server",
+      "RelativePath": "icons/linkedin#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "9srf4khzjj",
+      "Integrity": "l6H3Tmn3ramnZvjEWBc7Bn4UL55uVS3L6a7BMSjtwEY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/icons/linkedin.svg"
+    },
+    {
+      "Identity": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/icons/rightarrow.svg",
+      "SourceId": "server",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/",
+      "BasePath": "_content/server",
+      "RelativePath": "icons/rightarrow#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "mri1s7pb04",
+      "Integrity": "Qn2uGh8h1vsCSntSfy0BMI7kBLFu2KyC6jVFWkWyQ0c=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/icons/rightarrow.svg"
+    },
+    {
+      "Identity": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/icons/user.svg",
+      "SourceId": "server",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/",
+      "BasePath": "_content/server",
+      "RelativePath": "icons/user#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "esctadgjiq",
+      "Integrity": "AryWtxHaZumaz8hnCN+PDfpl7DokC595uBQ+ShY74Uk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/icons/user.svg"
+    },
+    {
+      "Identity": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/index.html",
+      "SourceId": "server",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/",
+      "BasePath": "_content/server",
+      "RelativePath": "index#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "gippcuy942",
+      "Integrity": "mI5+PCeClBbhakAn2ngHOve1t4F3yiNfV3YAnoNue3Y=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/index.html"
+    },
+    {
+      "Identity": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/T.png",
+      "SourceId": "server",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/",
+      "BasePath": "_content/server",
+      "RelativePath": "T#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "lq9vnp4cij",
+      "Integrity": "Df7SmoZcKedZDWi0Ntp6uhpJR1h/N4y9J+bNG43asbE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/T.png"
+    },
+    {
+      "Identity": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/Theory.png",
+      "SourceId": "server",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/",
+      "BasePath": "_content/server",
+      "RelativePath": "Theory#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "bcoe3ywzxd",
+      "Integrity": "RSIlmt20PlSspl2QmzgrrhHkOXiJ92hjJjA1rNWwMCI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Theory.png"
+    },
+    {
+      "Identity": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/Theory2.png",
+      "SourceId": "server",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/",
+      "BasePath": "_content/server",
+      "RelativePath": "Theory2#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ensa88a2kr",
+      "Integrity": "dggjTjec+p++Hi9FIDFNkMV2qM54aM4gNlXBtYHH5Io=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Theory2.png"
+    },
+    {
+      "Identity": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/TheoryLogo2.png",
+      "SourceId": "server",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/",
+      "BasePath": "_content/server",
+      "RelativePath": "TheoryLogo2#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ensa88a2kr",
+      "Integrity": "dggjTjec+p++Hi9FIDFNkMV2qM54aM4gNlXBtYHH5Io=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/TheoryLogo2.png"
+    },
+    {
+      "Identity": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/vite.svg",
+      "SourceId": "server",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/",
+      "BasePath": "_content/server",
+      "RelativePath": "vite#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "69kjnsiwqx",
+      "Integrity": "SnSK/UQ5GLsWWRyDTEAdrjPoeGGrXbrQgRw6O0qSFPs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/vite.svg"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "assets/browser-4PE-i8Mq.ihywopaqtv.js",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/kni10n16kz-ihywopaqtv.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.003663003663"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "272"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QAlL2RwPJ/xuNWr5RxiX7Jez5YEmHGGhWm6Q6o6sfAo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"ak0lQU8NEeXydStUnodHIAhnGHVuRJ2YF286qauCeUk=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ihywopaqtv"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/browser-4PE-i8Mq.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ak0lQU8NEeXydStUnodHIAhnGHVuRJ2YF286qauCeUk="
+        }
+      ]
+    },
+    {
+      "Route": "assets/browser-4PE-i8Mq.ihywopaqtv.js",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/assets/browser-4PE-i8Mq.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "340"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ak0lQU8NEeXydStUnodHIAhnGHVuRJ2YF286qauCeUk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ihywopaqtv"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/browser-4PE-i8Mq.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ak0lQU8NEeXydStUnodHIAhnGHVuRJ2YF286qauCeUk="
+        }
+      ]
+    },
+    {
+      "Route": "assets/browser-4PE-i8Mq.ihywopaqtv.js.gz",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/kni10n16kz-ihywopaqtv.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "272"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QAlL2RwPJ/xuNWr5RxiX7Jez5YEmHGGhWm6Q6o6sfAo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ihywopaqtv"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/browser-4PE-i8Mq.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-QAlL2RwPJ/xuNWr5RxiX7Jez5YEmHGGhWm6Q6o6sfAo="
+        }
+      ]
+    },
+    {
+      "Route": "assets/browser-4PE-i8Mq.js",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/kni10n16kz-ihywopaqtv.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.003663003663"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "272"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QAlL2RwPJ/xuNWr5RxiX7Jez5YEmHGGhWm6Q6o6sfAo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"ak0lQU8NEeXydStUnodHIAhnGHVuRJ2YF286qauCeUk=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ak0lQU8NEeXydStUnodHIAhnGHVuRJ2YF286qauCeUk="
+        }
+      ]
+    },
+    {
+      "Route": "assets/browser-4PE-i8Mq.js",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/assets/browser-4PE-i8Mq.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "340"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ak0lQU8NEeXydStUnodHIAhnGHVuRJ2YF286qauCeUk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ak0lQU8NEeXydStUnodHIAhnGHVuRJ2YF286qauCeUk="
+        }
+      ]
+    },
+    {
+      "Route": "assets/browser-4PE-i8Mq.js.gz",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/kni10n16kz-ihywopaqtv.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "272"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QAlL2RwPJ/xuNWr5RxiX7Jez5YEmHGGhWm6Q6o6sfAo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-QAlL2RwPJ/xuNWr5RxiX7Jez5YEmHGGhWm6Q6o6sfAo="
+        }
+      ]
+    },
+    {
+      "Route": "assets/index-DxxjtocE.93o34hv7qw.js",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/ef3kfgv4th-93o34hv7qw.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000006272739"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "159419"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0uHjZ8vmiAiViSie34ce8cyrFlfIRPj8wcH8mmHqPY8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"tbT+A4t+YD4/fPZ73rKfVohF4v9bfxnmRkbnml6lvVk=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "93o34hv7qw"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/index-DxxjtocE.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-tbT+A4t+YD4/fPZ73rKfVohF4v9bfxnmRkbnml6lvVk="
+        }
+      ]
+    },
+    {
+      "Route": "assets/index-DxxjtocE.93o34hv7qw.js",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/assets/index-DxxjtocE.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "498512"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tbT+A4t+YD4/fPZ73rKfVohF4v9bfxnmRkbnml6lvVk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "93o34hv7qw"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/index-DxxjtocE.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-tbT+A4t+YD4/fPZ73rKfVohF4v9bfxnmRkbnml6lvVk="
+        }
+      ]
+    },
+    {
+      "Route": "assets/index-DxxjtocE.93o34hv7qw.js.gz",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/ef3kfgv4th-93o34hv7qw.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "159419"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0uHjZ8vmiAiViSie34ce8cyrFlfIRPj8wcH8mmHqPY8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "93o34hv7qw"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/index-DxxjtocE.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-0uHjZ8vmiAiViSie34ce8cyrFlfIRPj8wcH8mmHqPY8="
+        }
+      ]
+    },
+    {
+      "Route": "assets/index-DxxjtocE.js",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/ef3kfgv4th-93o34hv7qw.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000006272739"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "159419"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0uHjZ8vmiAiViSie34ce8cyrFlfIRPj8wcH8mmHqPY8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"tbT+A4t+YD4/fPZ73rKfVohF4v9bfxnmRkbnml6lvVk=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-tbT+A4t+YD4/fPZ73rKfVohF4v9bfxnmRkbnml6lvVk="
+        }
+      ]
+    },
+    {
+      "Route": "assets/index-DxxjtocE.js",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/assets/index-DxxjtocE.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "498512"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tbT+A4t+YD4/fPZ73rKfVohF4v9bfxnmRkbnml6lvVk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-tbT+A4t+YD4/fPZ73rKfVohF4v9bfxnmRkbnml6lvVk="
+        }
+      ]
+    },
+    {
+      "Route": "assets/index-DxxjtocE.js.gz",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/ef3kfgv4th-93o34hv7qw.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "159419"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0uHjZ8vmiAiViSie34ce8cyrFlfIRPj8wcH8mmHqPY8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-0uHjZ8vmiAiViSie34ce8cyrFlfIRPj8wcH8mmHqPY8="
+        }
+      ]
+    },
+    {
+      "Route": "assets/index-ZMk4oHDS.css",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/txl1vvqtn2-yj7lzv7blh.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000434971727"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2298"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2ehglkGiS0Nrl+W8NKfohspAocuwHXuUMnxjoJu5MIM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"fiiZr++nISQBIdwxEWnpu6n4u/w3dOnSaZW9XrYD9PA=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fiiZr++nISQBIdwxEWnpu6n4u/w3dOnSaZW9XrYD9PA="
+        }
+      ]
+    },
+    {
+      "Route": "assets/index-ZMk4oHDS.css",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/assets/index-ZMk4oHDS.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9528"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fiiZr++nISQBIdwxEWnpu6n4u/w3dOnSaZW9XrYD9PA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fiiZr++nISQBIdwxEWnpu6n4u/w3dOnSaZW9XrYD9PA="
+        }
+      ]
+    },
+    {
+      "Route": "assets/index-ZMk4oHDS.css.gz",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/txl1vvqtn2-yj7lzv7blh.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2298"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2ehglkGiS0Nrl+W8NKfohspAocuwHXuUMnxjoJu5MIM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-2ehglkGiS0Nrl+W8NKfohspAocuwHXuUMnxjoJu5MIM="
+        }
+      ]
+    },
+    {
+      "Route": "assets/index-ZMk4oHDS.yj7lzv7blh.css",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/txl1vvqtn2-yj7lzv7blh.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000434971727"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2298"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2ehglkGiS0Nrl+W8NKfohspAocuwHXuUMnxjoJu5MIM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"fiiZr++nISQBIdwxEWnpu6n4u/w3dOnSaZW9XrYD9PA=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "yj7lzv7blh"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/index-ZMk4oHDS.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fiiZr++nISQBIdwxEWnpu6n4u/w3dOnSaZW9XrYD9PA="
+        }
+      ]
+    },
+    {
+      "Route": "assets/index-ZMk4oHDS.yj7lzv7blh.css",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/assets/index-ZMk4oHDS.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9528"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fiiZr++nISQBIdwxEWnpu6n4u/w3dOnSaZW9XrYD9PA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "yj7lzv7blh"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/index-ZMk4oHDS.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fiiZr++nISQBIdwxEWnpu6n4u/w3dOnSaZW9XrYD9PA="
+        }
+      ]
+    },
+    {
+      "Route": "assets/index-ZMk4oHDS.yj7lzv7blh.css.gz",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/txl1vvqtn2-yj7lzv7blh.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2298"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2ehglkGiS0Nrl+W8NKfohspAocuwHXuUMnxjoJu5MIM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "yj7lzv7blh"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/index-ZMk4oHDS.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-2ehglkGiS0Nrl+W8NKfohspAocuwHXuUMnxjoJu5MIM="
+        }
+      ]
+    },
+    {
+      "Route": "Carousel1.png",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/Carousel1.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "24418801"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gxP+aLnPUfficCRzuTfMg735KbLcoyeO+IOUu9LQhs4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gxP+aLnPUfficCRzuTfMg735KbLcoyeO+IOUu9LQhs4="
+        }
+      ]
+    },
+    {
+      "Route": "Carousel1.tsvu0o1qnd.png",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/Carousel1.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "24418801"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gxP+aLnPUfficCRzuTfMg735KbLcoyeO+IOUu9LQhs4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tsvu0o1qnd"
+        },
+        {
+          "Name": "label",
+          "Value": "Carousel1.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gxP+aLnPUfficCRzuTfMg735KbLcoyeO+IOUu9LQhs4="
+        }
+      ]
+    },
+    {
+      "Route": "Carousel2.png",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/Carousel2.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "24796438"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2sQwlURfRSh38uUR0Wjw+Neyr1dOyGIrQNUGfm+Vw7Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-2sQwlURfRSh38uUR0Wjw+Neyr1dOyGIrQNUGfm+Vw7Q="
+        }
+      ]
+    },
+    {
+      "Route": "Carousel2.u7gnjwmhz1.png",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/Carousel2.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "24796438"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2sQwlURfRSh38uUR0Wjw+Neyr1dOyGIrQNUGfm+Vw7Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "u7gnjwmhz1"
+        },
+        {
+          "Name": "label",
+          "Value": "Carousel2.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-2sQwlURfRSh38uUR0Wjw+Neyr1dOyGIrQNUGfm+Vw7Q="
+        }
+      ]
+    },
+    {
+      "Route": "Carousel4.pm71golur2.png",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/Carousel4.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2942904"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"H+NKLwwCZvO9FFVYXD4pXB7gLTIIqCkn3+e5qeLlVts=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "pm71golur2"
+        },
+        {
+          "Name": "label",
+          "Value": "Carousel4.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-H+NKLwwCZvO9FFVYXD4pXB7gLTIIqCkn3+e5qeLlVts="
+        }
+      ]
+    },
+    {
+      "Route": "Carousel4.png",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/Carousel4.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2942904"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"H+NKLwwCZvO9FFVYXD4pXB7gLTIIqCkn3+e5qeLlVts=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-H+NKLwwCZvO9FFVYXD4pXB7gLTIIqCkn3+e5qeLlVts="
+        }
+      ]
+    },
+    {
+      "Route": "Carousel5.png",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/Carousel5.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "31432275"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"35KU7vCf9fteidoS3oXet5tD7lW7z+z0nM/r5oDGhj8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-35KU7vCf9fteidoS3oXet5tD7lW7z+z0nM/r5oDGhj8="
+        }
+      ]
+    },
+    {
+      "Route": "Carousel5.v4fpez0hxd.png",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/Carousel5.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "31432275"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"35KU7vCf9fteidoS3oXet5tD7lW7z+z0nM/r5oDGhj8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "v4fpez0hxd"
+        },
+        {
+          "Name": "label",
+          "Value": "Carousel5.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-35KU7vCf9fteidoS3oXet5tD7lW7z+z0nM/r5oDGhj8="
+        }
+      ]
+    },
+    {
+      "Route": "Carousel6.png",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/Carousel6.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "27333093"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PZh6ArllInMEvnebAI7CZFmtYXR1de+QhuzcZxPC+cY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-PZh6ArllInMEvnebAI7CZFmtYXR1de+QhuzcZxPC+cY="
+        }
+      ]
+    },
+    {
+      "Route": "Carousel6.t06zrdkwuo.png",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/Carousel6.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "27333093"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PZh6ArllInMEvnebAI7CZFmtYXR1de+QhuzcZxPC+cY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "t06zrdkwuo"
+        },
+        {
+          "Name": "label",
+          "Value": "Carousel6.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-PZh6ArllInMEvnebAI7CZFmtYXR1de+QhuzcZxPC+cY="
+        }
+      ]
+    },
+    {
+      "Route": "example-product.nazo0019ob.png",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/example-product.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "362195"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rxgFQP2CGstJAJiTsDADlv2ENagIEmXOkWNA2ApQgQU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "nazo0019ob"
+        },
+        {
+          "Name": "label",
+          "Value": "example-product.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-rxgFQP2CGstJAJiTsDADlv2ENagIEmXOkWNA2ApQgQU="
+        }
+      ]
+    },
+    {
+      "Route": "example-product.png",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/example-product.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "362195"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rxgFQP2CGstJAJiTsDADlv2ENagIEmXOkWNA2ApQgQU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-rxgFQP2CGstJAJiTsDADlv2ENagIEmXOkWNA2ApQgQU="
+        }
+      ]
+    },
+    {
+      "Route": "icons/cart.svg",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/hxqexa16vw-wfj5s1x547.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.002336448598"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "427"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+ASwPFsn0fg9OnaXgUF9j45iAKqixxzTClZJT94HY5g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"VH6rZ/wKjCu3IehvqXD3xuIvS+RNHrW4HO5yE7lCCXs=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-VH6rZ/wKjCu3IehvqXD3xuIvS+RNHrW4HO5yE7lCCXs="
+        }
+      ]
+    },
+    {
+      "Route": "icons/cart.svg",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/icons/cart.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "930"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VH6rZ/wKjCu3IehvqXD3xuIvS+RNHrW4HO5yE7lCCXs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-VH6rZ/wKjCu3IehvqXD3xuIvS+RNHrW4HO5yE7lCCXs="
+        }
+      ]
+    },
+    {
+      "Route": "icons/cart.svg.gz",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/hxqexa16vw-wfj5s1x547.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "427"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+ASwPFsn0fg9OnaXgUF9j45iAKqixxzTClZJT94HY5g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+ASwPFsn0fg9OnaXgUF9j45iAKqixxzTClZJT94HY5g="
+        }
+      ]
+    },
+    {
+      "Route": "icons/cart.wfj5s1x547.svg",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/hxqexa16vw-wfj5s1x547.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.002336448598"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "427"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+ASwPFsn0fg9OnaXgUF9j45iAKqixxzTClZJT94HY5g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"VH6rZ/wKjCu3IehvqXD3xuIvS+RNHrW4HO5yE7lCCXs=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wfj5s1x547"
+        },
+        {
+          "Name": "label",
+          "Value": "icons/cart.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-VH6rZ/wKjCu3IehvqXD3xuIvS+RNHrW4HO5yE7lCCXs="
+        }
+      ]
+    },
+    {
+      "Route": "icons/cart.wfj5s1x547.svg",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/icons/cart.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "930"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VH6rZ/wKjCu3IehvqXD3xuIvS+RNHrW4HO5yE7lCCXs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wfj5s1x547"
+        },
+        {
+          "Name": "label",
+          "Value": "icons/cart.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-VH6rZ/wKjCu3IehvqXD3xuIvS+RNHrW4HO5yE7lCCXs="
+        }
+      ]
+    },
+    {
+      "Route": "icons/cart.wfj5s1x547.svg.gz",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/hxqexa16vw-wfj5s1x547.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "427"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+ASwPFsn0fg9OnaXgUF9j45iAKqixxzTClZJT94HY5g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wfj5s1x547"
+        },
+        {
+          "Name": "label",
+          "Value": "icons/cart.svg.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+ASwPFsn0fg9OnaXgUF9j45iAKqixxzTClZJT94HY5g="
+        }
+      ]
+    },
+    {
+      "Route": "icons/circle.99olruv0s2.svg",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/t9op571jas-99olruv0s2.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.004484304933"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "222"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QEvgVk5FWpkbEPPqy++OVkcukofpJ4mj4SaBTZ6InII=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"8262I6v8cmSxSCfU4Xu67+ql8Cz0cHelCp8mGd/CC6o=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "99olruv0s2"
+        },
+        {
+          "Name": "label",
+          "Value": "icons/circle.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8262I6v8cmSxSCfU4Xu67+ql8Cz0cHelCp8mGd/CC6o="
+        }
+      ]
+    },
+    {
+      "Route": "icons/circle.99olruv0s2.svg",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/icons/circle.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "357"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8262I6v8cmSxSCfU4Xu67+ql8Cz0cHelCp8mGd/CC6o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "99olruv0s2"
+        },
+        {
+          "Name": "label",
+          "Value": "icons/circle.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8262I6v8cmSxSCfU4Xu67+ql8Cz0cHelCp8mGd/CC6o="
+        }
+      ]
+    },
+    {
+      "Route": "icons/circle.99olruv0s2.svg.gz",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/t9op571jas-99olruv0s2.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "222"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QEvgVk5FWpkbEPPqy++OVkcukofpJ4mj4SaBTZ6InII=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "99olruv0s2"
+        },
+        {
+          "Name": "label",
+          "Value": "icons/circle.svg.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-QEvgVk5FWpkbEPPqy++OVkcukofpJ4mj4SaBTZ6InII="
+        }
+      ]
+    },
+    {
+      "Route": "icons/circle.svg",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/t9op571jas-99olruv0s2.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.004484304933"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "222"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QEvgVk5FWpkbEPPqy++OVkcukofpJ4mj4SaBTZ6InII=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"8262I6v8cmSxSCfU4Xu67+ql8Cz0cHelCp8mGd/CC6o=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8262I6v8cmSxSCfU4Xu67+ql8Cz0cHelCp8mGd/CC6o="
+        }
+      ]
+    },
+    {
+      "Route": "icons/circle.svg",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/icons/circle.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "357"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8262I6v8cmSxSCfU4Xu67+ql8Cz0cHelCp8mGd/CC6o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8262I6v8cmSxSCfU4Xu67+ql8Cz0cHelCp8mGd/CC6o="
+        }
+      ]
+    },
+    {
+      "Route": "icons/circle.svg.gz",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/t9op571jas-99olruv0s2.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "222"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QEvgVk5FWpkbEPPqy++OVkcukofpJ4mj4SaBTZ6InII=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-QEvgVk5FWpkbEPPqy++OVkcukofpJ4mj4SaBTZ6InII="
+        }
+      ]
+    },
+    {
+      "Route": "icons/github.orkblwnjqa.svg",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/vahf7lmhpg-orkblwnjqa.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001760563380"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "567"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"H7JIcCSn7lreuL0Jy1WTzgeIz9oUuCJ+8uO81msusKI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"HN1N1o/oLkjS2/AGUbYU6Ge6wyyYAQpR8p2iW73fZlI=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "orkblwnjqa"
+        },
+        {
+          "Name": "label",
+          "Value": "icons/github.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-HN1N1o/oLkjS2/AGUbYU6Ge6wyyYAQpR8p2iW73fZlI="
+        }
+      ]
+    },
+    {
+      "Route": "icons/github.orkblwnjqa.svg",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/icons/github.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1226"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HN1N1o/oLkjS2/AGUbYU6Ge6wyyYAQpR8p2iW73fZlI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "orkblwnjqa"
+        },
+        {
+          "Name": "label",
+          "Value": "icons/github.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-HN1N1o/oLkjS2/AGUbYU6Ge6wyyYAQpR8p2iW73fZlI="
+        }
+      ]
+    },
+    {
+      "Route": "icons/github.orkblwnjqa.svg.gz",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/vahf7lmhpg-orkblwnjqa.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "567"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"H7JIcCSn7lreuL0Jy1WTzgeIz9oUuCJ+8uO81msusKI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "orkblwnjqa"
+        },
+        {
+          "Name": "label",
+          "Value": "icons/github.svg.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-H7JIcCSn7lreuL0Jy1WTzgeIz9oUuCJ+8uO81msusKI="
+        }
+      ]
+    },
+    {
+      "Route": "icons/github.svg",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/vahf7lmhpg-orkblwnjqa.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001760563380"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "567"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"H7JIcCSn7lreuL0Jy1WTzgeIz9oUuCJ+8uO81msusKI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"HN1N1o/oLkjS2/AGUbYU6Ge6wyyYAQpR8p2iW73fZlI=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-HN1N1o/oLkjS2/AGUbYU6Ge6wyyYAQpR8p2iW73fZlI="
+        }
+      ]
+    },
+    {
+      "Route": "icons/github.svg",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/icons/github.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1226"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HN1N1o/oLkjS2/AGUbYU6Ge6wyyYAQpR8p2iW73fZlI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-HN1N1o/oLkjS2/AGUbYU6Ge6wyyYAQpR8p2iW73fZlI="
+        }
+      ]
+    },
+    {
+      "Route": "icons/github.svg.gz",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/vahf7lmhpg-orkblwnjqa.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "567"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"H7JIcCSn7lreuL0Jy1WTzgeIz9oUuCJ+8uO81msusKI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-H7JIcCSn7lreuL0Jy1WTzgeIz9oUuCJ+8uO81msusKI="
+        }
+      ]
+    },
+    {
+      "Route": "icons/hamburger.ixw2yoixs8.svg",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/d62ap6qrji-ixw2yoixs8.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.006024096386"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "165"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"V5YiimcUP1jhhzlSENK9aT05Wgqb37BJaTKHWOVrxg4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"yspFfbXI5c72/1eFB6DoFXPINho0hAF8wFXneTEx/7g=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ixw2yoixs8"
+        },
+        {
+          "Name": "label",
+          "Value": "icons/hamburger.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-yspFfbXI5c72/1eFB6DoFXPINho0hAF8wFXneTEx/7g="
+        }
+      ]
+    },
+    {
+      "Route": "icons/hamburger.ixw2yoixs8.svg",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/icons/hamburger.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "179"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yspFfbXI5c72/1eFB6DoFXPINho0hAF8wFXneTEx/7g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ixw2yoixs8"
+        },
+        {
+          "Name": "label",
+          "Value": "icons/hamburger.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-yspFfbXI5c72/1eFB6DoFXPINho0hAF8wFXneTEx/7g="
+        }
+      ]
+    },
+    {
+      "Route": "icons/hamburger.ixw2yoixs8.svg.gz",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/d62ap6qrji-ixw2yoixs8.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "165"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"V5YiimcUP1jhhzlSENK9aT05Wgqb37BJaTKHWOVrxg4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ixw2yoixs8"
+        },
+        {
+          "Name": "label",
+          "Value": "icons/hamburger.svg.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-V5YiimcUP1jhhzlSENK9aT05Wgqb37BJaTKHWOVrxg4="
+        }
+      ]
+    },
+    {
+      "Route": "icons/hamburger.svg",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/d62ap6qrji-ixw2yoixs8.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.006024096386"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "165"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"V5YiimcUP1jhhzlSENK9aT05Wgqb37BJaTKHWOVrxg4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"yspFfbXI5c72/1eFB6DoFXPINho0hAF8wFXneTEx/7g=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-yspFfbXI5c72/1eFB6DoFXPINho0hAF8wFXneTEx/7g="
+        }
+      ]
+    },
+    {
+      "Route": "icons/hamburger.svg",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/icons/hamburger.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "179"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yspFfbXI5c72/1eFB6DoFXPINho0hAF8wFXneTEx/7g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-yspFfbXI5c72/1eFB6DoFXPINho0hAF8wFXneTEx/7g="
+        }
+      ]
+    },
+    {
+      "Route": "icons/hamburger.svg.gz",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/d62ap6qrji-ixw2yoixs8.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "165"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"V5YiimcUP1jhhzlSENK9aT05Wgqb37BJaTKHWOVrxg4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-V5YiimcUP1jhhzlSENK9aT05Wgqb37BJaTKHWOVrxg4="
+        }
+      ]
+    },
+    {
+      "Route": "icons/instagram.09crdraxxz.svg",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/ks6lrrep39-09crdraxxz.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000837520938"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1193"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ukhSwZ10+I5XOWr9XKWm/SR1sSe3EZyXVN1/HJ33PYY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"PDAWm0vWkivD5TXNvCgYu6Ckul3nqSRU0FK8sP8yKAI=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "09crdraxxz"
+        },
+        {
+          "Name": "label",
+          "Value": "icons/instagram.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-PDAWm0vWkivD5TXNvCgYu6Ckul3nqSRU0FK8sP8yKAI="
+        }
+      ]
+    },
+    {
+      "Route": "icons/instagram.09crdraxxz.svg",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/icons/instagram.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2782"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PDAWm0vWkivD5TXNvCgYu6Ckul3nqSRU0FK8sP8yKAI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "09crdraxxz"
+        },
+        {
+          "Name": "label",
+          "Value": "icons/instagram.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-PDAWm0vWkivD5TXNvCgYu6Ckul3nqSRU0FK8sP8yKAI="
+        }
+      ]
+    },
+    {
+      "Route": "icons/instagram.09crdraxxz.svg.gz",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/ks6lrrep39-09crdraxxz.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1193"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ukhSwZ10+I5XOWr9XKWm/SR1sSe3EZyXVN1/HJ33PYY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "09crdraxxz"
+        },
+        {
+          "Name": "label",
+          "Value": "icons/instagram.svg.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ukhSwZ10+I5XOWr9XKWm/SR1sSe3EZyXVN1/HJ33PYY="
+        }
+      ]
+    },
+    {
+      "Route": "icons/instagram.svg",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/ks6lrrep39-09crdraxxz.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000837520938"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1193"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ukhSwZ10+I5XOWr9XKWm/SR1sSe3EZyXVN1/HJ33PYY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"PDAWm0vWkivD5TXNvCgYu6Ckul3nqSRU0FK8sP8yKAI=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-PDAWm0vWkivD5TXNvCgYu6Ckul3nqSRU0FK8sP8yKAI="
+        }
+      ]
+    },
+    {
+      "Route": "icons/instagram.svg",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/icons/instagram.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2782"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PDAWm0vWkivD5TXNvCgYu6Ckul3nqSRU0FK8sP8yKAI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-PDAWm0vWkivD5TXNvCgYu6Ckul3nqSRU0FK8sP8yKAI="
+        }
+      ]
+    },
+    {
+      "Route": "icons/instagram.svg.gz",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/ks6lrrep39-09crdraxxz.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1193"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ukhSwZ10+I5XOWr9XKWm/SR1sSe3EZyXVN1/HJ33PYY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ukhSwZ10+I5XOWr9XKWm/SR1sSe3EZyXVN1/HJ33PYY="
+        }
+      ]
+    },
+    {
+      "Route": "icons/leftarrow.acgtipgbda.svg",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/uqef6uoo4m-acgtipgbda.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.005235602094"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "190"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eajoQGlCeIaSKcWrmbBdjSb42SZ+nO/ONXFv7spATHs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"+g1vJqLe4Tsx/gLcjBecKySRoGDhqyuBEZp0Ai49p9U=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "acgtipgbda"
+        },
+        {
+          "Name": "label",
+          "Value": "icons/leftarrow.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+g1vJqLe4Tsx/gLcjBecKySRoGDhqyuBEZp0Ai49p9U="
+        }
+      ]
+    },
+    {
+      "Route": "icons/leftarrow.acgtipgbda.svg",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/icons/leftarrow.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "236"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+g1vJqLe4Tsx/gLcjBecKySRoGDhqyuBEZp0Ai49p9U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "acgtipgbda"
+        },
+        {
+          "Name": "label",
+          "Value": "icons/leftarrow.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+g1vJqLe4Tsx/gLcjBecKySRoGDhqyuBEZp0Ai49p9U="
+        }
+      ]
+    },
+    {
+      "Route": "icons/leftarrow.acgtipgbda.svg.gz",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/uqef6uoo4m-acgtipgbda.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "190"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eajoQGlCeIaSKcWrmbBdjSb42SZ+nO/ONXFv7spATHs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "acgtipgbda"
+        },
+        {
+          "Name": "label",
+          "Value": "icons/leftarrow.svg.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-eajoQGlCeIaSKcWrmbBdjSb42SZ+nO/ONXFv7spATHs="
+        }
+      ]
+    },
+    {
+      "Route": "icons/leftarrow.svg",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/uqef6uoo4m-acgtipgbda.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.005235602094"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "190"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eajoQGlCeIaSKcWrmbBdjSb42SZ+nO/ONXFv7spATHs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"+g1vJqLe4Tsx/gLcjBecKySRoGDhqyuBEZp0Ai49p9U=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+g1vJqLe4Tsx/gLcjBecKySRoGDhqyuBEZp0Ai49p9U="
+        }
+      ]
+    },
+    {
+      "Route": "icons/leftarrow.svg",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/icons/leftarrow.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "236"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+g1vJqLe4Tsx/gLcjBecKySRoGDhqyuBEZp0Ai49p9U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+g1vJqLe4Tsx/gLcjBecKySRoGDhqyuBEZp0Ai49p9U="
+        }
+      ]
+    },
+    {
+      "Route": "icons/leftarrow.svg.gz",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/uqef6uoo4m-acgtipgbda.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "190"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eajoQGlCeIaSKcWrmbBdjSb42SZ+nO/ONXFv7spATHs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-eajoQGlCeIaSKcWrmbBdjSb42SZ+nO/ONXFv7spATHs="
+        }
+      ]
+    },
+    {
+      "Route": "icons/linkedin.9srf4khzjj.svg",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/dhtx5wmbr0-9srf4khzjj.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.002257336343"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "442"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"r0IHamTN6sw10cjDq5DkA2nSwkK3uwBL+jUs28DPnu4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"l6H3Tmn3ramnZvjEWBc7Bn4UL55uVS3L6a7BMSjtwEY=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9srf4khzjj"
+        },
+        {
+          "Name": "label",
+          "Value": "icons/linkedin.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-l6H3Tmn3ramnZvjEWBc7Bn4UL55uVS3L6a7BMSjtwEY="
+        }
+      ]
+    },
+    {
+      "Route": "icons/linkedin.9srf4khzjj.svg",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/icons/linkedin.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "859"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"l6H3Tmn3ramnZvjEWBc7Bn4UL55uVS3L6a7BMSjtwEY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9srf4khzjj"
+        },
+        {
+          "Name": "label",
+          "Value": "icons/linkedin.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-l6H3Tmn3ramnZvjEWBc7Bn4UL55uVS3L6a7BMSjtwEY="
+        }
+      ]
+    },
+    {
+      "Route": "icons/linkedin.9srf4khzjj.svg.gz",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/dhtx5wmbr0-9srf4khzjj.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "442"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"r0IHamTN6sw10cjDq5DkA2nSwkK3uwBL+jUs28DPnu4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9srf4khzjj"
+        },
+        {
+          "Name": "label",
+          "Value": "icons/linkedin.svg.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-r0IHamTN6sw10cjDq5DkA2nSwkK3uwBL+jUs28DPnu4="
+        }
+      ]
+    },
+    {
+      "Route": "icons/linkedin.svg",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/dhtx5wmbr0-9srf4khzjj.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.002257336343"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "442"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"r0IHamTN6sw10cjDq5DkA2nSwkK3uwBL+jUs28DPnu4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"l6H3Tmn3ramnZvjEWBc7Bn4UL55uVS3L6a7BMSjtwEY=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-l6H3Tmn3ramnZvjEWBc7Bn4UL55uVS3L6a7BMSjtwEY="
+        }
+      ]
+    },
+    {
+      "Route": "icons/linkedin.svg",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/icons/linkedin.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "859"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"l6H3Tmn3ramnZvjEWBc7Bn4UL55uVS3L6a7BMSjtwEY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-l6H3Tmn3ramnZvjEWBc7Bn4UL55uVS3L6a7BMSjtwEY="
+        }
+      ]
+    },
+    {
+      "Route": "icons/linkedin.svg.gz",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/dhtx5wmbr0-9srf4khzjj.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "442"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"r0IHamTN6sw10cjDq5DkA2nSwkK3uwBL+jUs28DPnu4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-r0IHamTN6sw10cjDq5DkA2nSwkK3uwBL+jUs28DPnu4="
+        }
+      ]
+    },
+    {
+      "Route": "icons/rightarrow.mri1s7pb04.svg",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/bvx6vt6b61-mri1s7pb04.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.005128205128"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "194"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"biLAjeagZnVMP8tKZ/7dHiDSMqZglhP/p+NnpIP9UbY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"Qn2uGh8h1vsCSntSfy0BMI7kBLFu2KyC6jVFWkWyQ0c=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mri1s7pb04"
+        },
+        {
+          "Name": "label",
+          "Value": "icons/rightarrow.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Qn2uGh8h1vsCSntSfy0BMI7kBLFu2KyC6jVFWkWyQ0c="
+        }
+      ]
+    },
+    {
+      "Route": "icons/rightarrow.mri1s7pb04.svg",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/icons/rightarrow.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "244"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Qn2uGh8h1vsCSntSfy0BMI7kBLFu2KyC6jVFWkWyQ0c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mri1s7pb04"
+        },
+        {
+          "Name": "label",
+          "Value": "icons/rightarrow.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Qn2uGh8h1vsCSntSfy0BMI7kBLFu2KyC6jVFWkWyQ0c="
+        }
+      ]
+    },
+    {
+      "Route": "icons/rightarrow.mri1s7pb04.svg.gz",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/bvx6vt6b61-mri1s7pb04.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "194"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"biLAjeagZnVMP8tKZ/7dHiDSMqZglhP/p+NnpIP9UbY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mri1s7pb04"
+        },
+        {
+          "Name": "label",
+          "Value": "icons/rightarrow.svg.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-biLAjeagZnVMP8tKZ/7dHiDSMqZglhP/p+NnpIP9UbY="
+        }
+      ]
+    },
+    {
+      "Route": "icons/rightarrow.svg",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/bvx6vt6b61-mri1s7pb04.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.005128205128"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "194"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"biLAjeagZnVMP8tKZ/7dHiDSMqZglhP/p+NnpIP9UbY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"Qn2uGh8h1vsCSntSfy0BMI7kBLFu2KyC6jVFWkWyQ0c=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Qn2uGh8h1vsCSntSfy0BMI7kBLFu2KyC6jVFWkWyQ0c="
+        }
+      ]
+    },
+    {
+      "Route": "icons/rightarrow.svg",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/icons/rightarrow.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "244"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Qn2uGh8h1vsCSntSfy0BMI7kBLFu2KyC6jVFWkWyQ0c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Qn2uGh8h1vsCSntSfy0BMI7kBLFu2KyC6jVFWkWyQ0c="
+        }
+      ]
+    },
+    {
+      "Route": "icons/rightarrow.svg.gz",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/bvx6vt6b61-mri1s7pb04.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "194"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"biLAjeagZnVMP8tKZ/7dHiDSMqZglhP/p+NnpIP9UbY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-biLAjeagZnVMP8tKZ/7dHiDSMqZglhP/p+NnpIP9UbY="
+        }
+      ]
+    },
+    {
+      "Route": "icons/user.esctadgjiq.svg",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/y3rdd624fy-esctadgjiq.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.003623188406"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "275"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TwUQgkrRuIvnKJ6JKrKN+/cMCtkoxHLfS8r/vOrpv2o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"AryWtxHaZumaz8hnCN+PDfpl7DokC595uBQ+ShY74Uk=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "esctadgjiq"
+        },
+        {
+          "Name": "label",
+          "Value": "icons/user.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-AryWtxHaZumaz8hnCN+PDfpl7DokC595uBQ+ShY74Uk="
+        }
+      ]
+    },
+    {
+      "Route": "icons/user.esctadgjiq.svg",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/icons/user.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "439"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AryWtxHaZumaz8hnCN+PDfpl7DokC595uBQ+ShY74Uk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "esctadgjiq"
+        },
+        {
+          "Name": "label",
+          "Value": "icons/user.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-AryWtxHaZumaz8hnCN+PDfpl7DokC595uBQ+ShY74Uk="
+        }
+      ]
+    },
+    {
+      "Route": "icons/user.esctadgjiq.svg.gz",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/y3rdd624fy-esctadgjiq.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "275"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TwUQgkrRuIvnKJ6JKrKN+/cMCtkoxHLfS8r/vOrpv2o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "esctadgjiq"
+        },
+        {
+          "Name": "label",
+          "Value": "icons/user.svg.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-TwUQgkrRuIvnKJ6JKrKN+/cMCtkoxHLfS8r/vOrpv2o="
+        }
+      ]
+    },
+    {
+      "Route": "icons/user.svg",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/y3rdd624fy-esctadgjiq.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.003623188406"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "275"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TwUQgkrRuIvnKJ6JKrKN+/cMCtkoxHLfS8r/vOrpv2o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"AryWtxHaZumaz8hnCN+PDfpl7DokC595uBQ+ShY74Uk=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-AryWtxHaZumaz8hnCN+PDfpl7DokC595uBQ+ShY74Uk="
+        }
+      ]
+    },
+    {
+      "Route": "icons/user.svg",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/icons/user.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "439"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AryWtxHaZumaz8hnCN+PDfpl7DokC595uBQ+ShY74Uk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-AryWtxHaZumaz8hnCN+PDfpl7DokC595uBQ+ShY74Uk="
+        }
+      ]
+    },
+    {
+      "Route": "icons/user.svg.gz",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/y3rdd624fy-esctadgjiq.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "275"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TwUQgkrRuIvnKJ6JKrKN+/cMCtkoxHLfS8r/vOrpv2o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-TwUQgkrRuIvnKJ6JKrKN+/cMCtkoxHLfS8r/vOrpv2o="
+        }
+      ]
+    },
+    {
+      "Route": "index.gippcuy942.html",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/hflpgo3jhw-gippcuy942.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.002604166667"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "383"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iINxR9zCzi6W04gyKkFzpbm2JE9idyFSLebZap/RQqw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"mI5+PCeClBbhakAn2ngHOve1t4F3yiNfV3YAnoNue3Y=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "gippcuy942"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-mI5+PCeClBbhakAn2ngHOve1t4F3yiNfV3YAnoNue3Y="
+        }
+      ]
+    },
+    {
+      "Route": "index.gippcuy942.html",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "776"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mI5+PCeClBbhakAn2ngHOve1t4F3yiNfV3YAnoNue3Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "gippcuy942"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-mI5+PCeClBbhakAn2ngHOve1t4F3yiNfV3YAnoNue3Y="
+        }
+      ]
+    },
+    {
+      "Route": "index.gippcuy942.html.gz",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/hflpgo3jhw-gippcuy942.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "383"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iINxR9zCzi6W04gyKkFzpbm2JE9idyFSLebZap/RQqw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "gippcuy942"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-iINxR9zCzi6W04gyKkFzpbm2JE9idyFSLebZap/RQqw="
+        }
+      ]
+    },
+    {
+      "Route": "index.html",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/hflpgo3jhw-gippcuy942.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.002604166667"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "383"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iINxR9zCzi6W04gyKkFzpbm2JE9idyFSLebZap/RQqw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"mI5+PCeClBbhakAn2ngHOve1t4F3yiNfV3YAnoNue3Y=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-mI5+PCeClBbhakAn2ngHOve1t4F3yiNfV3YAnoNue3Y="
+        }
+      ]
+    },
+    {
+      "Route": "index.html",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "776"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mI5+PCeClBbhakAn2ngHOve1t4F3yiNfV3YAnoNue3Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-mI5+PCeClBbhakAn2ngHOve1t4F3yiNfV3YAnoNue3Y="
+        }
+      ]
+    },
+    {
+      "Route": "index.html.gz",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/hflpgo3jhw-gippcuy942.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "383"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iINxR9zCzi6W04gyKkFzpbm2JE9idyFSLebZap/RQqw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-iINxR9zCzi6W04gyKkFzpbm2JE9idyFSLebZap/RQqw="
+        }
+      ]
+    },
+    {
+      "Route": "T.lq9vnp4cij.png",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/T.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5874"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Df7SmoZcKedZDWi0Ntp6uhpJR1h/N4y9J+bNG43asbE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "lq9vnp4cij"
+        },
+        {
+          "Name": "label",
+          "Value": "T.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Df7SmoZcKedZDWi0Ntp6uhpJR1h/N4y9J+bNG43asbE="
+        }
+      ]
+    },
+    {
+      "Route": "T.png",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/T.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5874"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Df7SmoZcKedZDWi0Ntp6uhpJR1h/N4y9J+bNG43asbE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Df7SmoZcKedZDWi0Ntp6uhpJR1h/N4y9J+bNG43asbE="
+        }
+      ]
+    },
+    {
+      "Route": "Theory.bcoe3ywzxd.png",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/Theory.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "77869"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RSIlmt20PlSspl2QmzgrrhHkOXiJ92hjJjA1rNWwMCI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bcoe3ywzxd"
+        },
+        {
+          "Name": "label",
+          "Value": "Theory.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-RSIlmt20PlSspl2QmzgrrhHkOXiJ92hjJjA1rNWwMCI="
+        }
+      ]
+    },
+    {
+      "Route": "Theory.png",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/Theory.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "77869"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RSIlmt20PlSspl2QmzgrrhHkOXiJ92hjJjA1rNWwMCI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-RSIlmt20PlSspl2QmzgrrhHkOXiJ92hjJjA1rNWwMCI="
+        }
+      ]
+    },
+    {
+      "Route": "Theory2.ensa88a2kr.png",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/Theory2.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "60001"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dggjTjec+p++Hi9FIDFNkMV2qM54aM4gNlXBtYHH5Io=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ensa88a2kr"
+        },
+        {
+          "Name": "label",
+          "Value": "Theory2.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-dggjTjec+p++Hi9FIDFNkMV2qM54aM4gNlXBtYHH5Io="
+        }
+      ]
+    },
+    {
+      "Route": "Theory2.png",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/Theory2.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "60001"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dggjTjec+p++Hi9FIDFNkMV2qM54aM4gNlXBtYHH5Io=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-dggjTjec+p++Hi9FIDFNkMV2qM54aM4gNlXBtYHH5Io="
+        }
+      ]
+    },
+    {
+      "Route": "TheoryLogo2.ensa88a2kr.png",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/TheoryLogo2.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "60001"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dggjTjec+p++Hi9FIDFNkMV2qM54aM4gNlXBtYHH5Io=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ensa88a2kr"
+        },
+        {
+          "Name": "label",
+          "Value": "TheoryLogo2.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-dggjTjec+p++Hi9FIDFNkMV2qM54aM4gNlXBtYHH5Io="
+        }
+      ]
+    },
+    {
+      "Route": "TheoryLogo2.png",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/TheoryLogo2.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "60001"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dggjTjec+p++Hi9FIDFNkMV2qM54aM4gNlXBtYHH5Io=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-dggjTjec+p++Hi9FIDFNkMV2qM54aM4gNlXBtYHH5Io="
+        }
+      ]
+    },
+    {
+      "Route": "vite.69kjnsiwqx.svg",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/78ivns09oz-69kjnsiwqx.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001288659794"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "775"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yWlQkwTAgXoqC96r+Qj4NzYKqSD17ZhnVXCy8hnGHHk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"SnSK/UQ5GLsWWRyDTEAdrjPoeGGrXbrQgRw6O0qSFPs=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "69kjnsiwqx"
+        },
+        {
+          "Name": "label",
+          "Value": "vite.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SnSK/UQ5GLsWWRyDTEAdrjPoeGGrXbrQgRw6O0qSFPs="
+        }
+      ]
+    },
+    {
+      "Route": "vite.69kjnsiwqx.svg",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/vite.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1497"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SnSK/UQ5GLsWWRyDTEAdrjPoeGGrXbrQgRw6O0qSFPs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "69kjnsiwqx"
+        },
+        {
+          "Name": "label",
+          "Value": "vite.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SnSK/UQ5GLsWWRyDTEAdrjPoeGGrXbrQgRw6O0qSFPs="
+        }
+      ]
+    },
+    {
+      "Route": "vite.69kjnsiwqx.svg.gz",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/78ivns09oz-69kjnsiwqx.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "775"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yWlQkwTAgXoqC96r+Qj4NzYKqSD17ZhnVXCy8hnGHHk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "69kjnsiwqx"
+        },
+        {
+          "Name": "label",
+          "Value": "vite.svg.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-yWlQkwTAgXoqC96r+Qj4NzYKqSD17ZhnVXCy8hnGHHk="
+        }
+      ]
+    },
+    {
+      "Route": "vite.svg",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/78ivns09oz-69kjnsiwqx.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001288659794"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "775"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yWlQkwTAgXoqC96r+Qj4NzYKqSD17ZhnVXCy8hnGHHk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"SnSK/UQ5GLsWWRyDTEAdrjPoeGGrXbrQgRw6O0qSFPs=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-SnSK/UQ5GLsWWRyDTEAdrjPoeGGrXbrQgRw6O0qSFPs="
+        }
+      ]
+    },
+    {
+      "Route": "vite.svg",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/wwwroot/vite.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1497"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SnSK/UQ5GLsWWRyDTEAdrjPoeGGrXbrQgRw6O0qSFPs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-SnSK/UQ5GLsWWRyDTEAdrjPoeGGrXbrQgRw6O0qSFPs="
+        }
+      ]
+    },
+    {
+      "Route": "vite.svg.gz",
+      "AssetFile": "/Users/thanetate/OneDrive/Desktop/Software Engineering/GitHub Projects/theory-v.2/theory-v.2/server/obj/Debug/net9.0/compressed/78ivns09oz-69kjnsiwqx.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "775"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yWlQkwTAgXoqC96r+Qj4NzYKqSD17ZhnVXCy8hnGHHk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 00:29:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-yWlQkwTAgXoqC96r+Qj4NzYKqSD17ZhnVXCy8hnGHHk="
+        }
+      ]
+    }
+  ]
 }
