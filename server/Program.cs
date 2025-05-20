@@ -37,7 +37,7 @@ builder.Services.AddAuthentication().AddJwtBearer(options =>
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowViteClient",
-    policy => policy.WithOrigins("https://theoryclimbing.com") 
+    policy => policy.WithOrigins("http://localhost:3000") 
         .AllowAnyHeader()
         .AllowAnyMethod()
         .AllowCredentials()
@@ -98,7 +98,7 @@ app.MapUserEndpoints();
 // stripe endpoint
 app.MapPost("/create-checkout-session", async (HttpContext context) =>
 {
-    var domain = "https://theoryclimbing.com"; 
+    var domain = "http://localhost:3000"; 
 
     // read cart details from the request body
     var body = await context.Request.ReadFromJsonAsync<CartRequest>();
