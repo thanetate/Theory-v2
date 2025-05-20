@@ -263,7 +263,19 @@ export function AccountPage() {
 				<Header />
 				<div className="auth-container">
 					<div className="failure-message">Log In Required</div>
-					<Auth supabaseClient={supabase} appearance={{ theme: ThemeSupa }} providers={['google']} />
+					<Auth
+						supabaseClient={supabase}
+						appearance={{ theme: ThemeSupa }}
+						providers={["google"]}
+						// queryParams={{
+						// 	access_type: "offline",
+						// 	prompt: "consent",
+						// 	hd: "domain.com",
+						// }}
+						// providerScopes={{
+						// 	google: "https://www.googleapis.com/auth/calendar.readonly",
+						// }}
+					/>
 				</div>
 				<Footer />
 			</>
