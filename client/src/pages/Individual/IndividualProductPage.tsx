@@ -107,7 +107,7 @@ export function IndividualProductPage() {
 					<div className="i-product-info">
 						<h1>{product.name}</h1>
 						<h3 className="price">${product.price}.00 USD</h3>
-						<p> ${product.description}</p>
+						<p>{product.description}</p>
 						<p> Shipping calculated at checkout.</p>
 						<div className="size">
 							<h2>Size</h2>
