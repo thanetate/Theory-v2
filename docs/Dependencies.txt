@@ -1,0 +1,18 @@
+Libraries Used ->
+    Client ->
+        - react-router-dom
+        - react-fast-marquee
+        - react-modern-drawer
+        - hamburger-react
+        - jotai
+        - @supabase/supabase-js @supabase/auth-ui-react @supabase/auth-ui-shared
+        - react-hot-toast
+        - dotenv
+        - react-spinners
+        - react-slick
+    Server -> 
+        - supabase-csharp
+        - Swashbuckle.AspNetCore
+        - Microsoft.AspNetCore.Authentication.JwtBearer
+        - Newtonsoft.Json
+        - Stripe.net
