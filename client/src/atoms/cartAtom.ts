@@ -1,5 +1,5 @@
-import { atom } from "jotai";
 import { sessionIdAtom } from "./userAtom";
+import { atom } from "jotai";
 import axios from "axios";
 
 export const cartDetailsAtom = atom<Array<{
@@ -36,7 +36,7 @@ export const fetchCartDetailsAtom = atom(
 			);
 			const cartDetails = response.data;
 			set(cartDetailsAtom, cartDetails);
-			console.log('DETAILS', cartDetails);
+			console.log("DETAILS", cartDetails);
 		} catch (error) {
 			console.error("Failed to fetch cart details:", error);
 		}
@@ -48,7 +48,10 @@ export const addToCartAtom = atom(
 		const sessionId = get(sessionIdAtom);
 		if (!product || !sessionId) return;
 
-		const min = 100000000;
+		// Todo: Find a safer way of creating a uid.
+		// for now, I created a random number with around a billion possible
+		// unique values.
+		const min = 1;
 		const max = 999999999;
 		const randomNumber = Math.floor(Math.random() * (max - min)) + min;
 
