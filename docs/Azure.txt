@@ -1,0 +1,12 @@
+Deploying the server to Azure ->
+
+    1. Create an App Service
+        * Make sure authentication is enabled.
+
+    2. Configure Server to have the correct app name. ex: "theory-webapp"
+
+    3. Download Publish Profile and put it into GitHub secrets. 
+
+    4. Put Environment Variables In Azure
+        * For nested variables do Root:Child.
+        * Do not click the box, so that the Environment Variables are used for everything. 
