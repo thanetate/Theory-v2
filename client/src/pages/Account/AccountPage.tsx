@@ -2,31 +2,26 @@ import "./AccountPage.css";
 import { Footer } from "../../components/Footer/Footer";
 import { Header } from "../../components/Header/Header";
 import { PromoBar } from "../../components/PromoBar/PromoBar";
+import { sessionIdAtom } from "../../atoms/userAtom";
 import { useState, useEffect } from "react";
+import { useSearchParams } from "react-router-dom";
+import axios from "axios";
+import { useAtom, useSetAtom } from "jotai";
 import { createClient, Session } from "@supabase/supabase-js";
 import { Auth } from "@supabase/auth-ui-react";
 import { ThemeSupa } from "@supabase/auth-ui-shared";
-import { useAtom, useSetAtom } from "jotai";
-import { sessionIdAtom } from "../../atoms/userAtom";
-import { useSearchParams } from "react-router-dom";
-import axios from "axios";
 
 const supabase = createClient(
 	import.meta.env.VITE_SUPABASE_URL,
-	import.meta.env.VITE_SUPABASE_KEY	
+	import.meta.env.VITE_SUPABASE_KEY
 );
 
 export function AccountPage() {
-	// supabase session Ids
 	const [session, setSession] = useState<Session | null>(null);
 	const [sessionId, setSessionId] = useAtom(sessionIdAtom);
 	const resetSessionId = useSetAtom(sessionIdAtom);
-
-	// stripe session Ids
 	const [searchParams] = useSearchParams();
 	const StripeSessionId = searchParams.get("session_id");
-
-	// orders state
 	const [orders, setOrders] = useState<
 		{
 			id: string;
@@ -42,7 +37,6 @@ export function AccountPage() {
 		}[]
 	>([]);
 
-	// supabase hooks
 	useEffect(() => {
 		supabase.auth.getSession().then(({ data: { session } }) => {
 			setSession(session);
@@ -67,7 +61,6 @@ export function AccountPage() {
 		}
 	}, [sessionId]);
 
-	// stripe hooks
 	useEffect(() => {
 		if (StripeSessionId) {
 			handleStripeGetOrders(StripeSessionId);
@@ -79,7 +72,6 @@ export function AccountPage() {
 		handleFetchOrders();
 	}, [sessionId]);
 
-	// logout user
 	const handleLogout = async () => {
 		const { error } = await supabase.auth.signOut();
 		if (error) {
@@ -89,7 +81,6 @@ export function AccountPage() {
 		resetSessionId(null);
 	};
 
-	// clear stripe session id from url
 	const clearStripeSesssionId = () => {
 		const searchParams = new URLSearchParams(window.location.search);
 		searchParams.delete("session_id");
@@ -97,7 +88,6 @@ export function AccountPage() {
 		window.history.replaceState({}, "", newUrl);
 	};
 
-	// gets order from stripe
 	const handleStripeGetOrders = async (sessionId: string | null) => {
 		try {
 			const response = await axios.get("http://localhost:5255/get-line-items", {
@@ -106,18 +96,12 @@ export function AccountPage() {
 
 			const stripeOrderData = response.data;
 			if (stripeOrderData) {
-				// Get shipping details
 				const shippingDetails = await handleGetShippingAddress(sessionId);
-				// Get metadata
 				const metaDataResponse = await handleGetMetaData(sessionId);
 				const metaData = metaDataResponse.metadata;
-				console.log("Meta Data: ", metaData);
 
 				for (const item of stripeOrderData) {
-
 					const size = metaData[item.description];
-					console.log("Item Desc:", item.description);
-                	console.log("Stripe Item Size:", size);
 
 					await handleAddToOrders(
 						item.id,
@@ -134,7 +118,6 @@ export function AccountPage() {
 					await handleDeleteCart();
 					clearStripeSesssionId();
 					window.location.reload();
-					console.log("SESSION ID", sessionId);
 				}
 			}
 		} catch (error) {
@@ -142,7 +125,6 @@ export function AccountPage() {
 		}
 	};
 
-	// get shipping address from stripe
 	const handleGetShippingAddress = async (sessionId: string | null) => {
 		try {
 			const response = await axios.get(
@@ -162,7 +144,6 @@ export function AccountPage() {
 		return null;
 	};
 
-	//get meta data from stripe
 	const handleGetMetaData = async (sessionId: string | null) => {
 		try {
 			const response = await axios.get(
@@ -181,7 +162,6 @@ export function AccountPage() {
 		}
 	};
 
-	// add order to user
 	const handleAddToOrders = async (
 		id: string,
 		description: string,
@@ -218,7 +198,6 @@ export function AccountPage() {
 		}
 	};
 
-	// get orders from user
 	const handleFetchOrders = async () => {
 		if (!sessionId) return;
 		try {
@@ -234,7 +213,6 @@ export function AccountPage() {
 		}
 	};
 
-	// delete all items from cart
 	const handleDeleteCart = async () => {
 		if (!sessionId) {
 			console.error("Session Id not found.");
@@ -286,12 +264,6 @@ export function AccountPage() {
 				<PromoBar />
 				<Header />
 				<div className="account-container">
-					{/* <div className="success-message">
-						Log In Success UID: {session.user?.id}
-					</div>
-					<div className="success-message">
-						Stripe Order Success, UID: {StripeSessionId}
-					</div> */}
 					<h1 className="welcome-message">Welcome, {session.user?.email}</h1>
 
 					{orders.length > 0 ? (
