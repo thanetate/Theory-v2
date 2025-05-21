@@ -1,4 +1,6 @@
 Deploying the server to Azure ->
+* Note -> We didn't have to configure our own CI/CD pipeline with GitHub Actions, 
+Azure has a prompt that will create that automatically. 
 
     1. Create an App Service
         * Make sure authentication is enabled.
