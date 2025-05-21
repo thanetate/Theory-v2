@@ -83,7 +83,7 @@ export function AccountPage() {
 	const handleLogout = async () => {
 		const { error } = await supabase.auth.signOut();
 		if (error) {
-			console.log("Error logging out:", error.message);
+			console.error("Error logging out:", error.message);
 		}
 		setSession(null);
 		resetSessionId(null);

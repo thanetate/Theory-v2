@@ -64,8 +64,15 @@ export function IndividualProductPage() {
 			navigate("/account");
 		} else {
 			if (product) {
+				const updatedProduct = { ...product };
+				
+				if (size === "large") {
+					updatedProduct.price = product.price + 10;
+				}
+
 				toast.success("Added to cart");
-				addToCart(product, quantity, size);
+				console.log('CART', updatedProduct);
+				addToCart(updatedProduct, quantity, size);
 			}
 		}
 	};

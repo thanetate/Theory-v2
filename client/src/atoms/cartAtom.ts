@@ -13,6 +13,7 @@ export const cartDetailsAtom = atom<Array<{
 }> | null>(null);
 interface Product {
 	id: number;
+	description: string;
 	name: string;
 	price: number;
 	image: string;
@@ -35,6 +36,7 @@ export const fetchCartDetailsAtom = atom(
 			);
 			const cartDetails = response.data;
 			set(cartDetailsAtom, cartDetails);
+			console.log('DETAILS', cartDetails);
 		} catch (error) {
 			console.error("Failed to fetch cart details:", error);
 		}
@@ -46,11 +48,16 @@ export const addToCartAtom = atom(
 		const sessionId = get(sessionIdAtom);
 		if (!product || !sessionId) return;
 
+		const min = 100000000;
+		const max = 999999999;
+		const randomNumber = Math.floor(Math.random() * (max - min)) + min;
+
 		try {
 			const response = await axios.post(
 				`http://localhost:5255/user/${sessionId}/add-to-cart`,
 				{
-					productId: product.id,
+					id: randomNumber,
+					description: product.description,
 					name: product.name,
 					price: product.price,
 					quantity: quantity,
@@ -67,8 +74,6 @@ export const addToCartAtom = atom(
 			if (response.status !== 200) {
 				throw new Error("Failed to add product to cart");
 			}
-
-			console.log("Product added to cart successfully");
 		} catch (error) {
 			console.error("Failed to add product to cart:", error);
 		}
