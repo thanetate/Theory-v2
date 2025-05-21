@@ -1,26 +1,26 @@
-import { Footer } from "../../components/Footer/Footer";
+import "./CartPage.css";
 import { Header } from "../../components/Header/Header";
+import { Footer } from "../../components/Footer/Footer";
 import { PromoBar } from "../../components/PromoBar/PromoBar";
-import { useAtom } from "jotai";
 import { sessionIdAtom } from "../../atoms/userAtom";
+import { fetchCartDetailsAtom } from "../../atoms/cartAtom";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "./CartPage.css";
-import { fetchCartDetailsAtom } from "../../atoms/cartAtom";
 import toast from "react-hot-toast";
 import axios from "axios";
+import { useAtom } from "jotai";
 
 export function CartPage() {
+	const [, setQuantity] = useState(1);
 	const [sessionId] = useAtom(sessionIdAtom);
-	console.log("Session id in atom: ", sessionId);
 	const [cartDetails, fetchCartDetails] = useAtom(fetchCartDetailsAtom);
 	const navigate = useNavigate();
-	const [, setQuantity] = useState(1);
 
 	useEffect(() => {
 		fetchCartDetails();
 	}, [fetchCartDetails]);
 
+	// Todo: fix quantity issues
 	const handleQuantityChange = (amount: number) => {
 		setQuantity((prevQuantity) => Math.max(1, prevQuantity + amount));
 	};
@@ -57,7 +57,7 @@ export function CartPage() {
 		try {
 			const response = await axios.post(
 				"http://localhost:5255/create-checkout-session",
-				{ cart: cartDetails }, // send the cart details to the backend
+				{ cart: cartDetails },
 				{
 					headers: {
 						"Content-Type": "application/json",
@@ -65,9 +65,9 @@ export function CartPage() {
 				}
 			);
 
-			// extract the URL from the response and redirect
+			// redirect to stripe checkout page
 			if (response.data.url) {
-				window.location.href = response.data.url; // redirect to Stripe's checkout page
+				window.location.href = response.data.url;
 			} else {
 				console.error("Checkout session URL not found in response.");
 			}
@@ -75,9 +75,6 @@ export function CartPage() {
 			console.error("Error creating checkout session:", error);
 		}
 	};
-
-	//TODO: delete this later
-	console.log("Cart details: ", cartDetails);
 
 	return (
 		<>
