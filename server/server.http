@@ -26,7 +26,7 @@ Content-Type: application/json
 
 {
   "id": "12831",
-  "name": "Climbing Boots",
+  "name": "TEST ETST ETST",
   "description": "High-performance climbing Boots",
   "price": 10,
   "image": "/example-product.webp",

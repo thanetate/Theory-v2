@@ -1,6 +1,3 @@
-using Microsoft.AspNetCore.Builder;
-using Microsoft.Extensions.DependencyInjection;
-using Supabase;
 using Supabase.Tutorial.Contracts;
 using Supabase.Tutorial.Models;
 
@@ -8,12 +5,11 @@ public static class ProductEndpoints
 {
     public static void MapProductEndpoints(this WebApplication app)
     {
-        // GET ALL
+        // GET all products
         app.MapGet("/products", async (Supabase.Client client) => 
         {
             var response = await client.From<Product>().Get();
 
-            // Map to DTO
             var products = response.Models.Select(p => new ProductResponse
             {
                 Id = p.Id,
@@ -26,7 +22,7 @@ public static class ProductEndpoints
             return Results.Ok(products);
         });
 
-        // GET
+        // GET one product based on id
         app.MapGet("/products/{id}", async (long id, Supabase.Client client) =>
         {
             var response = await client
