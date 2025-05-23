@@ -70,7 +70,7 @@ export function Footer() {
 				</div>
 			</div>
 			<div className="copyright-container">
-				<h2>Copyright © 2024 - All rights reserved by Theory Climbing</h2>
+				<h2>Copyright © 2025 - All rights reserved by Theory Climbing</h2>
 			</div>
 		</>
 	);

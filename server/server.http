@@ -1,57 +1,31 @@
 @HostAddress = http://localhost:5255
 
-### Newsletter
-POST http://localhost:5255/newsletters
-Content-Type: application/json
-
-{
-  "name": "Weekly Update",
-  "description": "A weekly update on the latest news.",
-  "readTime": 5
-}
-
-### GET
-GET http://localhost:5255/newsletters/1
-Content-Type: application/json
-
-### DELETE
-DELETE http://localhost:5255/newsletters/3
-Content-Type: application/json
-
-### GET
-GET http://localhost:5255/newsletters
-Content-Type: application/json
-
-### Product
-
-### GET ALL
+### get all products
 GET http://localhost:5255/products
 Content-Type: application/json
 
-### GET
-GET http://localhost:5255/products/1
+### get product by id
+GET http://localhost:5255/products/2
 Content-Type: application/json
 
-
-@AccessToken = eyJhbGciOiJIUzI1NiIsImtpZCI6Ijc2STEwTHU5djhGVXExSG8iLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NkZ2tjcnpqd3F1bGxoY3h4enJrLnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiJhYjA2Yjk0Yy1kYzkwLTQ1NmQtYjFhMi05N2ZiYmZkZWQ4NmEiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzM1MjM4MDYyLCJpYXQiOjE3MzUyMzQ0NjIsImVtYWlsIjoidGhhbmV0YXRlQG91dGxvb2suY29tIiwicGhvbmUiOiIiLCJhcHBfbWV0YWRhdGEiOnsicHJvdmlkZXIiOiJlbWFpbCIsInByb3ZpZGVycyI6WyJlbWFpbCJdfSwidXNlcl9tZXRhZGF0YSI6eyJlbWFpbF92ZXJpZmllZCI6dHJ1ZX0sInJvbGUiOiJhdXRoZW50aWNhdGVkIiwiYWFsIjoiYWFsMSIsImFtciI6W3sibWV0aG9kIjoicGFzc3dvcmQiLCJ0aW1lc3RhbXAiOjE3MzUyMzQ0NjJ9XSwic2Vzc2lvbl9pZCI6IjA3NDBhYTQ2LTZlZjEtNGQ5Ni05NzViLWY0ZjliMWE5MTJkYiIsImlzX2Fub255bW91cyI6ZmFsc2V9.F_obH_Rv30zs8sz6xtdS9dcWgHJABpnxO6E_IC2uqkE
 ### GET
-GET {{HostAddress}}/user/
-Accept: application/json
-Authorization: Bearer {{AccessToken}}
+# GET {{HostAddress}}/user/
+# Accept: application/json
+# Authorization: Bearer {{AccessToken}}
 
-### GET user by id
+### get user by id
 GET http://localhost:5255/user/9846c653-c02b-4e81-b28c-7564d70dd377
 
-### Get User Cart
+### get users cart
 GET http://localhost:5255/user/9846c653-c02b-4e81-b28c-7564d70dd377/cart
 Content-Type: application/json
 
-### POST
+### add item to users cart
 POST http://localhost:5255/user/9846c653-c02b-4e81-b28c-7564d70dd377/add-to-cart
 Content-Type: application/json
 
 {
-  "id": "1",
+  "id": "12831",
   "name": "Climbing Boots",
   "description": "High-performance climbing Boots",
   "price": 10,
@@ -59,26 +33,31 @@ Content-Type: application/json
   "size": "XS",
   "quantity": 2
 }
-### Delete Item from Cart
-DELETE http://localhost:5255/user/9846c653-c02b-4e81-b28c-7564d70dd377/cart/6
+
+### change quantity in users cart
+PATCH http://localhost:5255/user/9846c653-c02b-4e81-b28c-7564d70dd377/cart/12831/quantity/4
 Content-Type: application/json
 
-### Delete All Items from Cart
+### delete an item based on the productId from users cart
+DELETE http://localhost:5255/user/9846c653-c02b-4e81-b28c-7564d70dd377/cart/12831
+Content-Type: application/json
+
+### delete all items from users cart
 DELETE http://localhost:5255/user/9846c653-c02b-4e81-b28c-7564d70dd377/cart
 
-### Checkout
+### create a checkout session
 curl -X POST http://localhost:5255/create-checkout-session -H "Content-Type: application/json" -d '{}'
 
-### GET Line Items from Account Page
+### get line items from account page
 GET http://localhost:5255/get-line-items?session_id=cs_test_a18NikcS4suKScEY8szTFqY4qc0SRKheRgrIbNcHgdno0fffv82EP2Kjh5
 
-### GET MetaData from Account Page
+### get metadata from account page
 GET http://localhost:5255/get-checkout-session-metadata?session_id=cs_test_a18NikcS4suKScEY8szTFqY4qc0SRKheRgrIbNcHgdno0fffv82EP2Kjh5
 
-### GET Order Items from Account Page
+### get order items from account page
 GET http://localhost:5255/get-shipping-details?session_id=cs_test_a1ZyZFtzL5ZznQap3V8b30S5z0nVGUrwEy4tJcpXQlkeuA3t7vfq1Dwh7t
 
-### Add to Orders
+### add to order
 POST http://localhost:5255/user/9846c653-c02b-4e81-b28c-7564d70dd377/add-to-orders
 Content-Type: application/json
 
@@ -94,5 +73,5 @@ Content-Type: application/json
   "state": "TX"
 }
 
-### Get Orders
+### get all orders 
 GET http://localhost:5255/user/9846c653-c02b-4e81-b28c-7564d70dd377/orders
