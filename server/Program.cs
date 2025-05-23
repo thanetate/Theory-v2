@@ -1,17 +1,10 @@
-using Swashbuckle.AspNetCore.SwaggerGen;
 using Supabase;
-using Supabase.Interfaces;
-using Supabase.Tutorial.Contracts;
-using Supabase.Tutorial.Models;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
-using System.Security.Claims;
 using Stripe;
 using Stripe.Checkout;
-using YourNamespace.Models;
 using YourNamespace.Contracts;
 
-//test comment
 // initialize the web application
 var builder = WebApplication.CreateBuilder(args);
 
