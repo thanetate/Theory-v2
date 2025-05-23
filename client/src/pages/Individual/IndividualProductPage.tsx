@@ -13,14 +13,15 @@ import toast from "react-hot-toast";
 import { useAtom } from "jotai";
 
 export function IndividualProductPage() {
-	const { productId } = useParams<{ productId: string }>();
-	const [product] = useAtom(singleProductAtom);
 	const [, fetchProduct] = useAtom(fetchProductById);
+	const [product] = useAtom(singleProductAtom);
+	const [addToCart] = useAtom(addToCartAtom);
 	const [sessionId] = useAtom(sessionIdAtom);
 	const [size, setSize] = useState("small");
-	const [addToCart] = useAtom(addToCartAtom);
-	const navigate = useNavigate();
+	const [quantity, setQuantity] = useState(1);
 	const [displayPrice, setDisplayPrice] = useState<number | null>(null);
+	const { productId } = useParams<{ productId: string }>();
+	const navigate = useNavigate();
 
 	useEffect(() => {
 		if (product) {
@@ -33,10 +34,6 @@ export function IndividualProductPage() {
 			fetchProduct({ productId: Number(productId) });
 		}
 	}, [fetchProduct, productId]);
-
-	const handlePrevClick = () => {};
-	const handleNextClick = () => {};
-	const [quantity, setQuantity] = useState(1);
 
 	const handleQuantityChange = (amount: number) => {
 		setQuantity((prevQuantity) => Math.max(1, prevQuantity + amount));
@@ -66,7 +63,7 @@ export function IndividualProductPage() {
 				if (size === "large") {
 					updatedProduct.price = product.price + 10;
 				}
-
+				console.log('product quantity', quantity);
 				toast.success("Added to cart");
 				addToCart(updatedProduct, quantity, size);
 			}
@@ -95,14 +92,6 @@ export function IndividualProductPage() {
 							alt="Product Image"
 							className="i-product-img"
 						/>
-					</div>
-					<div className="carousel-btn-container">
-						<button className="carousel-btn" onClick={handlePrevClick}>
-							<img src="/icons/leftarrow.svg" alt="Left Arrow" />
-						</button>
-						<button className="carousel-btn" onClick={handleNextClick}>
-							<img src="/icons/rightarrow.svg" alt="Right Arrow" />
-						</button>
 					</div>
 				</div>
 				<div className="rightside">

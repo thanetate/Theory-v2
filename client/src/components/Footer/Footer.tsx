@@ -59,6 +59,7 @@ export function Footer() {
 				<h2>
 					Website Designed & Created by <span>Thane Tate</span>
 				</h2>
+				<h2>Help us improve — report issues <a href="https://github.com/thanetate/Theory-v2/issues">here</a>.</h2>
 				<div className="icons-container">
 					<a href="https://github.com/thanetate">
 						<img src="/icons/github.svg" alt="Theory Github Icon" />
